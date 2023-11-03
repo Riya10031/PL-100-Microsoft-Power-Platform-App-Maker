@@ -5,43 +5,19 @@
  
 # Lab 02.1: Data model and model-driven app
 
+## Lab Scenario
+
 In this lab you will be implementing the data model for the solution and building a model-driven app that will be used for tracking problems and managing the overall effort.
 
 ## Lab Objectives
  
 Though this lab, you will be able to complete and gain insights into the following exercises:
-  
-  - Create Tables, Columns, and relationships
 
-  - Create a model-driven app
-
-  - Create a site map
-
-  - Create and configure Table forms
-
-  - Create and configure Table views
-
-## High-level lab steps
-
-  - Exercise 1 – Create publisher and solution  
-
-  - Exercise 2 – Implement the data model 
-    
-      - Data Model 
-        
-          - Building 
-          
-          - Department 
-          
-          - Problem Report 
-
-  - Exercise 3 – Configure forms and views 
-
-  - Exercise 4 – Compose a basic model-driven app 
-
-  - Exercise 5 – Input data and refine some views, import some problem reports 
-
-## Detailed steps
+Exercise 1 – Create publisher and solution  
+Exercise 2 – Implement the data model 
+Exercise 3 – Configure forms and views 
+Exercise 4 – Compose a basic model-driven app 
+Exercise 5 – Input data and refine some views, import some problem reports 
 
 ### Exercise 1: Create publisher and solution
 
