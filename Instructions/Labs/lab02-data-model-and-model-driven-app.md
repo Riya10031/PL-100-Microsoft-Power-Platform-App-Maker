@@ -13,11 +13,11 @@ In this lab you will be implementing the data model for the solution and buildi
  
 Though this lab, you will be able to complete and gain insights into the following exercises:
 
-Exercise 1 – Create publisher and solution  
-Exercise 2 – Implement the data model 
-Exercise 3 – Configure forms and views 
-Exercise 4 – Compose a basic model-driven app 
-Exercise 5 – Input data and refine some views, import some problem reports 
+- Exercise 1 : Create publisher and solution  
+- Exercise 2 : Implement the data model 
+- Exercise 3 : Configure forms and views 
+- Exercise 4 : Compose a basic model-driven app 
+- Exercise 5 : Input data and refine some views, import some problem reports 
 
 ### Exercise 1: Create publisher and solution
 
