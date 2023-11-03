@@ -1,28 +1,19 @@
----
-lab:
-    title: 'Lab 01: Design the solution'
-    module: 'Module 01: Introduction to Power Platform'
----
-
-> **NOTE**
->
-> Effective November 2020:
-> - Common Data Service has been renamed to Microsoft Dataverse. [Learn more](https://aka.ms/PAuAppBlog)
-> - Some terminology in Microsoft Dataverse has been updated. For example, *entity* is now *table* and *field* is now *column*. [Learn more](https://go.microsoft.com/fwlink/?linkid=2147247)
->
-
+# Course Introduction
+ 
+> - Common Data Service has been renamed to Microsoft Dataverse. You can refer to the following link for more details: `https://aka.ms/PAuAppBlog`
+> - Some terminology in Microsoft Dataverse has been updated. For example, *entity* is now *table* and *field* is now *column*. For more details, navigate to: `https://go.microsoft.com/fwlink/?linkid=2147247`
 
 # Lab 01: Design the solution
 
+## Lab Scenario
+
 In this lab you will be shaping your idea into something that can be implemented on the Power Platform.   As part of this you will meet with other people in your organization to get more clarity on how your idea could be implemented.  Using this information, you will identify what applications and automations need to be built.
 
-## What you will learn
+## Lab Objectives
 
-  - How to identify gaps and requirements for an idea
-
-  - How to map a problem domain to the Power Platform 
-
-  - How to determine required Tables for a data model 
+- Exercise : 1 How to identify gaps and requirements for an idea
+- Exercise: 2 How to map a problem domain to the Power Platform
+- Exercise 3 : How to determine required Tables for a data model 
 
 ## High-level lab steps
 
