@@ -119,6 +119,8 @@ In this task, you will create a business process flow for the Problem Report tab
 
 15. Add the new stage after the **Route** stage.
 
+    ![A screenshot of the completed route stage with three data steps: building, location, and department](02-2/media/lab03-ex1-t2-s15.png)
+
 16. Select the stage, go to the **Properties** pane, enter `Fix` for **Display Name**, and select **Apply**.
 
 17. Expand **Details** of the **Fix** stage.
@@ -147,19 +149,21 @@ In this task, you will create a business process flow for the Problem Report tab
 
 29. The Business process flow should now look like the image below. Select **Save**.
 
-    ![A screenshot of a Business Process Designer with an arrow pointing to the save button](02-2/media/image9.png)
+    ![A screenshot of a Business Process Designer with an arrow pointing to the save button](02-2/media/lab03-ex1-t2-s29.png)
 
 30. Select **Activate**.
 
-31. Select **Activate** again on the pop-up.
+    ![A screenshot of a Business Process Designer with an arrow pointing to the save button](02-2/media/lab03-ex1-t2-s30.png)
 
-32. Confirm that Status: **Active** shows at the bottom left of the Business Process Flow canvas.
+32. Select **Activate** again on the pop-up.
+
+33. Confirm that Status: **Active** shows at the bottom left of the Business Process Flow canvas.
 
     ![A screeshot of a high-level overview of a business process with the words "Status: Active" highlighted in the left bottom corner](02-2/media/image28.png)
 
-33. Close the process editor browser window or tab.
+34. Close the process editor browser window or tab.
 
-34. Select **Done**.
+35. Select **Done**.
 
 
 ### Exercise 2: Create business rule
@@ -178,15 +182,17 @@ In this exercise, you will create a business rule that will block completion of 
 
     ![A screenshot of the flyout New menu with the cursor positioned over the highlighted Business rule entry](02-2/media/image12.png)
 
-5.  Make sure the **Scope** is set to **Entity** in the selector in the right corner of the screen. 
+5.  Make sure the **Scope** is set to **Entity** in the selector in the right corner of the screen.
 
-6.  Select the **Show details** chevron located next to New business rule title on the same row as the scope.
+    ![A screenshot of the rules panel](02-2/media/lab03-ex2-t1-s5.png)
 
-    ![A Screenshot with an arrow pointing to the drop down icon next to the text problem report: new business rule and a border around the scope set to entity on the right hand side of the page](02-2/media/image13.png)
+7.  Select the **Show details** chevron located next to New business rule title on the same row as the scope.
+
+    ![A Screenshot with an arrow pointing to the drop down icon next to the text problem report: new business rule and a border around the scope set to entity on the right hand side of the page](02-2/media/lab03-ex2-t1-s7.png)
 
 6.  Change **Business rule name** to `Completion rule` and select the **Hide details** chevron.
 
-    ![A screenshot of a business rules property pane with an arrow pointing to the shevron that collapses the entire property pane](02-2/media/image29.png)
+    ![A screenshot of a business rules property pane with an arrow pointing to the shevron that collapses the entire property pane](02-2/media/lab03-ex2-t1-s6.png)
  
 7.  Select the **Condition**.
 
