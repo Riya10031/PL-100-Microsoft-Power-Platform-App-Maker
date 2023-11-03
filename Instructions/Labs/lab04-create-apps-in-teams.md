@@ -1,52 +1,31 @@
----
-lab:
-    title: 'Lab 03.1: Create apps in Teams'
-    module: 'Module 03: Create a canvas app'
----
+## Exercise 2: Create apps in Teams
 
-> **NOTE**
->
-> Effective November 2020:
->
-> - Common Data Service has been renamed to Microsoft Dataverse. [Learn more](https://aka.ms/PAuAppBlog)
-> - Some terminology in Microsoft Dataverse has been updated. For example, *entity* is now *table* and *field* is now *column*. [Learn more](https://go.microsoft.com/fwlink/?linkid=2147247)
->
-
-Lab 03.1: Create apps in Teams
-=================================
-
-## Scenario
+## Lab Scenario
 
 It is not uncommon for organizations to accumulate unused computer peripherals, power cords and other electronics. Your organization is taking steps to reuse existing devices and computer peripherals before ordering new equipment.
 
 You are asked to create an application where users can post devices they no longer need and browse through what their colleagues posted.
 
+> - Common Data Service has been renamed to Microsoft Dataverse. [Learn more](https://aka.ms/PAuAppBlog)
+> - Some terminology in Microsoft Dataverse has been updated. For example, *entity* is now *table* and *field* is now *column*. [Learn more](https://go.microsoft.com/fwlink/?linkid=2147247)
+
+## Lab Objectives
+
+Through this lab, you will be able to complete and gain insights into the following exercises:
+ 
+-  Exercise 1: Get started with Microsoft Dataverse for Teams
+-  Exercise 2: Create application
+-  Exercise 3: Test and publish application
+
 ## Requirements
 
 1)	Application must use Dataverse for Teams.
-
 2)	Users should be able to create new items, edit items they created and see items created by other users.
-
 3)	Items should be removed from the list if they are no longer available.
-
 4)  Allow users to reserve an item.
-
 5)  Allow user to mark item for pick up.
-
 6)  If item is reserved, only reserved user should be able to mark item picked up.
-
 7)  Users should be able to search items.
-
-## What you will learn
-
-1)	How to create an application using Dataverse for Teams.
-
-2)	How to publish application.
-
-3)	How to give other users permission to your application.
-
-
-## Detailed steps
 
 ### Exercise 1: Get started with Microsoft Dataverse for Teams
 
@@ -56,9 +35,9 @@ In this exercise, you will create a new team and install Power Apps for Teams.
 
 In this task you will create a new team.
 
-1.  Navigate to [Microsoft Teams](https://teams.microsoft.com).
+1.  Navigate to Desktop and search for Microsoft teams and select it. Select **Keep using the new teams**.
 
-2.  Select **Teams**, hover over **Create a team** and select the **Create team** button.
+2.  Select the **Create team** button.
 
     ![A screenshot with a box around the teams button on the left side of the window and an arrow pointing to the create team button](03-1/media/ex1-t1-image1.png)
 
@@ -101,7 +80,7 @@ In this exercise, you will provision Dataverse for Teams by creating an applicat
 
 In this task, you will provision Dataverse for Teams by creating an application.
 
-1.  Navigate to [Microsoft Teams](https://teams.microsoft.com).
+1.  Navigate to Desktop and search for Microsoft teams and select it. Select **Keep using the new teams**.
 
 2.  Select **Power Apps** and select **Start now**.
 
