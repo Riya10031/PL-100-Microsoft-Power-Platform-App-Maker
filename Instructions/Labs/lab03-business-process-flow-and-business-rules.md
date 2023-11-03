@@ -5,34 +5,18 @@
 
 # Lab 02.2: Business Process Flows and Business Rules
 
+## Lab Scenario
+
 In this lab you will enhance the data model and improve the app behavior by adding a business process flow and a business rule.
 
-## What you will learn
+## Lab Objectives
 
-  - How to identify stages in a Business Process Flow (BPF)
-
-  - How to create and use a BPF
-
-  - How to use a business rule to implement logic
-
-## High-level lab steps
-
-  - Exercise 1 – Create BPF lifecycle of problem report
-    
-      - Route 
-      
-      - Fix 
-      
-      - Resolved 
-
-  - Exercise 2 – Business rule to not allow close without resolution
+- Exercise 1 : Create BPF lifecycle of problem report
+- Exercise 2 : Business rule to not allow close without resolution
 
 ## Prerequisites
 
 * Must have completed **Lab 02.1: Data model and model-driven app**
-
-
-## Detailed steps
 
 ### Exercise 1: Create business process flow
 
