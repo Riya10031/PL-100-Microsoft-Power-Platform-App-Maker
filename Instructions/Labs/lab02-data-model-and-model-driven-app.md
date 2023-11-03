@@ -7,8 +7,10 @@
 
 In this lab you will be implementing the data model for the solution and building a model-driven app that will be used for tracking problems and managing the overall effort.
 
-## What you will learn
-
+## Lab Objectives
+ 
+Though this lab, you will be able to complete and gain insights into the following exercises:
+  
   - Create Tables, Columns, and relationships
 
   - Create a model-driven app
