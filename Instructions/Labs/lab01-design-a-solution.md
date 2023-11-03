@@ -11,23 +11,11 @@ In this lab you will be shaping your idea into something that can be implemen
 
 ## Lab Objectives
 
-- Exercise : 1 How to identify gaps and requirements for an idea
-- Exercise: 2 How to map a problem domain to the Power Platform
-- Exercise 3 : How to determine required Tables for a data model 
-
-## High-level lab steps
-
-  - Exercise 1 - Scenario overview 
-
-  - Exercise 2 - Extract needs from interview with a co-worker and facility staff
-
-  - Exercise 3 - Design a data model
-
-  - Exercise 4 - Identify apps and automation that are needed 
-
-  - Exercise 5 - User story, mockup the app UI 
-
-## Detailed steps
+- Exercise 1 : How to identify gaps and requirements for an idea
+- Exercise 2 : How to map a problem domain to the Power Platform
+- Exercise 3 : How to determine required Tables for a data model
+- Exercise 4 : Identify apps and automation that are needed
+- Exercise 5 : User story, mockup the app UI 
 
 ### Exercise 1: Scenario Overview
 
