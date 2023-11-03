@@ -488,8 +488,6 @@ In this exercise, you will input data to the Dataverse tables.
 
 5.  Select **Departments** and select **+ New**.
 
-    ![A Screenshot with an arrow pointing to the new button at the top of the window](02-1/media/lab03-ex2-t1-s5.png)
-
 6.  Enter `Information Technology` for **Name** and select **Save**.
 
     ![A screenshot showing the change in name to information technology](02-1/media/lab02-ex5-t1-s6.png)
