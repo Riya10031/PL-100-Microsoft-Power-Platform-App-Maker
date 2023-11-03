@@ -403,19 +403,17 @@ In this exercise, you will create a model-driven application.
 
     ![A screenshot of the navigation pane with navigation bar selected](02-1/media/lab02-ex4-t1-s5-b.png)
 
-7.  In the properties pane, check **Enable Areas**. 
+6.  In the properties pane, check **Enable Areas**. 
 
-8.  Select **Area1**.
+7.  Select **Area1**.
 
-    ![A screenshot of the navigation pane with navigation bar selected](02-1/media/lab02-ex4-t1-s9.png)
+8.  Go to the **Properties** pane, enter `Manage Problems` for **Title**, and enter `area_manage_problems` for **ID**.
 
-10.  Go to the **Properties** pane, enter `Manage Problems` for **Title**, and enter `area_manage_problems` for **ID**.
+     ![A screenshot of the properties pane with the title and ID changed](02-1/media/lab02-ex4-t1-s8.png)
 
-    ![A screenshot of the properties pane with the title and ID changed](02-1/media/lab02-ex4-t1-s8.png)
+9.  Select **+ Add page** on the **Pages** menu.
 
-11.  Select **+ Add page** on the **Pages** menu.
-
-   ![A screenshot of the properties pane with the title and ID changed](02-1/media/lab02-ex4-t1-s9.png)
+     ![A screenshot of the properties pane with the title and ID changed](02-1/media/lab02-ex4-t1-s9.png)
    
 10. Select **Next**.
 
