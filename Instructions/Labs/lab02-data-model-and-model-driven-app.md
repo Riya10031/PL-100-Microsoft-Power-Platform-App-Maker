@@ -399,20 +399,24 @@ In this exercise, you will create a model-driven application.
 
 5.  Select **Navigation** from the left menu. 
 
-    ![A screenshot of the navigation pane with navigation bar selected](02-1/media/image102.png)
+    ![A screenshot of the navigation pane with navigation bar selected](02-1/media/lab02-ex4-t1-s5-a.png)
 
-6.  In the properties pane, check **Enable Areas**. 
+    ![A screenshot of the navigation pane with navigation bar selected](02-1/media/lab02-ex4-t1-s5-b.png)
 
-7.  Select **Area1**. 
+7.  In the properties pane, check **Enable Areas**. 
 
-    ![A screenshot of the area editing](02-1/media/image106.png)
+8.  Select **Area1**. 
 
-8.  Go to the **Properties** pane, enter `Manage Problems` for **Title**, and enter `area_manage_problems` for **ID**.
+    ![A screenshot of the area editing](02-1/media/lab02-ex4-t1-s7.png)
 
-    ![A screenshot of the properties pane with the title and ID changed](02-1/media/image64.png)
+9.  Go to the **Properties** pane, enter `Manage Problems` for **Title**, and enter `area_manage_problems` for **ID**.
 
-9.  Select **+ Add page** on the **Pages** menu.
+    ![A screenshot of the properties pane with the title and ID changed](02-1/media/lab02-ex4-t1-s8.png)
 
+10.  Select **+ Add page** on the **Pages** menu.
+
+   ![A screenshot of the properties pane with the title and ID changed](02-1/media/lab02-ex4-t1-s9.png)
+   
 10. Select **Next**.
 
 11. Search for and select **Problem Report**.
@@ -425,41 +429,43 @@ In this exercise, you will create a model-driven application.
 
 14. Go to the **Properties**, enter `Problems` for **Title**, and enter `group_problems` for **ID**.
 
-15. Click on area selection and then select **New area**
+    ![A screenshot of the adding new area](02-1/media/lab02-ex4-t1-s14.png)
+
+16. Click on area selection and then select **New area**
     
     ![A screenshot of the adding new area](02-1/media/image107.png)
 
-16. Go to the **Properties** pane, enter `Settings` for **Title**, and enter `area_settings` for **ID**.
+17. Go to the **Properties** pane, enter `Settings` for **Title**, and enter `area_settings` for **ID**.
 
-    ![A screenshot of the properties pane with the title and ID changed](02-1/media/image97.png)
+    ![A screenshot of the properties pane with the title and ID changed](02-1/media/lab02-ex4-t1-s16.png)
     
-17. Select **+ New** on the **Pages** menu.
+18. Select **+ New** on the **Pages** menu.
 
-18. Select **Next**.
+19. Select **Next**.
 
-19. Search for and select **Building**.
+20. Search for and select **Building**.
 
-20. Search for and select **Department**.
+21. Search for and select **Department**.
 
-21. Select **Add**
+22. Select **Add**
 
-22. Select **New Group**.
+23. Select **New Group**.
 
-23. Go to the **Properties** pane, enter **Taxonomy** for **Title**, and enter **group\_taxonomy** for **ID**.
+24. Go to the **Properties** pane, enter **Taxonomy** for **Title**, and enter **group\_taxonomy** for **ID**.
 
-24. The navigation should now look like the image below. Select **Save**.
+25. The navigation should now look like the image below. Select **Save**.
 
     ![A screenshot of the navigation in Settings area](02-1/media/image108.png)
 
-25. Select **Publish** to publish the sitemap and wait for the publishing to complete.
+26. Select **Publish** to publish the sitemap and wait for the publishing to complete.
 
-26. Select the **🡠 Back** button to return to the **Solution Explorer**.
+27. Select the **🡠 Back** button to return to the **Solution Explorer**.
 
-27. Select **All** in the **Objects** navigation tree.
+28. Select **All** in the **Objects** navigation tree.
 
-28. Select **Publish all customizations** and wait for the publishing to complete.
+29. Select **Publish all customizations** and wait for the publishing to complete.
 
-    ![A screenshot with an arrow pointing to the publish all customizations button](02-1/media/image77.png)
+    ![A screenshot with an arrow pointing to the publish all customizations button](02-1/media/lab02-ex4-t1-s28.png)
 
 
 ### Exercise 5: Input data
@@ -472,25 +478,25 @@ In this exercise, you will input data to the Dataverse tables.
 
 2.  Select **Apps** and open the **Company 311 Admin** application created in the previous exercise.
 
-    ![A Screenshot with an arrow pointing to the Company 311 Admin app](02-1/media/image80.png)
+    ![A Screenshot with an arrow pointing to the Company 311 Admin app](02-1/media/lab02-ex5-t1-s2.png)
 
 3.  Select **Change area**.
 
-    ![A screenshot with an arrow pointing to chevron icon next to Manage Problems](02-1/media/image81.png)
+    ![A screenshot with an arrow pointing to chevron icon next to Manage Problems](02-1/media/lab02-ex5-t1-s3.png)
 
 4.  Select the **Settings** area.
 
 5.  Select **Departments** and select **+ New**.
 
-    ![A Screenshot with an arrow pointing to the new button at the top of the window](02-1/media/image82.png)
+    ![A Screenshot with an arrow pointing to the new button at the top of the window](02-1/media/lab03-ex2-t1-s5.png)
 
 6.  Enter `Information Technology` for **Name** and select **Save**.
 
-    ![A screenshot showing the change in name to information technology](02-1/media/image83.png)
+    ![A screenshot showing the change in name to information technology](02-1/media/lab02-ex5-t1-s6.png)
 
 7.  Select **Buildings**.
 
-    ![A Screenshot with an arrow pointing to the buildings button under taxonomy](02-1/media/image84.png)
+    ![A Screenshot with an arrow pointing to the buildings button under taxonomy](02-1/media/lab02-ex5-t1-s7.png)
 
 8.  Select **+ New**.
 
@@ -504,7 +510,7 @@ In this exercise, you will input data to the Dataverse tables.
 
 12. Select **Change area**.
 
-    ![A Screenshot with an arrow pointing to the chevron icon next to settings in the bottom left corner of the window](02-1/media/image85.png)
+    ![A Screenshot with an arrow pointing to the chevron icon next to settings in the bottom left corner of the window](02-1/media/lab02-ex5-t1-s12.png)
 
 13. Select **Manage Problems**.
 
@@ -518,7 +524,7 @@ In this exercise, you will input data to the Dataverse tables.
     >
     > You cannot save images before creating the row in the database. Select **Save** and then you may upload a picture.
 
-    ![A screenshot of the new problem report window with all relevant text in each field](02-1/media/image87.png)
+    ![A screenshot of the new problem report window with all relevant text in each field](02-1/media/lab02-ex5-t1-s15.png)
 
 16. Select **Open file** on the **Photo** field.
 
