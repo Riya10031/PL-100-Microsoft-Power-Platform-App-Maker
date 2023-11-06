@@ -37,7 +37,7 @@ In this task you will create a new team.
 
 1.  Navigate to Desktop and search for Microsoft teams and select it. Select **Keep using the new teams**.
 
-2.  Select the **Create team** button.
+2.  Select the **Create a new team** button.
 
     ![A screenshot with a box around the teams button on the left side of the window and an arrow pointing to the create team button](03-1/media/lab4-ex1-t1-6.png)
 
