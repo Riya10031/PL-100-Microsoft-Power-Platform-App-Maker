@@ -1,4 +1,4 @@
-## Exercise 2: Create apps in Teams
+# Lab 04: Create apps in Teams
 
 ## Lab Scenario
 
