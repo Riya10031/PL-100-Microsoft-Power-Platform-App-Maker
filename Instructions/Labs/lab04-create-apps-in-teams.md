@@ -39,15 +39,15 @@ In this task you will create a new team.
 
 2.  Select the **Create team** button.
 
-    ![A screenshot with a box around the teams button on the left side of the window and an arrow pointing to the create team button](03-1/media/ex1-t1-image1.png)
+    ![A screenshot with a box around the teams button on the left side of the window and an arrow pointing to the create team button](03-1/media/lab4-ex1-t1-6.png)
 
 3.  Select **From scratch**.
 
 4.  Select **Public**.
 
-5.  Enter `Green` for **Team name** and select **Create**.
+5.  Enter **Green** for **Team name** and select **Create**.
 
-    ![A screenshot with the word green in the team name field](03-1/media/ex1-t1-image2.png)
+    ![A screenshot with the word green in the team name field](03-1/media/lab4-ex1-t1-9.png)
 
 6.  Select **Skip** on the **Add members to Green** screen.
 
@@ -64,13 +64,13 @@ In this task you will install Power Apps for Teams.
 
 1.  Select the **... More added apps**, search for power apps and select **Power Apps**. 
 
-    ![A Screenshot with an arrow pointing to the ellipsis icon for more added apps on the left side of the page and a box around power apps button](03-1/media/ex1-t2-image1.png)
+    ![A Screenshot with an arrow pointing to the ellipsis icon for more added apps on the left side of the page and a box around power apps button](03-1/media/lab4-ex1-t1-12.png)
 
 2.  Select **Add**. 
 
 3.  Right-click on the Power Apps tab and select **Pin**. 
 
-    ![A Screenshot with an arrow pointing to the power apps icon and a box around the pin button](03-1/media/ex1-t2-image2.png)
+    ![A Screenshot with an arrow pointing to the power apps icon and a box around the pin button](03-1/media/lab4-ex1-t1-14.png)
 
 
 ### Exercise 2: Create application
@@ -84,13 +84,17 @@ In this task, you will provision Dataverse for Teams by creating an application.
 
 2.  Select **Power Apps** and select **Start now**.
 
-    ![A screenshot of the power apps for teams home page](03-1/media/ex2-t1-image1.png)
+    ![A screenshot of the power apps for teams home page](03-1/media/lab4-ex1-t1-15.png)
 
 3.  Select the **Green** team you created and select **Create**.
+
+    ![A screenshot of the power apps for teams home page](03-1/media/lab4-ex1-t1-17.png)
 
 4.  **Wait** until provisioning is complete.
 
 5.  Enter `Upcycle` for **App name** and select **Save**.
+
+    ![A screenshot of the power apps for teams home page](03-1/media/lab4-ex1-t1-18.png)
 
 6.  Do not navigate away from this page.
 
@@ -100,31 +104,37 @@ In this task, you will create a table and columns.
 
 1.  Select **With data** and select **Create new table**.
 
-    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/ex2-t2-image2.png)
+    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/lab4-ex1-t1-19.png)
 
-2.  Enter `Gadget` for **Table name** and select **Create**.
+2.  Select **Start with a blank table** in Create new table tab.
 
-3.  Select **+ New column**.
+    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/lab4-ex1-t1-20.png)
 
-4.  Enter `Description` for **Display name**, select **Text** for **Data type** (displayed as **Single line of text**), and expand the **Advanced options** section.
+3.  Click on edit and Enter **Gadget** for **Display name** and select **Save**.
 
-    ![A screenshot with the cursor pointing to the advanced options link](03-1/media/ex2-t2-image3.png)
+    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/lab4-ex1-t1-21.png)
+
+4.  Select **+ New column**.
+
+5.  Enter **Description** for **Display name**, select **Text** for **Data type** (displayed as **Single line of text**), and expand the **Advanced options** section.
+
+    ![A screenshot with the cursor pointing to the advanced options link](03-1/media/lab4-ex1-t1-22.png)
 
 5.  Change the **Maximum character count** to `500` and select **Save**.
 
 6.  Select **+ New column** again.
 
-7.  Enter `Availability` for Name, select **Choice** for Type, and select **+ New choice** under **Sync this choice with** drop-down box. That will open a window to create a global choice to sync with.
+7.  Enter **Availability** for Name, select **Choice** for Type, and select **+ New choice** under **Sync this choice with** drop-down box. That will open a window to create a global choice to sync with.
 
-8.  Enter `Availability` for **Display name**.
+8.  Enter **Availability** for **Display name**.
 
-9.  Enter `Available` for the first choice and select **+ New choice**.
+9.  Enter **Available** for the first choice and select **+ New choice**.
 
-10. Enter `Reserved` for the second choice and select **+ New choice**.
+10. Enter **Reserved** for the second choice and select **+ New choice**.
 
-11. Enter `Picked up` for the third choice and select **Save**.
+11. Enter **Picked up** for the third choice and select **Save**.
 
-    ![A screenshot of the new global choice with 3 choice values entered](03-1/media/ex2-t2-image4.png)
+    ![A screenshot of the new global choice with 3 choice values entered](03-1/media/lab4-ex1-t1-23.png)
 
 12. Select **Availability** in **Sync this choice with**.
 
@@ -134,27 +144,27 @@ In this task, you will create a table and columns.
 
 14. Select **+ New column** menu.
 
-15. Enter `Location` for **Display name**, select **Text** for **Data type** (displayed as **Single line of text**), select **Business required** for **Required** and select **Save**.
+15. Enter **Location** for **Display name**, select **Text** for **Data type** (displayed as **Single line of text**), select **Business required** for **Required** and select **Save**.
 
-    ![A screenshot of the add column window with the relevant text in each field](03-1/media/ex2-t3-image.png)
+    ![A screenshot of the add column window with the relevant text in each field](03-1/media/lab4-ex1-t1-24.png)
 
 16. Select **+ New column**.
 
-17. Enter `Photo` for **Display name**, select **File > Image** for **Data type**, check the **Primary image** checkbox and select **Save**.
+17. Enter **Photo** for **Display name**, select **File > Image** for **Data type**, check the **Primary image** checkbox and select **Save**.
 
-    ![A screenshot of the add column window with the relevant text in each field](03-1/media/ex2-t3-image3.png)
+    ![A screenshot of the add column window with the relevant text in each field](03-1/media/lab4-ex1-t1-25.png)
 
 18. Select **+ New column**.
 
-19. Enter `Reserved by` for **Display name**, select **Lookup** for Data type, select **User** for **Related table** and select **Save**.
+19. Enter **Reserved by** for **Display name**, select **Lookup** for Data type, select **User** for **Related table** and select **Save**.
 
-    ![A screenshot of the add column window with the relevant text in each field](03-1/media/ex2-t3-image4.png)
+    ![A screenshot of the add column window with the relevant text in each field](03-1/media/lab4-ex1-t1-27.png)
 
 20. Your table screen should now look like the image below.
 
-    ![A screenshot of the new Gadget table with all columns in a grid layout](03-1/media/ex2-t2-image5.png)
+    ![A screenshot of the new Gadget table with all columns in a grid layout](03-1/media/lab4-ex1-t1-28.png)
 
-21. Close the table editor by selecting the **Close** button.
+21. Close the table editor by selecting the **Save and Close** button.
 
 22. Do not navigate away from this page.
 
