@@ -181,7 +181,7 @@ In this task, you will edit the application by filters for gadgets that are avai
 
 2.  Make sure **RightContainer1** is expanded and select the **EditForm1** control from tree view.
 
-    ![A screenshot with a border around the edit form button under screen 1](03-1/media/ex2-t4-image1.png)
+    ![A screenshot with a border around the edit form button under screen 1](03-1/media/lab4-ex1-t1-30.png)
 
 3.  Go to the **Properties** pane and select **Edit fields**.
 
@@ -217,9 +217,9 @@ In this task, you will edit the application by filters for gadgets that are avai
 
     ![A Screenshot with an arrow pointing to the lock icon under the advanced tab](03-1/media/ex2-t4-image5_2.png)
 
-11. Search for `display` and change the **DisplayMode** value to `DisplayMode.View`
+11. Search for **display** and change the **DisplayMode** value to **DisplayMode.View** 
 
-    ![A screenshot with a border around the display mode field](03-1/media/ex2-t4-image5_3.png)
+    ![A screenshot with a border around the display mode field](03-1/media/lab4-ex1-t1-34.png)
 
 12. Select the **Browse gallery** under **LeftContainer** in the treeview.
 
@@ -227,19 +227,19 @@ In this task, you will edit the application by filters for gadgets that are avai
 
     ```Filter(Gadgets, Availability <> [@Availability].'Picked up')```
 
-    ![Filter data - screenshot](03-1/media/ex2-t4-image6.png)
+    ![Filter data - screenshot](03-1/media/lab4-ex1-t1-35.png)
 
 14. Select the **Image1** inside the gallery.
 
     ![A Screenshot with an arrow pointing to image 1 inside the gallery](03-1/media/ex2-t4-image7.png)
 
-15. Go to the formula bar and verify that the value of the **Image** property is set to the formula below.
+15. Go to the formula bar and verify that the value of the **Image** property is set to the formula: **ThisItem.Photo**.
 
-    ```ThisItem.Photo```
+    ![A Screenshot with an arrow pointing to image 1 inside the gallery](03-1/media/lab4-ex1-t1-36.png)
 
 16. Select the **Data** tab (database icon) in the left navigation, select the **...More actions** button of the **Gadgets** table and select **Refresh**.
 
-    ![A Screenshot with an arrow pointing to the ellipsis icon for more actions and a border around the refresh button](03-1/media/ex2-t4-image9.png)
+    ![A Screenshot with an arrow pointing to the ellipsis icon for more actions and a border around the refresh button](03-1/media/lab4-ex1-t1-37.png)
 
 17. Select **Save** and wait for the app to be saved.
 
@@ -276,7 +276,7 @@ In this task, you will add buttons that will let users reserve and/or pick up it
 
     ```Set(CurrentUser, First(Filter(Users, 'Primary Email' = User().Email)))```
 
-    ![A screenshot with a border around app selected in the screens tab on the left and another border around the formula bar with the relevant command entered in](03-1/media/ex2-t5-image1.png)
+    ![A screenshot with a border around app selected in the screens tab on the left and another border around the formula bar with the relevant command entered in](03-1/media/lab4-ex1-t1-41.png)
 
 2.  Select App, select **ellipsis** and select **Run OnStart**.
 
@@ -286,13 +286,15 @@ In this task, you will add buttons that will let users reserve and/or pick up it
 
 3.  Select the **+** Insert button and select **Button**.
 
-    ![A Screenshot with an arrow pointing to the plus icon to insert and a border around the button option](03-1/media/ex2-t5-image3.png)
+    ![A Screenshot with an arrow pointing to the plus icon to insert and a border around the button option](03-1/media/lab4-ex1-t1-42.png)
 
 4.  Select the **Tree view**, double-click on the button you just added and rename it `Reserve Button`.
 
     ![A screenshot with the text "Reserve Button" highlighted as the new name for the button you added](03-1/media/ex2-t5-image4.png)
 
-5.  Set the **Text** property of the Reserve Button to `Reserve`.
+5.  Set the **Text** property of the Reserve Button to **Reserve**.
+
+    ![A screenshot with the text "Reserve Button" highlighted as the new name for the button you added](03-1/media/lab4-ex1-t1-43.png)
 
 6.  **Move** the Reserve Button and place it next to the Gadget Image.
 
@@ -302,13 +304,19 @@ In this task, you will add buttons that will let users reserve and/or pick up it
 
     ```If(BrowseGallery1.Selected.Availability = [@Availability].Available, DisplayMode.Edit, DisplayMode.Disabled)```
 
+    ![A screenshot of the Reserve button selected and moved next to the image on the right hand side](03-1/media/lab4-ex1-t1-44.png)
+
 8.  Set the **OnSelect** property of the Reserve Button to the formula below. This formula will update the selected record by setting the reserved by value to the current user and the availability value to reserved.
 
     ```Patch(Gadgets, BrowseGallery1.Selected, {Availability: [@Availability].Reserved, 'Reserved by': CurrentUser})```
 
+    ![A screenshot of the Reserve button selected and moved next to the image on the right hand side](03-1/media/lab4-ex1-t1-45.png)
+
 9.  Set the **Visible** property of the Reserve Button to the formula below. This formula will hide the button if the user is creating a new record.
 
     ```If(EditForm1.Mode = FormMode.View, true, false)```
+
+    ![A screenshot of the Reserve button selected and moved next to the image on the right hand side](03-1/media/lab4-ex1-t1-46.png)
 
 10. Select the **RightContainer1** again.
 
