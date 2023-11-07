@@ -166,7 +166,7 @@ In this task, you will create a table and columns.
 
 21. Close the table editor by selecting the **Save and Close** button.
 
-22. Do not navigate away from this page.
+22. Close the preview mode after adding all the records.
 
 
 #### Task 3: Edit the application
@@ -361,7 +361,7 @@ In this task, you will add search capability to your application.
 
     ![A screenshot of the plus icon selected](03-1/media/ex2-t6-image1.png)
 
-4.  Select the icon, go to the **Properties** and select **Search** for Icon.
+4.  Select the icon from the tree view, go to the **Properties** and select **Search** for Icon.
 
     ![A screenshot with a border around the Search option selected as the icon](03-1/media/ex2-t6-image2.png)
 
@@ -397,7 +397,7 @@ In this task, you will add search capability to your application.
 
     ![Suggested description column - screenshot](03-1/media/ex2-t6-image7.png)
 
-14. Select the **Search Box**.
+14. Select the **Search Box** from the RightContainer1.
 
 15. Go to the formula bar and clear the **Value** text.
 
