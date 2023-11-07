@@ -99,8 +99,6 @@ In this task, create a view that will show the current user’s problem reports.
 
 4.  Select **Views** in the tree view in the **Objects** pane and open the **Active Problem Reports** view.
 
-    ![A screenshot of the solution explorer screen with Views selected under problem report table and the cursor over the active problem reports view link](03-2/media/image3.png)
-
 5.  Select **Edit filters**.
 
     ![A Screenshot with an arrow pointing to the edit filters button](03-2/media/image4.png)
@@ -130,8 +128,6 @@ In this task, create a canvas app using the phone form factor.
 
 3.  Select **+ New** > **App** > **Canvas app**.
 
-    ![A screenshot of a solution explorer with new button with the dropdown menu under app and a cursor over the canvas app button](03-2/media/image7.png)
-
 4.  Enter **Company 311 Phone App**, select **Phone** for format, and select **Create**.
 
 5.  Select **Skip**.
@@ -160,7 +156,7 @@ In this task, create a canvas app using the phone form factor.
 
 12. Move the **Tab Control** to the bottom of the screen and the **Header Control** to the top of the screen.
 
-13. Select the **Header Control** and change the **Text** value to **"Company 311".**
+13. Navigate back to the **Tree View**. Select the **Header Control** and change the **Text** value to **"Company 311".**
 
     ![A screenshot of a border around the expression tab with the text value set to company 311](03-2/media/image13.png)
 
@@ -172,7 +168,7 @@ In this task, create a canvas app using the phone form factor.
 
     ![A screenshot with a border around the duplicate screen button](03-2/media/image14.png)
 
-16. Rename the new screen `New Reports Screen`
+16. Rename the new screen `New Reports Screen`.
 
 17. Select the **Tree view**, select **App** and change the **OnStart** value to the formula below. This formula will create a new variable named My Tabs and set it to a table of tab items.
 
@@ -196,15 +192,15 @@ In this task, create a canvas app using the phone form factor.
 
     ![A screenshot of the copied expression into the expression tab](03-2/media/image15.png)
 
-18. Select the **Tab Control** component in the **Main Screen** and change the **Items** value to `'My Tabs'`
+18. Select the **Tab Control_1 (1)** component in the **Main Screen** and change the **Items (2)** value to `'My Tabs'` (3).
 
     ![A screenshot of the items value set to my tabs for Tab control](03-2/media/image16.png)
 
-19. Change the **SelectedColor** value to `Color.WhiteSmoke`
+19. Change the **SelectedColor** value to `Color.WhiteSmoke`.
 
-20. Select the **Tab Control** inside the **New Report Screen** and set the **Items** value to `'My Tabs'`
+20. Select the **Tab Control_2** inside the **New Report Screen** and set the **Items** value to `'My Tabs'`.
 
-21. Change the **SelectedColor** value to `Color.WhiteSmoke`
+21. Change the **SelectedColor** value to `Color.WhiteSmoke`.
 
 22. In the **Tree view**, right-click on **App** and select **Run OnStart**.
 
@@ -231,7 +227,7 @@ In this exercise, add a gallery that will show reports created by the current lo
 
     ![A screenshot of the app designer with a cursor pointing to the vertical gallery option](03-2/media/verticalgallery.png)
 
-2.  Rename the new gallery to `My Reports Gallery`.
+2.  Navigate back to the **Tree View**, rename the new gallery to `My Reports Gallery`.
 
 3.  Resize and reposition **My Reports Gallery**, under properties pane, change the setting **Position, Y** value to `75` and the **Height** value to `1000`. It should look like this:
 
@@ -251,7 +247,7 @@ In this exercise, add a gallery that will show reports created by the current lo
 
     ![A screenshot of a border around subtitle 1 changed to the correct name](03-2/media/image23.png)
 
-8.  Select **Image** control within the gallery. Set **Image** value to the formula below. This allows images to be displayed correctly when view is used as a source.
+8.  Select **Image 1** control within the **My Reports Gallery**. Set **Image** value to the formula below. This allows images to be displayed correctly when view is used as a source.
 
     `LookUp('Problem Reports', 'Problem Report' = ThisItem.'Problem Report').Photo`
 
@@ -288,7 +284,7 @@ In this exercise, allow unassigned reports to be removed. This will allow users 
 
     `Remove('Problem Reports', ThisItem)`
 
-6.  Change the **Tooltip** value to `"Remove this report"`
+6.  Change the **Tooltip** value to `"Remove this report"`.
 
 7.  Select **Save**. 
 
@@ -311,6 +307,14 @@ In this exercise, add a form to the canvas app to submit new problem reports.
 
     ![A Screenshot with an arrow pointing to the edit fields button](03-2/media/image28.png)
 
+5.  If **Status Reason** Column is there you can remove it.
+
+    ![A Screenshot with an arrow pointing to the ellipses icon for more options and a border around the remove button](03-2/media/image29.png)
+
+6.  If **Created On** Column is there remove it.
+
+7.  If **Location** Column is there remove it.
+
 8.  Select **+ Add field**.
 
 9.  Select **Building**, **Department**, **Details**, and **Photo**, and then select **Add**.
@@ -323,13 +327,13 @@ In this exercise, add a form to the canvas app to submit new problem reports.
 
 11. Select the **New Reports Screen**.
 
-12. Select **Insert** then select **Button**.
+12. Select **Insert** then select **Button1**.
 
 13. Navigate back to the tree view, and rename the button `Submit Report`.
 
 14. Move the button below the form, or set **Position, X** value to `180` and **Y** value to `990`.
 
-15. Change the **Submit Report** button **Text** property to `Submit`.
+15. Change the **Submit Report** button **Text** property to `"Submit"`.
 
 16. Select the **Submit Report** button and change the **OnSelect** value to the formula below. This formula will create a new Row in the Problem Reports table.
 
@@ -372,8 +376,6 @@ In this exercise, test the canvas application by submitting a problem report.
 
 2.  The application should load, and the list should show all the reports you created.
 
-    ![A screen of your loaded application](03-2/media/image33.png)
-
 3.  Select the **New Report** tab.
 
 4.  The **New Report Form** should load. Fill out the form and select the **Photo** Column.
@@ -394,7 +396,7 @@ In this exercise, test the canvas application by submitting a problem report.
 
 10. The Row should be deleted and removed from the list.
 
-    ![A screenshot of the row deleted and removed from the list](03-2/media/image36.png)
+    ![A screenshot of the row deleted and removed from the list](03-2/media/3apps.png)
 
 11. **Close** the preview mode.
 
@@ -411,7 +413,7 @@ In this task, you will setup a **Microsoft Teams** team for the Lamna Healthcare
 
 1.  Navigate to [Microsoft Teams](https://teams.microsoft.com) and sign in with the same credentials you have been using previously.
 
-2.  Select **Use the web app instead** on the welcome screen.
+2.  If it asks, select **Use the web app instead** on the welcome screen.
 
     ![A screenshot of the Microsoft Teams web browser landing page with a border around the use the web app instead button](03-2/media/image-3-teams.png)
 
@@ -419,11 +421,13 @@ In this task, you will setup a **Microsoft Teams** team for the Lamna Healthcare
 
 4.  Select **Teams**.
 
+    ![A screenshot of the Microsoft Teams web browser landing page with a border around the use the web app instead button](03-2/media/teams.png)
+
 5.  On the bottom left corner, choose **Join or create a team**.
 
 6.  Select **Create a team**.
 
-    ![A screenshot of a border around the join or create a team button and another border around the create a team button](03-2/media/image-3-createteam.png)
+    ![A screenshot of a border around the join or create a team button and another border around the create a team button](03-2/media/createteam.png)
 
 6.  Select **From scratch**.
 
@@ -438,11 +442,11 @@ In this task, you will setup a **Microsoft Teams** team for the Lamna Healthcare
 
 #### Task 2: Add canvas app to Teams
 
-1.  Select the **General** channel of the **Company 311** team.
+1.  Select the **General (1)** channel of the **Company 311** team.
 
-2.  At the top of the page, select the **+** symbol to add a new tab.
+2.  At the top of the page, select the **+ (2)** symbol to add a new tab.
 
-    ![A screenshot of a border around the plus icon to add a new tab](03-2/media/image-3-addpowerbitab.png)
+    ![A screenshot of a border around the plus icon to add a new tab](03-2/media/general.png)
 
 4.  Search for `power` and select **Power Apps** from the results.
 
@@ -450,14 +454,12 @@ In this task, you will setup a **Microsoft Teams** team for the Lamna Healthcare
 
 6.  Select the **Company 311 Phone App** that you created earlier in this lab. 
 
-    > **IMPORTANT**
-    >
-    > If you do not see the app you may need to go back to the app editor and publish the app.
+    > **IMPORTANT:** If you do not see the app you may need to go back to the app editor and publish the app.
 
 7.  Select **Save**. 
 
 8.  The **Company 311** app should now appear on a tab in Microsoft Teams.
 
-    ![A screenshot of the company 311 app appearing on a tab in Microsoft Teams](03-2/media/image-3-powerappinteams.png)
+    ![A screenshot of the company 311 app appearing on a tab in Microsoft Teams](03-2/media/apps.png)
 
 
