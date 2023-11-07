@@ -2,7 +2,7 @@
 
 In this module you will design and build a canvas app for the company employees to submit problem reports.
 
-## What you will learn
+## Lab Scenario
 
   - Import and use a pre-built component library
   - Create a Power Apps canvas app
@@ -12,13 +12,14 @@ In this module you will design and build a canvas app for the company employees 
   - Use images with data rows
   - Embed canvas Power App into Microsoft Teams
 
-## High-level lab steps
+## Lab Objectives
 
-  - Import company components
-  - Create app and layout main screen (including list of my items)
-  - Submit New Report
-  - Test
-  - Embed canvas app in Microsoft Teams
+  - Exercise 1: Create canvas application
+  - Exercise 2: My reports
+  - Exercise 3: Allow removing reports
+  - Exercise 4: Add new report
+  - Exercise 5: Test the application
+  - Exercise 6: Embed canvas app in Microsoft Teams
 
 ## Prerequisites
 
