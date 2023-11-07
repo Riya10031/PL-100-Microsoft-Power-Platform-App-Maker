@@ -1,27 +1,23 @@
----
-lab:
-    title: 'Lab 05: Power BI'
-    module: 'Module 05: Power BI'
----
+# Lab 07: Power BI
 
-> **NOTE**
->
+
 > Effective November 2020:
 > - Common Data Service has been renamed to Microsoft Dataverse. [Learn more](https://aka.ms/PAuAppBlog)
 > - Some terminology in Microsoft Dataverse has been updated. For example, *entity* is now *table* and *field* is now *column*. [Learn more](https://go.microsoft.com/fwlink/?linkid=2147247)
 >
 
 
-# Lab 05: Power BI
+## Lab Scenario
 
 In this lab, you will build a Power BI dashboard that visualizes data about problems reported by company employees.
 
-## What you will learn
+## Lab Objectives
 
-  - How to connect to Dataverse 
-  - How to refine the data model and prepare it for reporting
-  - How to create a Power BI visualization 
-  - How to embed a Power BI report in Microsoft Teams
+-  Exercise 1: Prepare environment & data
+-  Exercise 2: Create Power BI Report
+-  Exercise 3: Create Power BI Dashboard
+-  Exercise 4: Embed Power BI report
+-  Exercise 5: Power BI embedded canvas
 
 ## High-level lab steps
 
