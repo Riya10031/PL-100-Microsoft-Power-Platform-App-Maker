@@ -369,7 +369,7 @@ In this task you will setup a Microsoft Teams team for the Lamna Healthcare Comp
 
 12.  While still in the Company 311 solution, open the **Company 311 Admin** Model-driven application.
 
-     [A Screenshot with an arrow pointing to the company 311 admin option with another border around model-driven application in the type column in line with the correct company 311 admin option](05/media/image-6-editmodeldrivenapp.png)
+     ![A Screenshot with an arrow pointing to the company 311 admin option with another border around model-driven application in the type column in line with the correct company 311 admin option](05/media/image-6-editmodeldrivenapp.png)
 
 13. In app designer make sure you have **Manage Problems** area selected. If not, click on the arrows and select **Manage Problems**.
 
