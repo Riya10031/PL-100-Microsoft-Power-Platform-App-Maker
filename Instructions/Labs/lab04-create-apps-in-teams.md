@@ -92,7 +92,7 @@ In this task, you will provision Dataverse for Teams by creating an application.
 
 4.  **Wait** until provisioning is complete.
 
-5.  Enter `Upcycle` for **App name** and select **Save**.
+5.  Enter **Upcycle** for App name and select **Save**.
 
     ![A screenshot of the power apps for teams home page](03-1/media/lab4-ex1-t1-18.png)
 
@@ -102,7 +102,7 @@ In this task, you will provision Dataverse for Teams by creating an application.
 #### Task 2: Create table
 In this task, you will create a table and columns.
 
-1.  Select **With data** and select **Create new table**.
+1.  Select **With data** and then select **Create new table**.
 
     ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/lab4-ex1-t1-19.png)
 
@@ -110,17 +110,30 @@ In this task, you will create a table and columns.
 
     ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/lab4-ex1-t1-20.png)
 
-3.  Click on edit and Enter **Gadget** for **Display name** and select **Save**.
+3.  Click on edit and Enter **Gadget** for **Display name** and select **Save** then select  **Save and close**.
 
     ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/lab4-ex1-t1-21.png)
+
+4. Select **Data** tab then select ellipse of Gadgets table and select Edit data.
+
+    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/2023-11-07_14-23-55.png)
+
+5. Select **Create new column** tab.
+
+    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/2023-11-07_14-24-19.png)
+
+6.  Select the dropdown of New column and select edit column. Enter **Name** for **Display name** and then select **Update**.
+
+    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/2023-11-07_14-24-57.png)
+
+    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/2023-11-07_14-25-36.png)
 
 4.  Select **+ New column**.
 
 5.  Enter **Description** for **Display name**, select **Text** for **Data type** (displayed as **Single line of text**), and expand the **Advanced options** section.
+    Change the **Maximum character count** to `500` and select **Save**.
 
-    ![A screenshot with the cursor pointing to the advanced options link](03-1/media/lab4-ex1-t1-22.png)
-
-5.  Change the **Maximum character count** to `500` and select **Save**.
+    ![A screenshot with the cursor pointing to the advanced options link](03-1/media/2023-11-07_14-26-52.png)
 
 6.  Select **+ New column** again.
 
@@ -134,7 +147,9 @@ In this task, you will create a table and columns.
 
 11. Enter **Picked up** for the third choice and select **Save**.
 
-    ![A screenshot of the new global choice with 3 choice values entered](03-1/media/lab4-ex1-t1-23.png)
+    ![A screenshot of the new global choice with 3 choice values entered](03-1/media/2023-11-07_14-27-35.png)
+
+    ![A screenshot of the new global choice with 3 choice values entered](03-1/media/2023-11-07_14-28-43.png)
 
 12. Select **Availability** in **Sync this choice with**.
 
