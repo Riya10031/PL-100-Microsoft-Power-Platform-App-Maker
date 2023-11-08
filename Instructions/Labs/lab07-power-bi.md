@@ -164,7 +164,7 @@ We will follow the below steps to design and create the Power BI dashboard:
     * Select various building slices on the pie chart and observe changes on the stacked column chart.
     * Select various bars on the stacked column chart and observe changes on the pie report.
 
-    ![A Screenshot with an arrow pointing to the pie chart to observe changed to the data after changing data on the stacked column chart](05/media/image-6-18.png)
+![A Screenshot with an arrow pointing to the pie chart to observe changed to the data after changing data on the stacked column chart](05/media/image-6-18.png)
 
 11. Select the **Insert**, and select **Q&A**.
 
@@ -214,8 +214,8 @@ We will follow the below steps to design and create the Power BI dashboard:
 > 1. Select **311 Workspace** and select the **Problem Management** dataset.
 > 2. Expand Refresh dropdown and select **Schedule refresh**.
 > 3. Expand **Data Source credentials** section and select **Edit Credentials**.
-> 4. Select **OAuth2** for **Authentication** Method and **Organizational** for **Privacy level setting**.
-> 5. Select **Sign in**. This will resolve the issue for report and it should display properly on Power BI.
+> 4. Select **OAuth2** for **Authentication** Method and **Organizational** for **Privacy level setting for this data source**.
+> 5. Select **Sign in**. Provide the sign in details with the same username we are using in the lab.This will resolve the issue for report and it should display properly on Power BI.
 
 
 #### Task 2: Create Power BI Dashboard
