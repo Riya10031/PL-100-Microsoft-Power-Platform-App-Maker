@@ -1,3 +1,8 @@
+# Course Introduction
+
+> - Common Data Service has been renamed to Microsoft Dataverse. [Learn more](https://aka.ms/PAuAppBlog)
+> - Some terminology in Microsoft Dataverse has been updated. For example, *entity* is now *table* and *field* is now *column*. [Learn more](https://go.microsoft.com/fwlink/?linkid=2147247)
+
 # Lab 03.2: Canvas app
 
 In this module you will design and build a canvas app for the company employees to submit problem reports.
@@ -14,18 +19,14 @@ In this module you will design and build a canvas app for the company employees 
 
 ## Lab Objectives
 
-  - Exercise 1: Create canvas application
-  - Exercise 2: My reports
-  - Exercise 3: Allow removing reports
-  - Exercise 4: Add new report
-  - Exercise 5: Test the application
-  - Exercise 6: Embed canvas app in Microsoft Teams
+In this lab, you will complete the following tasks:
 
-## Prerequisites
-
-* Must have completed **Lab 02.1: Data model and model-driven app**
-
-## Detailed steps
+- Exercise 1: Create canvas application
+- Exercise 2: My reports
+- Exercise 3: Allow removing reports
+- Exercise 4: Add new report
+- Exercise 5: Test the application
+- Exercise 6: Embed canvas app in Microsoft Teams
 
 ### Exercise 1: Create canvas application
 
@@ -463,4 +464,13 @@ In this task, you will setup a **Microsoft Teams** team for the Lamna Healthcare
 
     ![A screenshot of the company 311 app appearing on a tab in Microsoft Teams](03-2/media/apps.png)
 
+### Review
+In this lab, you have completed:
+- Created canvas application.
+- Created reports.
+- Allowed removing reports.
+- Added new report
+- Tested the application.
+- Embedded canvas app in Microsoft Teams.
 
+### You have successfully completed the lab
