@@ -109,21 +109,21 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 10. Expand the **lh_problemreport** node in the **Data** panel. 
 
-11. Select the **...** More options button of the **lh_ProblemReport** table. 
+11. Select the ellipsis More options button of the **lh_ProblemReport** table. 
 
     ![A Screenshot with an arrow pointing to the ellipsis for more options](05/media/image-6-11.png)
 
 12. Select **New column**. 
 
-    ![A screenshot of a border around the new column button](05/media/image-6-12.png)
+    ![A screenshot of a border around the new column button](05/media/2023-11-08_11-44-51.png)
 
-13. Complete the formula as below and press ENTER or select the checkmark button. That will add a new column with the building name into the problem report data.
+13. Complete the formula as below and press Enter or select the checkmark button. That will add a new column with the building name into the problem report data.
 
     ```powershell
        Building = RELATED(lh_Building[lh_name])
     ```
 
-    ![A Screenshot with an arrow pointing to the checkmark icon](05/media/image-6-13.png)
+    ![A Screenshot with an arrow pointing to the checkmark icon](05/media/2023-11-08_11-46-55.png)
 
 14. Repeat the three previous steps on **lh_problemreport** node to add a column **Department** with the below formula.
 
@@ -131,11 +131,11 @@ We will follow the below steps to design and create the Power BI dashboard:
        Department = RELATED(lh_Department[lh_name])
     ```
 
-15. Select the **...** menu next to the **lh_problemreportid** column of the **lh_problemreport** table and select **Rename**. Enter **Problem Report** as the column name.
+15. Select the ellipsis menu next to the **lh_problemreportid** column of the **lh_problemreport** table and select **Rename**. Enter **Problem Report** as the column name.
 
-16. Select the **...** menu next to the **statuscodename** column and select **Rename**. Enter `Status` as the column name.
+16. Select the ellipsis menu next to the **statuscodename** column and select **Rename**. Enter **Status** as the column name.
 
-17. Save work in progress by selecting **File** > **Save** and enter `Problem management` as a filename.
+17. Save work in progress by selecting **File** > **Save** and enter **Problem management** as a filename.
 
 
 ### Exercise 2: Create Power BI Report 
@@ -146,17 +146,19 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 1.  Click on **Report view**
 
-    ![A Screenshot with an arrow pointing to the Report view](05/media/image-6-31.png)
+    ![A Screenshot with an arrow pointing to the Report view](05/media/2023-11-08_11-44-22.png)
 
 2.  Select the **Pie chart** icon in the **Visualizations** panel to insert the chart.
 
-    ![A Screenshot with an arrow pointing to the pie chart icon](05/media/image-6-14.png)
+    ![A Screenshot with an arrow pointing to the pie chart icon](05/media/2023-11-08_11-45-18.png)
 
 3.  Expand **lh_ProblemReport** table in the **Data** panel, drag **Building** Column and drop it into **Legend** target box.
 
+    ![A Screenshot with Building needs to be dragged from the fields column into the Legend field](05/media/2023-11-08_12-34-23.png)
+
 4.  Drag **Problem Report** Column and drop it into **Values** target box.
 
-    ![A Screenshot with an arrow pointing to the direction the problem report needs to be dragged from the fields column into the values field](05/media/image-6-15.png)
+    ![A Screenshot with Problem Report needs to be dragged from the Values column into the Legend field](05/media/2023-11-08_12-35-37.png)
 
 5.  Resize the pie chart using corner handles so that all chart components are visible. Your report should now look like this:
 
@@ -164,30 +166,32 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 6.  Select the report's design surface outside of the chart area. Select **New visual** on the Power BI ribbon then select **stacked column** chart in **Visualizations** pane. 
 
-    ![A Screenshot with an arrow pointing to the stacked column chart icon](05/media/image-6-17.png)
+    ![A Screenshot with an arrow pointing to the stacked column chart icon](05/media/2023-11-08_12-39-24.png)
 
-7.  Drag **Problem Report** Column and drop it into **Y-axis** target box.
+7.  Drag **Problem Report(1)** Column and drop it into **Y-axis(2)** target box and Drag **statuscodename(3)** Column and drop it into **X-axis(4)** target box.
 
-8.  Drag **Status** Column and drop it into **X-axis** target box.
+    ![A Screenshot with an arrow pointing to the stacked column chart icon](05/media/2023-11-08_13-27-57.png) 
 
 9.  **Resize** the chart as required using the corner handles.
 
 10.  **Test** the report interactivity:
 
-    * Select various building slices on the pie chart and observe changes on the stacked column chart.
-    * Select various bars on the stacked column chart and observe changes on the pie report.
+>**Note**: Select various building slices on the pie chart and observe changes on the stacked column chart. 
+>**Note**:Select various bars on the stacked column chart and observe changes on the pie report.
 
 ![A Screenshot with an arrow pointing to the pie chart to observe changed to the data after changing data on the stacked column chart](05/media/image-6-18.png)
 
 11. Select the **Insert**, and select **Q&A**.
 
-    ![A Screenshot with an arrow pointing to the Q&A button](05/media/image-6-addbutton.png)
+    ![A Screenshot with an arrow pointing to the Q&A button](05/media/2023-11-08_13-34-01.png)
 
 12. Select **Turn on Q&A** and wait for the Q&A to get ready.
 
+    ![A Screenshot with an arrow pointing to the Q&A button](05/media/2023-11-08_13-35-31.png)
+
 13. Enter **bar count of problem reports by building**. You should see a bar chart.
 
-    ![A screenshot of the relevant text typed into the Q&A field](05/media/image-6-QAchart.png)
+    ![A screenshot of the relevant text typed into the Q&A field](05/media/2023-11-08_13-38-51.png)
 
 14. The dashboard now has Q&A enabled. Select the **...** More options button of the Q&A visual and select **Remove**.
 
@@ -204,19 +208,23 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 2.  Select **Workspaces** and select **Create a workspace**.
 
-    ![A Screenshot with a box around the workspaces button and an arrow pointing to the create a workspace button](05/media/image-6-createworkspace.png)
+    ![A Screenshot with a box around the workspaces button and an arrow pointing to the create a workspace button](05/media/2023-11-08_13-41-36.png)
 
 3.  Enter **311 Workspace** for Workspace name and select **Apply**.
 
+    ![A Screenshot with 311 Workspace](05/media/2023-11-08_13-42-14.png)
+
 4.  Go back to the Power BI desktop application, select the **Home** tab, and select **Publish**.
 
-    ![A Screenshot with an arrow pointing to the publish button](05/media/image-6-19.png)
+    ![A Screenshot with an arrow pointing to the publish button](05/media/2023-11-08_13-42-46.png)
 
 5.  Select **311 Workspace** as the destination and Click on **Select**.
 
+    ![A Screenshot with an arrow pointing to the publish button](05/media/2023-11-08_13-43-22.png)
+
 6.  **Wait** until publishing is complete and open the **Problem management.pbix** file in Power BI.
 
-    ![A Screenshot with an arrow pointing to the button to open your report](05/media/image-6-20.png)
+    ![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-43-46.png)
 
     This will open the published report in the browser.
 
@@ -246,11 +254,11 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 2.  Select the **Problem management** with a type **Report**. 
 
-    ![A screenshot with a border around the problem management option under reports](05/media/image-6-21.png)
+    ![A screenshot with a border around the problem management option under reports](05/media/2023-11-08_13-45-18.png)
 
-3.  Select **Pin to a dashboard** on the menu. Depending on the layout you may need to press **...** to show additional menu items.
+3.  Select **Pin to a dashboard** on the menu. Depending on the layout you may need to press ellipsis to show additional menu items.
 
-    ![A Screenshot with an arrow pointing to the ellipsis icon for more options and a border around the pin to dashboard option](05/media/image-6-22.png)
+    ![A Screenshot with an arrow pointing to the ellipsis icon for more options and a border around the pin to dashboard option](05/media/2023-11-08_14-02-45.png)
 
 4.  Select **New dashboard** on **Pin to dashboard** prompt.
 
@@ -267,15 +275,13 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 1.  Select **Ask a question about your data** on top of the dashboard.
 
-    ![A Screenshot with an arrow pointing to the ask a question about your data button at the top of your dashboard](05/media/image-6-24.png)
+    ![A Screenshot with an arrow pointing to the ask a question about your data button at the top of your dashboard](05/media/2023-11-08_14-05-14.png)
 
 2.  Enter **funnel count of problem reports by status** in Q&A area. The funnel chart will be displayed.
 
-3.  Select **Pin visual**.
+3.  Select **Pin visual(1)** and Select **Existing dashboard(2)**, select **Problem Management dashboard(3)**, select **Pin(4)**.
 
-    ![A Screenshot with an arrow pointing to the pin visual button](05/media/image-6-25.png)
-
-4.  Select **Existing dashboard**, select **Problem Management dashboard**, select **Pin**.
+    ![A Screenshot with an arrow pointing to the pin visual button](05/media/2023-11-08_14-13-35.png)
 
 
 #### Task 4: Build Mobile Phone View
@@ -283,6 +289,8 @@ We will follow the below steps to design and create the Power BI dashboard:
 1.  Select the **Problem Management dashboard** from **Dashboards** area.
 
 2.  Select **Edit** and then select **Mobile Layout** from the drop-down box.
+
+    ![A photo of the mobile phone layout with tiles rearrange to display data](05/media/2023-11-08_14-14-23.png)
 
 3.  **Rearrange** the tiles as desired.
 
@@ -296,9 +304,7 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 6.  If you have a mobile device, scan the code using a QR scanner app available on both iOS and Android platforms.
 
-    > **NOTE**
-    >
-    > To access the dashboard and report you will have to sign in on the phone as the same user.
+>**Note**: To access the dashboard and report you will have to sign in on the phone as the same user.
 
 7.  Navigate and explore reports and dashboards on a mobile device. 
 
