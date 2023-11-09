@@ -96,22 +96,22 @@ In this lab, you will build a Power BI dashboard that visualizes data about prob
 
     ![A Screenshot with an arrow pointing to the checkmark icon](05/media/2023-11-08_11-46-55.png)
 
-    >**Note**: If this step throws an error with Building name column is already present, you can skip this step.
+    >**Note**: If this step throws an error with Building name column is already present, you can skip this step and use the existing column.
 
 14. Repeat the three previous steps on **lh_problemreport** node to add a column **Department** with the below formula.
 
     ```powershell
        Department = RELATED(lh_department[Name])
     ```
-    >**Note**: If this step throws an error with Department name column is already present, you can skip this step you can use the existing column.
+    >**Note**: If this step throws an error with Department name column is already present, you can skip this step and use the existing column.
 
 15. Select the ellipsis menu next to the **lh_problemreportid** column of the **lh_problemreport** table and select **Rename**. Enter **Problem Report** as the column name.
 
-    >**Note**: If Problem Report column is already present, you can skip this step you can use the existing column.
+    >**Note**: If Problem Report column is already present, you can skip this step and use the existing column.
 
 16. Select the ellipsis menu next to the **statuscodename** column and select **Rename**. Enter **Status** as the column name.
 
-    >**Note**: If this step throws an error with Status name column is already present, you can skip this step and you can use the existing column.
+    >**Note**: If this step throws an error with Status name column is already present, you can skip this step and use the existing column.
 
 17. Save work in progress by selecting **File** > **Save** and enter **Problem management** as a filename.
 
@@ -555,19 +555,24 @@ In this exercise, you will add embedded canvas application to Power BI as a visu
 
 18.  Select the **Next icon** and set the **OnSelect** value to the formula below.
 
-    ```UpdateContext({CurrentItem: LookUp('Problem Reports', 'Problem Report' = GUID(Last(FirstN([@PowerBIIntegration].Data,currentIndex+1)).'Problem Report'))});UpdateContext({currentIndex: currentIndex+1})```
+ 
+         ```UpdateContext({CurrentItem: LookUp('Problem Reports', 'Problem Report' = GUID(Last(FirstN([@PowerBIIntegration].Data,currentIndex+1)).'Problem Report'))});UpdateContext({currentIndex: currentIndex+1})```
 
 19.  Set the **DisplayMode** value of the **Next icon** to the formula below.
 
-    ```If(currentIndex = CountRows([@PowerBIIntegration].Data), DisplayMode.Disabled, DisplayMode.Edit)```
+          ```If(currentIndex = CountRows([@PowerBIIntegration].Data), DisplayMode.Disabled, DisplayMode.Edit)```
 
 20. Select the **Back icon** and set the **OnSelect** value to the formula below.
 
-    ```UpdateContext({CurrentItem: LookUp('Problem Reports', 'Problem Report' = GUID(Last(FirstN([@PowerBIIntegration].Data,currentIndex-1)).'Problem Report'))});UpdateContext({currentIndex: currentIndex-1})```
+    ```powershell
+       UpdateContext({CurrentItem: LookUp('Problem Reports', 'Problem Report' = GUID(Last(FirstN([@PowerBIIntegration].Data,currentIndex-1)).'Problem Report'))});UpdateContext({currentIndex: currentIndex-1})
+    ```
 
 21. Set the **DisplayMode** value of the **Back icon** to the formula below.
 
-    ```If(currentIndex > 1, DisplayMode.Edit, DisplayMode.Disabled)```
+    ```powershell
+       If(currentIndex > 1, DisplayMode.Edit, DisplayMode.Disabled)
+    ```
 
 22. Select **+ Insert**, enter **check** in the search box, then select **Check** under **Icons**.
 
