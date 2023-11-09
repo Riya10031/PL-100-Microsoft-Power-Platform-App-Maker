@@ -81,17 +81,19 @@ We will follow the below steps to design and create the Power BI dashboard:
 
     ![A screenshot of the dataverse selected in the power platform window](05/media/2023-11-07_17-48-04.png)
 
-3.  Select **Sign in**. 
+3.  Select **Sign in** and provide the user name <inject key="Username" enableCopy="false" />
 
     ![A screenshot of the dataverse selected in the power platform window](05/media/2023-11-07_17-48-24.png)
 
-4.  The connection details dialog will open up. If you are not signed in, select **Sign in** and follow the prompts to sign in. Select **Connect**. 
+4.  The connection details dialog will open up. If you are not signed in, select **Sign in** and provide the user name: <inject key="Username" enableCopy="false" /> and Password: <inject key="Password" enableCopy="false" />. Select **Connect**. 
 
 5.  Expand environment node. Using `lh_` to filter, select the **lh_building**, **lh_department**, **lh_problemreport** tables and select **Load**. Wait until the load is complete.
 
-    ![A Screenshot with an arrow pointing to the load button](05/media/image-6-7.png)
+    ![A Screenshot with an arrow pointing to the load button](05/media/2023-11-07_17-53-04.png)
 
 6.  On the **Connection settings** window, choose **DirectQuery** and select **OK**.
+
+    ![A Screenshot with an arrow pointing to the load button](05/media/2023-11-08_11-40-36.png)
 
 7.  Select the **Model** icon on the left vertical toolbar.
 
@@ -99,11 +101,11 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 8.  Power BI should detect the relationships between the tables. The relationship should look like the image below.
 
-    ![A screenshot of the relationship between the table. There should be three main panels, Ih_building, Ih_problemreport, and Ih_department](05/media/image-6-9.png)
+    ![A screenshot of the relationship between the table. There should be three main panels, Ih_building, Ih_problemreport, and Ih_department](05/media/2023-11-08_11-43-13.png)
 
 9. Select the **Report** icon on the left side of the canvas.
 
-    ![A Screenshot with an arrow pointing to the report icon on the left toolbar](05/media/image-6-10.png)
+    ![A Screenshot with an arrow pointing to the report icon on the left toolbar](05/media/2023-11-08_11-44-22.png)
 
 10. Expand the **lh_problemreport** node in the **Data** panel. 
 
@@ -117,13 +119,17 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 13. Complete the formula as below and press ENTER or select the checkmark button. That will add a new column with the building name into the problem report data.
 
-    ```Building = RELATED(lh_Building[lh_name])```
+    ```powershell
+       Building = RELATED(lh_Building[lh_name])
+    ```
 
     ![A Screenshot with an arrow pointing to the checkmark icon](05/media/image-6-13.png)
 
 14. Repeat the three previous steps on **lh_problemreport** node to add a column **Department** with the below formula.
 
-    ```Department = RELATED(lh_Department[lh_name])```
+    ```powershell
+       Department = RELATED(lh_Department[lh_name])
+    ```
 
 15. Select the **...** menu next to the **lh_problemreportid** column of the **lh_problemreport** table and select **Rename**. Enter **Problem Report** as the column name.
 
