@@ -57,15 +57,20 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 2.  Open Power BI Desktop and select **Get started**.
 
+    ![A screenshot of the dataverse selected in the power platform window](05/media/2023-11-07_17-44-34.png)
+
 3.  Subscribe to the email list or select **Maybe later** and select **Close**.
 
     **Note:** If you were signed into Power BI Desktop previously, select **File** > **Sign out**. 
 
-4.  Enter your email address and select **Continue**. Sign in if prompted or select **File** > **Sign in** to sign in.
+4.  Enter your email address: <inject key="Username" enableCopy="false" /> and select **Continue**. Sign in if prompted or select **File** > **Sign in** to sign in.
 
 5.  Select **Work or school account** and select **Continue**.
 
-6.  Sign in using your M365 credentials and select **No, sign into this app only**. 
+6.  Sign in using your M365 credentials and select **No, sign into this app only**.
+
+    ![A screenshot of the dataverse selected in the power platform window](05/media/2023-11-07_17-46-09.png)
+
 
 
 #### Task 2: Prepare Data
@@ -74,9 +79,11 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 2.  Select **Get data** > **Dataverse**.
 
-3.  Select **Sign in**.
+    ![A screenshot of the dataverse selected in the power platform window](05/media/2023-11-07_17-48-04.png)
 
-    ![A screenshot of the dataverse selected in the power platform window](05/media/image-6-4.png)
+3.  Select **Sign in**. 
+
+    ![A screenshot of the dataverse selected in the power platform window](05/media/2023-11-07_17-48-24.png)
 
 4.  The connection details dialog will open up. If you are not signed in, select **Sign in** and follow the prompts to sign in. Select **Connect**. 
 
@@ -193,29 +200,38 @@ We will follow the below steps to design and create the Power BI dashboard:
 
     ![A Screenshot with a box around the workspaces button and an arrow pointing to the create a workspace button](05/media/image-6-createworkspace.png)
 
-3.  Enter **311 Workspace** for Workspace name and select **Save**.
+3.  Enter **311 Workspace** for Workspace name and select **Apply**.
 
 4.  Go back to the Power BI desktop application, select the **Home** tab, and select **Publish**.
 
     ![A Screenshot with an arrow pointing to the publish button](05/media/image-6-19.png)
 
-5.  Select **311 Workspace** as the destination.
+5.  Select **311 Workspace** as the destination and Click on **Select**.
 
-6.  **Wait** until publishing is complete and open the **<name of your report\>.pbix** file in Power BI.
+6.  **Wait** until publishing is complete and open the **Problem management.pbix** file in Power BI.
 
     ![A Screenshot with an arrow pointing to the button to open your report](05/media/image-6-20.png)
 
     This will open the published report in the browser.
 
-> **NOTE**
->
-> If you are getting an error on PowerBI Service with message "the data source is missing credentials and cannot be accessed", follow the below steps:
->
-> 1. Select **311 Workspace** and select the **Problem Management** dataset.
-> 2. Expand Refresh dropdown and select **Schedule refresh**.
-> 3. Expand **Data Source credentials** section and select **Edit Credentials**.
-> 4. Select **OAuth2** for **Authentication** Method and **Organizational** for **Privacy level setting for this data source**.
-> 5. Select **Sign in**. Provide the sign in details with the same username we are using in the lab.This will resolve the issue for report and it should display properly on Power BI.
+>**Note**:If you are getting an error on PowerBI Service with message "the data source is missing credentials and cannot be accessed", follow the below steps:
+
+1. Select **311 Workspace** and select the **Problem Management** dataset.
+
+![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-45-18.png)
+
+2. Expand Refresh dropdown and select **Schedule refresh**.
+
+![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-58-19.png)
+
+3. Expand **Data Source credentials** section and select **Edit Credentials**.
+
+![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-58-55.png)
+
+4. Select **OAuth2** for **Authentication** Method and **Organizational** for **Privacy level setting for this data source**.
+![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-59-19.png)
+
+5. Select **Sign in**. Provide the sign in details with the Username: <inject key="Username" enableCopy="false" />.This will resolve the issue for report and it should display properly on Power BI.
 
 
 #### Task 2: Create Power BI Dashboard
@@ -379,7 +395,7 @@ In this task you will setup a Microsoft Teams team for the Lamna Healthcare Comp
 
     ![A screenshot with a arrow pointing to the Group option under Add button](05/media/image-6-eddgroup.png)
 
-15. Go to the **Properties** pane and enter **Reports** for **Title**.
+15. Go to the **Display options** pane and enter **Reports** for **Title**.
 
 16. Select the **Reports** group you just created, select **+ New**.
 
@@ -457,7 +473,7 @@ In this exercise, you will add embedded canvas application to Power BI as a visu
 
     ![Add data - screenshot](05/media/ex_5_adddata.png)
 
-7.  Select the **Problem reports** table.
+7.  Search and Select the **Problem reports** table.
 
     ![Select data table - screenshot](05/media/ex_5_datatable.png)
 
@@ -568,7 +584,7 @@ In this exercise, you will add embedded canvas application to Power BI as a visu
 
 22. Select **+ Insert**, enter **check** in the search box, then select **Check** under **Icons**.
 
-23. In the tree view, double-click **Icon1** and rename the Check icon to **Complete icon**. 
+23. In the tree view, double-click **Icon3** and rename the Check icon to **Complete icon**. 
 
 24. Move the **Complete icon** to the top right of the screen.
 
