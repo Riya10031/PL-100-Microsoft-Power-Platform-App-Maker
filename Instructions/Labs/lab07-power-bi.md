@@ -555,19 +555,24 @@ In this exercise, you will add embedded canvas application to Power BI as a visu
 
 18.  Select the **Next icon** and set the **OnSelect** value to the formula below.
 
-    ```UpdateContext({CurrentItem: LookUp('Problem Reports', 'Problem Report' = GUID(Last(FirstN([@PowerBIIntegration].Data,currentIndex+1)).'Problem Report'))});UpdateContext({currentIndex: currentIndex+1})```
+ 
+         ```UpdateContext({CurrentItem: LookUp('Problem Reports', 'Problem Report' = GUID(Last(FirstN([@PowerBIIntegration].Data,currentIndex+1)).'Problem Report'))});UpdateContext({currentIndex: currentIndex+1})```
 
 19.  Set the **DisplayMode** value of the **Next icon** to the formula below.
 
-    ```If(currentIndex = CountRows([@PowerBIIntegration].Data), DisplayMode.Disabled, DisplayMode.Edit)```
+          ```If(currentIndex = CountRows([@PowerBIIntegration].Data), DisplayMode.Disabled, DisplayMode.Edit)```
 
 20. Select the **Back icon** and set the **OnSelect** value to the formula below.
 
-    ```UpdateContext({CurrentItem: LookUp('Problem Reports', 'Problem Report' = GUID(Last(FirstN([@PowerBIIntegration].Data,currentIndex-1)).'Problem Report'))});UpdateContext({currentIndex: currentIndex-1})```
+    ```powershell
+       UpdateContext({CurrentItem: LookUp('Problem Reports', 'Problem Report' = GUID(Last(FirstN([@PowerBIIntegration].Data,currentIndex-1)).'Problem Report'))});UpdateContext({currentIndex: currentIndex-1})
+    ```
 
 21. Set the **DisplayMode** value of the **Back icon** to the formula below.
 
-    ```If(currentIndex > 1, DisplayMode.Edit, DisplayMode.Disabled)```
+    ```powershell
+       If(currentIndex > 1, DisplayMode.Edit, DisplayMode.Disabled)
+    ```
 
 22. Select **+ Insert**, enter **check** in the search box, then select **Check** under **Icons**.
 
