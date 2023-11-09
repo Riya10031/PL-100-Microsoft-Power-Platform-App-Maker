@@ -147,35 +147,45 @@ In this task, you will test the Notify Problem Creator flow.
 
 2.  Select **Apps**, and then select the **Company 311 Admin** Model-driven application. Select **Play**.
 
-3.  Select **+ New**.
+    ![A screenshot of the current flow](04/media/task2(1).png)
 
-4.  Enter `Flow test` for **Title**, select **London Paddington** for **Building**, enter `This is a flow test` for **Details**, and select **Save**.
+4.  Select **+ New**.
 
-5.  Scroll down and change the **Status Reason** value to **In Progress** and save again.
+5. Enter `Flow test` for **Title**, select **ODL_User <inject key="DeploymentID"></inject>**  for **Owner**, select **London Paddington** for **Building**,  and select **Save**.
 
-6.  Close the application browser window or tab.
+    ![A screenshot of the current flow](04/media/task2(2).png)
 
-7.  You should now be back to the [Power Apps maker portal](https://make.powerapps.com/)
-0
-8.  Select **Solutions** and open the **Company 311** solution.
+    ![A screenshot of the current flow](04/media/task2(3).png)
 
-9.  Locate and open the **Notify Problem Creator** Cloud flow.
+7. Go back, click on **Activate** on the top, choose **in progress** for the status reason from the dropdown and select **Activate**.
 
-10. You should see a succeeded flow run in the **28-day run history section**. Open the run.
+    ![A screenshot of the current flow](04/media/task2(4).png)
 
-    ![A Screenshot with an arrow pointing to the start date of the 28-day run history section](04/media/image9.png)
+    ![A screenshot of the current flow](04/media/task2(5).png)
 
-11. All the flow steps should have a **green** check mark.
+9.  Close the application browser window or tab.
 
-12. Select the **App launcher** and under **Apps**, select **Outlook**.
+10.  You should now be back to the [Power Apps maker portal](https://make.powerapps.com/)
 
-    ![A Screenshot with an arrow pointing to the app launcher and a border around outlook](04/media/image10.png)
+11.  Select **Solutions** and open the **Company 311** solution.
 
-13. You should have received an email from the Cloud flow. **Open** the email.
+12.  Locate and open the **Notify Problem Creator** Cloud flow.
 
-14. The email should look like the image below.
+13. You should see a succeeded flow run in the **28-day run history section**. Open the run.
 
-    ![A screenshot of the email you should receive with the status of the problem, problem title, and its current status](04/media/image11.png)
+    ![A Screenshot with an arrow pointing to the start date of the 28-day run history section](04/media/task2.png)
+
+14. All the flow steps should have a **green** check mark.
+
+15. Select the **App launcher** and under **Apps**, select **Outlook**.
+
+    ![A Screenshot with an arrow pointing to the app launcher and a border around outlook](04/media/task2(6).png)
+
+16. You should have received an email from the Cloud flow. **Open** the email.
+
+17. The email should look like the image below.
+
+    ![A screenshot of the email you should receive with the status of the problem, problem title, and its current status](04/media/task2(7).png)
 
 
 ### Exercise 2: Build escalation flow
@@ -192,25 +202,35 @@ In this task, you add a new Columns to the Problem Report table.
 
 3.  Locate and open the **Problem Report** table in the **Objects** pane.
 
-4.  Select **+ New > Column**.
+       ![A Screenshot with an arrow pointing to the app launcher and a border around outlook](04/media/task1.png)
 
-5.  Enter **Estimated Cost** for **Display name**, select **Currency** for **Data type** and select **Save**.
+5.  Select **+ New > Column**.
 
-6.  Select **Forms** from the **Objects** pane.
+       ![A Screenshot with an arrow pointing to the app launcher and a border around outlook](04/media/task1(2).png)
 
-7.  Open the **Information** form of type **Main**.
+7.  Enter **Estimated Cost** for **Display name**, select **Currency** for **Data type** and select **Save**.
 
-8.  Add **Estimated Cost** column to the form and place it below the **Status Reason** column.
+       ![A Screenshot with an arrow pointing to the app launcher and a border around outlook](04/media/task1(3).png)
 
-9.  Add the **Assign to** column and place it below the **Estimated Cost** column.
+9.  Select **Forms** from the **Objects** pane.
 
-10. The **Resolution details** section of the form should now look like the image below. Select **Save and publish**.
+10.  Open the **Information** form of type **Main**.
 
-    ![A screenshot with a border around estimated cost and assign to columns placed on the form and an arrow pointing to the save button](04/media/image12.png)
+      ![A Screenshot with an arrow pointing to the app launcher and a border around outlook](04/media/task1(4).png)
 
-11. Select the **← Back** button located on the top left of the screen.
+12. Add **Estimated Cost** column to the form and place it below the **owner** column.
 
-12. Select **All**, select **Publish all customizations**, and wait for the publishing to complete.
+13. Add the **Assign to** column and place it below the **Estimated Cost** column.
+
+      ![A Screenshot with an arrow pointing to the app launcher and a border around outlook](04/media/TASK1(5).png)
+
+15. The **Resolution details** section of the form should now look like the image below. Select **Save and publish**.
+
+16. Select the **← Back** button located on the top left of the screen.
+
+17. Select **All**, select **Publish all customizations**, and wait for the publishing to complete.
+
+     ![A Screenshot with an arrow pointing to the app launcher and a border around outlook](04/media/task1(6).png)
 
 
 #### Task 2: Build escalation flow
@@ -227,101 +247,107 @@ In this task, you will create the escalation flow.
 
 5.  Select **Added or Modified** for **Change type**, select **Problem Reports** for **Table name**, select **Organization** for **Scope** and select **Show advanced options**.
 
-6.  Enter **lh_estimatedcost,lh_assignto** for **Select columns**.
+7.  Enter **lh_estimatedcost,lh_assignto** for **Select columns**.
 
-7.  Select the **… Menu** button of the trigger step and select **Rename**.
+     ![A Screenshot with an arrow pointing to the app launcher and a border around outlook](04/media/ex-2t2(1).png)
 
-8.  Rename the trigger step **When a problem report is created or updated**.
+9.  Select the **… Menu** button of the trigger step and select **Rename**.
 
-9.  Select **+ New step**.
+10.  Rename the trigger step **When a problem report is created or updated**.
 
-10. Search for **Condition** and Select **Condition** control.
+11.  Select **+ New step**.
 
-11. Select the first **Choose a value** field.
+12. Search for **Condition** and Select **Condition** control.
 
-12. Go to the Dynamic content pane, search for **estimated** and select **Estimated Cost**.
+    ![A Screenshot with an arrow pointing to the app launcher and a border around outlook](04/media/ex-2t2(2).png)
 
-    ![A screenshot of the dynamic content pane with the word estimated in the search bar](04/media/image13.png)
+14. Select the first **Choose a value** field.
 
-13. Select **is greater than** in the second field and enter **1000** in the third field.
+15. Go to the Dynamic content pane, search for **estimated** and select **Estimated Cost**.
 
-14. Rename the condition step to **Check if cost is greater than 1000**.
+16. Select **is greater than** in the second field and enter **1000** in the third field.
 
-15. Go to the **If yes** branch and select **Add an action**.
+    ![A Screenshot with an arrow pointing to the app launcher and a border around outlook](04/media/ex-2t2(3).png)
 
-16. Search for **Get a row** and select **Get a row by ID** from **Microsoft Dataverse**.
+18. Rename the condition step to **Check if cost is greater than 1000**.
 
-17. Select **Users** for **Table name**.
+19. Go to the **If yes** branch and select **Add an action**.
 
-18. Select the **Row ID** field and select **Assign to (Value)** from the **Dynamic content** pane.
+20. Search for **Get a row** and select **Get a row by ID** from **Microsoft Dataverse**.
 
-19. Select **Show advanced options**.
+21. Select **Users** for **Table name**.
 
-20. Enter **internalemailaddress** for **Select columns**.
+22. Select the **Row ID** field and select **Assign to (Value)** from the **Dynamic content** pane.
 
-21. Rename the **Get a Row by ID** step **Get user**.
+23. Select **Show advanced options**.
 
-23. Select **Add an action**.
+24. Enter **internalemailaddress** for **Select columns**.
 
-24. Search for **approval** and select **Start and wait for an approval**.
+    ![A Screenshot with an arrow pointing to the app launcher and a border around outlook](04/media/ex-2t2(4).png)
 
-25. Select **Approve/Reject - Everyone must approve** for **Approval type**.
+26. Rename the **Get a Row by ID** step **Get user**.
 
-26. Enter **Cost approval required** for **Title**.
+27. Select **Add an action**.
 
-27. Select the **Assigned to** field.
+28. Search for **approval** and select **Start and wait for an approval**.
 
-28. Go to the **Dynamic content** pane and select **Primary Email** from the **Get user** step.
+29. Select **Approve/Reject - Everyone must approve** for **Approval type**.
 
-29. Paste the markdown text below in the **Details** field.
+30. Enter **Cost approval required** for **Title**.
+
+31. Select the **Assigned to** field.
+
+32. Go to the **Dynamic content** pane and select **Primary Email** from the **Get user** step.
+
+33. Paste the markdown text below in the **Details** field.
 
     > \#\# URGENT Approval Required
     >
     > This is \*\*very\*\* expensive item with the estimated cost of
 
-30. Place your cursor after cost of, go to the Dynamic content pane, select the **Expression** tab, paste the expression below, and select **OK**.
+34. Place your cursor after cost of, go to the Dynamic content pane, select the **Expression** tab, paste the expression below, and select **OK**.
 
     `formatNumber(triggerOutputs()?['body/lh_estimatedcost'], 'C2')`
 
-    ![A Screenshot with an arrow pointing to the ok button in the expression tab under the pasted expression](04/media/image14.png)
+    ![A Screenshot with an arrow pointing to the ok button in the expression tab under the pasted expression](04/media/ex-2t2(5).png)
 
-31. Select **Add an action**.
+35. Select **Add an action**.
 
-32. Search for **condition** and select the **Condition** action from the Control connector.
+36. Search for **condition** and select the **Condition** action from the Control connector.
 
-33. Select the first **Choose a value** field.
+37. Select the first **Choose a value** field.
 
-34. Go to the **Dynamic content** pane, search for **Outcome** and select **Outcome**.
+38. Go to the **Dynamic content** pane, search for **Outcome** and select **Outcome**.
 
-35. Select **equals to** in the second field and enter **Reject** for value in the third field.
+39. Select **equals to** in the second field and enter **Reject** for value in the third field.
 
-36. Go to the **If yes** branch and select **Add an action**.
+40. Go to the **If yes** branch and select **Add an action**.
 
-37. Search for **update a Row** and select **Update a Row** from **Microsoft Dataverse**.
+41. Search for **update a Row** and select **Update a Row** from **Microsoft Dataverse**.
 
-38. Select **Problem Reports** for **Table name**.
+42. Select **Problem Reports** for **Table name**.
 
-39. Select the **Row ID** field.
+43. Select the **Row ID** field.
 
-40. Go to the **Dynamic content** pane, search for **problem report** and select **Problem Report**.
+44. Go to the **Dynamic content** pane, search for **problem report** and select **Problem Report**.
 
-41. Select **Show advanced options**.
+45. Select **Show advanced options**.
 
-42. Select the **Resolution** field, go to the **Dynamic content** pane and select **Response summary**.
+46. Select the **Resolution** field, go to the **Dynamic content** pane and select **Response summary**.
 
-43. Select **Won’t fix** for **Status Reason**.
+47. Select **Won’t fix** for **Status Reason**.
 
-44. Rename the step **Update problem report**.
+48. Rename the step **Update problem report**.
 
-45. Scroll up and rename the flow **Escalate Expense Approval**.
+49. Scroll up and rename the flow **Escalate Expense Approval**.
 
-46. Select **Save**.
+50. Select **Save**.
 
     ![A screenshot of the current flow](04/media/image15.png)
 
-47. Close the flow designer browser window or tab.
+51. Close the flow designer browser window or tab.
 
-48. Select **Done** on the popup.
+52. Select **Done** on the popup.
 
 
 #### Task 3: Test flow
