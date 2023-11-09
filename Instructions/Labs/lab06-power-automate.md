@@ -1,17 +1,7 @@
----
-lab:
-    title: 'Lab 04: Power Automate'
-    module: 'Module 04: Power Automate'
----
+# Course Introduction
 
-> **NOTE**
->
-> Effective November 2020:
->
 > - Common Data Service has been renamed to Microsoft Dataverse. [Learn more](https://aka.ms/PAuAppBlog)
 > - Some terminology in Microsoft Dataverse has been updated. For example, *entity* is now *table* and *field* is now *column*. [Learn more](https://go.microsoft.com/fwlink/?linkid=2147247)
->
-
 
 # Lab 04: Power Automate
 
@@ -25,20 +15,13 @@ The following have been identified as requirements you must implement to complet
 
   - How to use a business rule to implement logic.
 
-## What you will learn
+## Lab Objectives
 
-  - How to design data columns (in the data model) to support automation 
+In this lab, you will complete the following tasks:
 
-  - How to build a flow using Microsoft Dataverse Connector
-
-  - How to use approvals 
-
-## High-level lab steps
-
-  - Add columns to support escalation 
-  - Build flow to approve escalation  
-  - Build flow to notify user of status change
-  - Build approval as an adaptive card in Microsoft Teams 
+- Exercise 1: Build notify flow
+- Exercise 2: Build escalation flow
+- Exercise 3: Send approval requests as adaptive card in Microsoft Teams(READ-ONLY)
 
 ## Prerequisites
 
@@ -63,85 +46,97 @@ In this task, you will create a flow that send notification when the status of p
 
 2.  Select **Solutions** and open the **Company 311** solution.
 
-3.  Select **+ New** > **Automation** > **Cloud Flow** > **Automated**.
+    ![A screenshot showing dropdown menu to create new automated cloud flow](04/media/pl-100(6.1).png)
 
-    ![A screenshot showing dropdown menu to create new automated cloud flow](04/media/image1.png)
+4.  Select **+ New** > **Automation** > **Cloud Flow** > **Automated**.
 
-4.  Enter `when a row` in the search box, then locate and select the **When a row is added, modified or deleted** action from the **Microsoft Dataverse** connector. 
+    ![A screenshot showing dropdown menu to create new automated cloud flow](04/media/pl-100(6.2).png)
 
-5.  Select **Create**.
+5. Click on **Get Started** if the pop-up comes up.
 
-    ![Trigger selection screen with Microsoft Dataverse trigger selected and a cursor over Create button](04/media/image1-1.png)
+    ![A screenshot showing dropdown menu to create new automated cloud flow](04/media/pl-100(6.3).png)
 
-6.  Select **Modified** for **Change type**, select **Problem Reports** for **Table name**, **Organization** for **Scope** and expand **Show advanced options**.
+7.  Enter `when a row` in the search box, then locate and select the **When a row is added, modified or deleted** action from the **Microsoft Dataverse** connector. 
 
-7.  Enter `statuscode` for **Select columns** then select **… Menu** button of the trigger step.
+    ![A screenshot showing dropdown menu to create new automated cloud flow](04/media/pl-100(6.4).png)
+    
+9.  Select **Create**.
 
-    ![A Screenshot with an arrow pointing to the ellipses icon for more options and a border around the select columns statuscode](04/media/image3.png)
+10. Select **Modified** for **Change type**, select **Problem Reports** for **Table name**, **Organization** for **Scope** and expand **Show advanced options**.
+  
+    ![A screenshot showing dropdown menu to create new automated cloud flow](04/media/pl-100(6.5).png)
 
-8.  Select **Rename**.
+12.  Enter `statuscode` for **Select columns** then select **… Menu** button of the trigger step.
 
-9.  Rename the trigger step `When problem report status changes`
+11.  Select **Rename**.
 
-10.  Select **+ New step**.
+12.  Rename the trigger step `When problem report status changes`
 
-    ![A Screenshot with an arrow pointing to the add new step button](04/media/image4.png)
+13.  Select **+ New step**.
 
 11. Select **Connectors** tab and then select **Microsoft Dataverse**. Select **Get a row by ID**.
 
-12. Select **Users** for **Table name**.
+    ![A screenshot showing dropdown menu to create new automated cloud flow](04/media/pl-100(6.6).png)
 
-13. Select the **Row ID** field, go to the Dynamic pane, search for `created` and select **Created By (Value)** to add it.
+    ![A screenshot showing dropdown menu to create new automated cloud flow](04/media/pl-100(6.7).png)
 
-14. Select **Show advanced options** on the new step.
+13. Select **Users** for **Table name**.
 
-15. Enter `internalemailaddress` for **Select columns**.
+14. Select the **Row ID** field, go to the Dynamic pane, search for `created` and select **Created By (Value)** to add it.
 
-16. Select the **… Menu** button of the new step and select **Rename**.
+    ![A screenshot showing dropdown menu to create new automated cloud flow](04/media/pl-100(6.8).png)
 
-17. Rename the step `Get problem creator`
+16. Select **Show advanced options** on the new step.
 
-18. Select **+ New step**.
+17. Enter `internalemailaddress` for **Select columns**.
 
-19. Search for `send email` and select **Send an email (V2).**
+    ![A screenshot showing dropdown menu to create new automated cloud flow](04/media/pl-100(6.9).png)
+    
+19. Select the **… Menu** button of the new step and select **Rename**.
 
-20. Select the **To** field and select the **Switch to Advanced Mode** arrows icon. Selecting this button toggles show/hide of the Dynamic content pane.
+20. Rename the step `Get problem creator`
 
-    ![A Screenshot with an arrow pointing to the switch to advanced mode icon](04/media/image5.png)
+21. Select **+ New step**.
 
-21. Select the **Primary Email** field from the **Get problem creator** step.
+22. Search for `send email` and select **Send an email (V2).**
 
-22. Enter `Problem report status change notification` for **Subject**.
+    ![A screenshot showing dropdown menu to create new automated cloud flow](04/media/pl-100(6.10).png)
 
-23. Select the **Body** field.
+24. Select the **To** field and select the **Switch to Advanced Mode** arrows icon. Selecting this button toggles show/hide of the Dynamic content pane.
 
-24. Enter `The status of the problem you reported has changed.` and press the **[ENTER]** key.
+    ![A Screenshot with an arrow pointing to the switch to advanced mode icon](04/media/pl-100(6.11).png)
 
-25. Enter `Problem Title:` followed by a **[SPACE]**, go to the **Dynamic content** pane, search for `title` and select **Title**.
+25. Select the **Primary Email** field from the **Get problem creator** step.
 
-26. Press the **[ENTER]** key.
+    ![A Screenshot with an arrow pointing to the switch to advanced mode icon](04/media/pl-100(6.12).png)
 
-27. Enter `Current Status:` followed by a **[SPACE]**, go to the **Dynamic content** pane, select the **Expression** tab, paste the expression below, and select **OK**. This expression will show the label of the Status Reason instead of the value.
+27. Enter `Problem report status change notification` for **Subject**.
+
+28. Select the **Body** field.
+
+29. Enter `The status of the problem you reported has changed.` and press the **[ENTER]** key.
+
+30. Enter `Problem Title:` followed by a **[SPACE]**, go to the **Dynamic content** pane, search for `title` and select **Title**.
+
+31. Press the **[ENTER]** key.
+
+32. Enter `Current Status:` followed by a **[SPACE]**, go to the **Dynamic content** pane, select the **Expression** tab, paste the expression below, and select **OK**. This expression will show the label of the Status Reason instead of the value.
 
     `triggerOutputs()?['body/_statuscode_label']`
 
-    ![A Screenshot with an arrow pointing to the ok button under the expression tab with the relevant expression pasted into it](04/media/image6.png)
+    ![A Screenshot with an arrow pointing to the switch to advanced mode icon](04/media/pl-100(6.13).png)
+    
+34. Select the **… Menu** button of the new step and select **Rename**.
 
-28. Select the **… Menu** button of the new step and select **Rename**.
+35. Rename the step to `Notify problem creator`(1)
+    
+37. At the top of the page, change the flow name from **Untitled** to `Notify Problem Creator`
 
-29. Rename the step to `Notify problem creator`
+38. Select **Save** (2) and wait for the flow to be saved.
 
-30. The step should now look like the image below.
+    ![A screenshot of the current flow](04/media/pl-100(6.14).png)
 
-    ![A screenshot of the modify problem creator window being to primary email, the subject being problem report status change notification, and the body being "The status of the problem you reported has changed" with the problem title and current status as trigger outputs below that](04/media/image7.png)
-
-31. At the top of the page, change the flow name from **Untitled** to `Notify Problem Creator`
-
-32. Select **Save** and wait for the flow to be saved.
-
-    ![A screenshot of the current flow](04/media/image8.png)
-
-33. Select the **🡠** button to go back to the previous page.
+39. Select the **🡠** button to go back to the previous page.
 
 
 #### Task 2: Test the flow
@@ -161,7 +156,7 @@ In this task, you will test the Notify Problem Creator flow.
 6.  Close the application browser window or tab.
 
 7.  You should now be back to the [Power Apps maker portal](https://make.powerapps.com/)
-
+0
 8.  Select **Solutions** and open the **Company 311** solution.
 
 9.  Locate and open the **Notify Problem Creator** Cloud flow.
@@ -363,6 +358,7 @@ In this task, you will test the escalation flow.
 
     ![A screenshot of the status reason and resolution matching the values and text you put into the request](04/media/image18.png)
 
+# READ-ONLY
 
 ### Exercise 3: Send approval requests as adaptive card in Microsoft Teams
 
