@@ -62,7 +62,7 @@ In this task you will create a new team.
 
 In this task you will install Power Apps for Teams.
 
-1.  Select the **... More added apps**, search for power apps and select **Power Apps**. 
+1.  Select the **ellipsis More added apps**, search for power apps and select **Power Apps**. 
 
     ![A Screenshot with an arrow pointing to the ellipsis icon for more added apps on the left side of the page and a box around power apps button](03-1/media/lab4-ex1-t1-12.png)
 
@@ -128,60 +128,60 @@ In this task, you will create a table and columns.
 
     ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/2023-11-07_14-25-36.png)
 
-4.  Select **+ New column**.
+7.  Select **+ New column**.
 
-5.  Enter **Description** for **Display name**, select **Text** for **Data type** (displayed as **Single line of text**), and expand the **Advanced options** section.
+8.  Enter **Description** for **Display name**, select **Text** for **Data type** (displayed as **Single line of text**), and expand the **Advanced options** section.
     Change the **Maximum character count** to `500` and select **Save**.
 
     ![A screenshot with the cursor pointing to the advanced options link](03-1/media/2023-11-07_14-26-52.png)
 
-6.  Select **+ New column** again.
+9.  Select **+ New column** again.
 
-7.  Enter **Availability** for Name, select **Choice** for Type, and select **+ New choice** under **Sync this choice with** drop-down box. That will open a window to create a global choice to sync with.
+10.  Enter **Availability** for Name, select **Choice** for Type, and select **+ New choice** under **Sync this choice with** drop-down box. That will open a window to create a global choice to sync with.
 
-8.  Enter **Availability** for **Display name**.
+11.  Enter **Availability** for **Display name**.
 
-9.  Enter **Available** for the first choice and select **+ New choice**.
+12.  Enter **Available** for the first choice and select **+ New choice**.
 
-10. Enter **Reserved** for the second choice and select **+ New choice**.
+13. Enter **Reserved** for the second choice and select **+ New choice**.
 
-11. Enter **Picked up** for the third choice and select **Save**.
+14. Enter **Picked up** for the third choice and select **Save**.
 
     ![A screenshot of the new global choice with 3 choice values entered](03-1/media/2023-11-07_14-27-35.png)
 
     ![A screenshot of the new global choice with 3 choice values entered](03-1/media/2023-11-07_14-28-43.png)
 
-12. Select **Availability** in **Sync this choice with**.
+15. Select **Availability** in **Sync this choice with**.
 
-13. Select **Available** for **Default choice** and select **Save**.
+16. Select **Available** for **Default choice** and select **Save**.
 
     ![A screenshot of a new choice column with global choice to sync with selected](03-1/media/ex2-t2-image6.png)
 
-14. Select **+ New column** menu.
+17. Select **+ New column** menu.
 
-15. Enter **Location** for **Display name**, select **Text** for **Data type** (displayed as **Single line of text**), select **Business required** for **Required** and select **Save**.
+18. Enter **Location** for **Display name**, select **Text** for **Data type** (displayed as **Single line of text**), select **Business required** for **Required** and select **Save**.
 
     ![A screenshot of the add column window with the relevant text in each field](03-1/media/lab4-ex1-t1-24.png)
 
-16. Select **+ New column**.
+19. Select **+ New column**.
 
-17. Enter **Photo** for **Display name**, select **File > Image** for **Data type**, check the **Primary image** checkbox and select **Save**.
+20. Enter **Photo** for **Display name**, select **File > Image** for **Data type**, check the **Primary image** checkbox and select **Save**.
 
     ![A screenshot of the add column window with the relevant text in each field](03-1/media/lab4-ex1-t1-25.png)
 
-18. Select **+ New column**.
+21. Select **+ New column**.
 
-19. Enter **Reserved by** for **Display name**, select **Lookup** for Data type, select **User** for **Related table** and select **Save**.
+22. Enter **Reserved by** for **Display name**, select **Lookup** for Data type, select **User** for **Related table** and select **Save**.
 
     ![A screenshot of the add column window with the relevant text in each field](03-1/media/lab4-ex1-t1-27.png)
 
-20. Your table screen should now look like the image below.
+23. Your table screen should now look like the image below.
 
     ![A screenshot of the new Gadget table with all columns in a grid layout](03-1/media/lab4-ex1-t1-28.png)
 
-21. Close the table editor by selecting the **Save and Close** button.
+24. Close the table editor by selecting the **Save and Close** button.
 
-22. Close the preview mode after adding all the records.
+25. Close the preview mode after adding all the records.
 
 
 ### Task 3: Edit the application
