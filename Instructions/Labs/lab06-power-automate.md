@@ -360,29 +360,29 @@ In this task, you will test the escalation flow.
 
 3.  Open one of the **Problem Report** rows.
 
-4.  Scroll down, enter **2500** for **Estimated Cost**, assign it to **yourself** (for test purposes) and select **Save**.
+4.  Scroll down, enter **2700** for **Estimated Cost**, assign it to **yourself** (for test purposes) and select **Save**.
 
-5.  Navigate to the [Power Automate maker portal](https://make.powerautomate.com/).
+      ![A Screenshot with an arrow pointing to the cost approval required request](04/media/ex2-t3(1).png)
 
-6.  Select **Approvals**.
+6.  Navigate to the [Power Automate maker portal](https://make.powerautomate.com/).
 
-7.  You should see at least one approval in the received tab. Open the approval. It can take around 10-15 minutes for approvals to show up here on the first run.
+7.  Select **Approvals**.
 
-    ![A Screenshot with an arrow pointing to the cost approval required request](04/media/image16.png)
+8.  You should see at least one approval in the received tab. Open the approval. It can take around 10-15 minutes for approvals to show up here on the first run.
 
-8.  Select **Reject**, enter **We don't have the funds for this item** for **comment**, and select **Confirm**.
+    ![A Screenshot with an arrow pointing to the cost approval required request](04/media/ex2-t3(2).png)
 
-    ![A screenshot of the details of the request with the relevant text in each field](04/media/image17.png)
+9.  Select **Reject**, enter **We don't have the funds for this item** (optional) for **comment**, and select **Confirm**.
 
-9.  Go back to the **Company 311 Admin** application.
+    ![A Screenshot with an arrow pointing to the cost approval required request](04/media/ex2-t3(3).png)
 
-10. Change the view to **My Reports** and open the same row you change the estimated cost.
+10.  Go back to the **Company 311 Admin** application.
 
-11. The **Status Reason** should be set to **Won’t fix** and the **Resolution** should contain the details of Approver, Response, Request Date and Response Date.
+11. Change the view to **My Reports** and open the same row you change the estimated cost.
 
-12. Select **Save**, if you have not done so previously.
+12. The **Status Reason** should be set to **Won’t fix** and the **Resolution** should contain the details of Approver, Response, Request Date and Response Date.
 
-    ![A screenshot of the status reason and resolution matching the values and text you put into the request](04/media/image18.png)
+13. Select **Save**, if you have not done so previously.
 
 # READ-ONLY
 
