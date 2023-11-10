@@ -27,11 +27,11 @@ Through this lab, you will be able to complete and gain insights into the follow
 6)  If item is reserved, only reserved user should be able to mark item picked up.
 7)  Users should be able to search items.
 
-### Exercise 1: Get started with Microsoft Dataverse for Teams
+## Exercise 1: Get started with Microsoft Dataverse for Teams
 
 In this exercise, you will create a new team and install Power Apps for Teams.
 
-#### Task 1: Create team
+### Task 1: Create team
 
 In this task you will create a new team.
 
@@ -58,7 +58,7 @@ In this task you will create a new team.
 8.  Do not navigate away from this page.
 
 
-#### Task 2: Install Power Apps
+### Task 2: Install Power Apps
 
 In this task you will install Power Apps for Teams.
 
@@ -73,10 +73,10 @@ In this task you will install Power Apps for Teams.
     ![A Screenshot with an arrow pointing to the power apps icon and a box around the pin button](03-1/media/lab4-ex1-t1-14.png)
 
 
-### Exercise 2: Create application
+## Exercise 2: Create application
 In this exercise, you will provision Dataverse for Teams by creating an application and you will also create a Dataverse table with columns.
 
-#### Task 1: Create application
+### Task 1: Create application
 
 In this task, you will provision Dataverse for Teams by creating an application.
 
@@ -99,7 +99,7 @@ In this task, you will provision Dataverse for Teams by creating an application.
 6.  Do not navigate away from this page.
 
 
-#### Task 2: Create table
+### Task 2: Create table
 In this task, you will create a table and columns.
 
 1.  Select **With data** and then select **Create new table**.
@@ -184,7 +184,7 @@ In this task, you will create a table and columns.
 22. Close the preview mode after adding all the records.
 
 
-#### Task 3: Edit the application
+### Task 3: Edit the application
 
 In this task, you will edit the application by filters for gadgets that are available and edit the form.
 
@@ -283,7 +283,7 @@ In this task, you will edit the application by filters for gadgets that are avai
 25. **Do not** navigate away from this screen.
 
 
-#### Task 4: Update Dataverse rows
+### Task 4: Update Dataverse rows
 
 In this task, you will add buttons that will let users reserve and/or pick up item, you will also update the rows in Dataverse as reserved or picked up.
 
@@ -364,7 +364,7 @@ In this task, you will add buttons that will let users reserve and/or pick up it
 18. Do not navigate away from this page.
 
 
-#### Task 5: Add search
+### Task 5: Add search
 
 In this task, you will add search capability to your application.
 
@@ -421,11 +421,11 @@ In this task, you will add search capability to your application.
 16. Select **Save** to save your changes.
 
 
-### Exercise 3: Test and publish application
+## Exercise 3: Test and publish application
 
 In this exercise, you will test, publish and give colleagues permission to use the application.
 
-#### Task 1: Test application
+### Task 1: Test application
 
 In this task, you will test the application.
 
@@ -458,7 +458,7 @@ In this task, you will test the application.
 10.  Do not navigate away from this page.
 
 
-#### Task 2: Publish application
+### Task 2: Publish application
 
 In this task, you will publish the application to Teams.
 
@@ -485,7 +485,7 @@ In this task, you will publish the application to Teams.
 7. **Test** the application in Teams and make sure it behaves as you expect.
 
 
-#### Task 3: Give permissions
+### Task 3: Give permissions
 
 In this task, you will give your colleagues permission to create new items, edit items they created, delete items they created and read items created by other people.
 
