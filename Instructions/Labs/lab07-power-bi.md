@@ -204,21 +204,24 @@ In this lab, you will build a Power BI dashboard that visualizes data about prob
 
     ![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-43-46.png)
 
-   >**Note**:If you are getting an error on PowerBI Service with message "the data source is missing credentials and cannot be accessed", follow the below steps:
+ >**Note**:If you are getting an error on PowerBI Service with message "the data source is missing credentials and cannot be accessed", follow the below steps:
 1. Select **311 Workspace** and select the **Problem Management** dataset.
 
-![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-45-18.png)
+   ![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-45-18.png)
+
 2. Expand Refresh dropdown and select **Schedule refresh**.
 
-![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-58-19.png)
+   ![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-58-19.png)
 
 3. Expand **Data Source credentials** section and select **Edit Credentials**.
 
-![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-58-55.png)
+   ![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-58-55.png)
+
 
 4. Select **OAuth2** for **Authentication** Method and **Organizational** for **Privacy level setting for this data source**.
 
-![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-59-19.png)
+   ![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-59-19.png)
+
 
 5. Select **Sign in**. Provide the sign in details with the Username: <inject key="Username" enableCopy="false" />.This will resolve the issue for report and it should display properly on Power BI.
 
