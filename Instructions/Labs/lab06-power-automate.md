@@ -414,7 +414,7 @@ In this task you will setup a Microsoft Teams team for the Lamna Healthcare Comp
 
 2.  Select **Use the web app instead** on the welcome screen.
 
-    ![A screenshot of the Microsoft Teams landing page with a border around the use the web app instead button](04/media/image-5-teams.png)
+    ![A screenshot of the Microsoft Teams landing page with a border around the use the web app instead button](04/media/ex-3.png)
 
 3.  When the Microsoft Teams window opens, dismiss the welcome messages.
 
@@ -497,9 +497,7 @@ In this task you will replace the approval sent by email with an adaptive card.
 
 23. Go to the **Dynamic content** pane and select **Teams Adaptive Card** from the **Create an approval** step.
 
-24. The **Post adaptive card and wait for a response** step should look like the image below:
-
-    ![A screenshot of the post adaptive card in a chat or channel pane](04/media/image-5-post-adaptive-card.png)
+24. The **Post adaptive card and wait for a response** step should look like the image below
 
 25. Hover your mouse again below Post card in a chat or channel step, select **+** and then select **Add an action**.
 
@@ -509,11 +507,7 @@ In this task you will replace the approval sent by email with an adaptive card.
 
 28. Go to the **Dynamic content** pane and select **Approval ID** from the **Create an approval** step.
 
-    ![A screenshot of the wait for an approval panel with approval ID in the approval ID field](04/media/image-5-wait-for-approval.png)
-
 29. You now have replaced **Start and wait for an approval** step with the following:
-
-    ![A screenshot of the current flow with: create an approval, post adaptive card in a chat or channel, and wait for an approval](04/media/image-5-replaced-approval.png)
 
 30. Expand the **Condition** step. The left side of the condition should be empty because it was referring the step which is now removed. 
 
@@ -550,21 +544,15 @@ In this task, you will test the escalation flow with the Teams and adaptive card
 
 7. You should see the **Cost approval required** adaptive card in a message from **Power Automate**.
 
-    ![A screen shot of the request for cost approval pane](04/media/image-5-sample-adaptive-card.png)  
-
 8. Select the **Reject** button and enter a comment of your choice in the **Comments** area, for example **The item is too expensive**.
 
 9. Select **Submit**. The card will become read-only.
-
-    ![A screenshot of the request once you have rejected it](04/media/image-5-readonly-card.png)
 
 10. Go back to the **Company 311 Admin** application.
 
 11. Change the view to **My Reports** and open the same Row you change the estimated cost.
 
 12. The **Status Reason** should be set to **Won’t fix** and the **Resolution** should contain the details of Approver, Response, Request Date and Response Date.
-
-    ![A screenshot of the status reason and resolution matching the details of your response to the request](04/media/problemreportadaptivecard.png)
 
 
 ## **Discussion**
