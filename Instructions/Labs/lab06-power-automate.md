@@ -321,33 +321,39 @@ In this task, you will create the escalation flow.
 
 39. Select **equals to** in the second field and enter **Reject** for value in the third field.
 
-40. Go to the **If yes** branch and select **Add an action**.
+    ![A Screenshot with an arrow pointing to the ok button in the expression tab under the pasted expression](04/media/ex-2t2(6).png)
 
-41. Search for **update a Row** and select **Update a Row** from **Microsoft Dataverse**.
+41. Go to the **If yes** branch and select **Add an action**.
 
-42. Select **Problem Reports** for **Table name**.
+42. Search for **update a Row** and select **Update a Row** from **Microsoft Dataverse**.
 
-43. Select the **Row ID** field.
+    ![A Screenshot with an arrow pointing to the ok button in the expression tab under the pasted expression](04/media/ex-2t2(7).png)
 
-44. Go to the **Dynamic content** pane, search for **problem report** and select **Problem Report**.
+44. Select **Problem Reports** for **Table name**.
 
-45. Select **Show advanced options**.
+45. Select the **Row ID** field.
 
-46. Select the **Resolution** field, go to the **Dynamic content** pane and select **Response summary**.
+46. Go to the **Dynamic content** pane, search for **problem report** and select **Problem Report**.
 
-47. Select **Won’t fix** for **Status Reason**.
+47. Select **Show advanced options**.
 
-48. Rename the step **Update problem report**.
+48. Select the **Resolution** field, go to the **Dynamic content** pane and select **Response summary**.
 
-49. Scroll up and rename the flow **Escalate Expense Approval**.
+    ![A Screenshot with an arrow pointing to the ok button in the expression tab under the pasted expression](04/media/ex-2t2(8).png)
 
-50. Select **Save**.
+50. Select **Won’t fix** for **Status Reason**.
 
-    ![A screenshot of the current flow](04/media/image15.png)
+51. Rename the step **Update problem report**.
 
-51. Close the flow designer browser window or tab.
+52. Scroll up and rename the flow **Escalate Expense Approval**.
 
-52. Select **Done** on the popup.
+    ![A Screenshot with an arrow pointing to the ok button in the expression tab under the pasted expression](04/media/ex-2t2(9).png)
+
+54. Select **Save**.
+    
+55. Close the flow designer browser window or tab.
+
+56. Select **Done** on the popup.
 
 
 #### Task 3: Test flow
@@ -382,7 +388,11 @@ In this task, you will test the escalation flow.
 
 12. The **Status Reason** should be set to **Won’t fix** and the **Resolution** should contain the details of Approver, Response, Request Date and Response Date.
 
-13. Select **Save**, if you have not done so previously.
+    ![A Screenshot with an arrow pointing to the ok button in the expression tab under the pasted expression](04/media/TASK2.2.png)
+
+    ![A Screenshot with an arrow pointing to the ok button in the expression tab under the pasted expression](04/media/TASK2.1.png)
+
+14. Select **Save**, if you have not done so previously.
 
 # READ-ONLY
 
@@ -408,19 +418,19 @@ In this task you will setup a Microsoft Teams team for the Lamna Healthcare Comp
 
 3.  When the Microsoft Teams window opens, dismiss the welcome messages.
 
-4.  On the bottom left corner, choose **Join or create a team**.
+4.  On the top left corner, clcik on **"+"** and Select **Create a team** .
 
-5.  Select **Create a team**.
-
-    ![A screenshot with a box around the join or create a team button at the bottom of the window and a border around the create a team button](04/media/image-5-createteam.png)
+    ![A screenshot with a box around the join or create a team button at the bottom of the window and a border around the create a team button](04/media/ex-3t1(1).png)
 
 6.  Press **From scratch**.
 
-7.  Select **Public**.
+       ![A Screenshot with an arrow pointing to the ok button in the expression tab under the pasted expression](04/media/ex-3t1(2).png)
+   
+8.  Select **Public**.
 
-8.  For the Team name choose **Company 311** and select **Create**.
+9.  For the Team name choose **Company 311** and select **Create**.
 
-9.  Select **Skip** adding members to Company 311.
+10.  Select **Skip** adding members to Company 311.
 
 
 #### Task 2: Modify flow to send adaptive card in Teams chat
@@ -437,10 +447,14 @@ In this task you will replace the approval sent by email with an adaptive card.
 
 5.  Select the **...** menu, and then select **Delete**. 
 
+     ![A Screenshot with an arrow pointing to the ok button in the expression tab under the pasted expression](04/media/ex-3t2(1).png)
+    
 6.  Hover your mouse between the steps, select the **+** to insert a new step then select **Add an action**. 
 
 7.  Search for **approval**, and select **Create an approval**. 
 
+    ![A Screenshot with an arrow pointing to the ok button in the expression tab under the pasted expression](04/media/ex-3t2(2).png)
+  
 8.  Select **Approve/Reject - Everyone must approve** for **Approval type**. 
 
 9.  Enter **Cost approval required** for **Title**. 
@@ -467,7 +481,7 @@ In this task you will replace the approval sent by email with an adaptive card.
 
 16. Your step should look like the following: 
 
-    ![A screenshot of the create an approval window with the following. Approval type as approve/reject - everyone must approve, title as cost approval required, assigned to primary email, details as title, details, some text and format number, item link, and item link description](04/media/image-5-create-approval.png)
+    ![A screenshot of the create an approval window with the following. Approval type as approve/reject - everyone must approve, title as cost approval required, assigned to primary email, details as title, details, some text and format number, item link, and item link description](04/media/ex-3t2(3).png)
 
 17. Hover your mouse again below Create an approval step, select **+** and then select **Add an action**.
 
