@@ -1,41 +1,20 @@
----
-lab:
-    title: 'Lab 07: Test & Deploy'
-    module: 'Module 07: Testing & deployment'
----
+# Course Introduction
 
-> **NOTE**
->
-> Effective November 2020:
 > - Common Data Service has been renamed to Microsoft Dataverse. [Learn more](https://aka.ms/PAuAppBlog)
 > - Some terminology in Microsoft Dataverse has been updated. For example, *entity* is now *table* and *field* is now *column*. [Learn more](https://go.microsoft.com/fwlink/?linkid=2147247)
->
 
 # Lab 07: Test & Deploy
 
 In this lab you will complete solution configuration by adding security roles for the users. Then you will verify, test, and deploy the solution in the production environment.
 
-## What you will learn
+## Lab Objectives
+In this lab, you will complete the following tasks:
 
-  - How to deploy a solution to another environment
-
-## High-level lab steps
-
-  - Exercise 1 – Create security roles for users 
-    
-      - Company 311 User – read all on Building, user owned on Problem Reports 
-      
-      - Company 311 Admin – All access for Buildings, Departments, Problem Reports 
-      
-      - Associate Company 311 Admin role with model-driven app 
-
-  - Exercise 2 – Run solution checker
-
-  - Exercise 3 – Use Test Studio to create test case for submitting problem (ok to not include image)
-
-  - Exercise 4 – Export and import solution
-  
-  - Exercise 5: Add existing flow to solution
+- Exercise 1: Create security roles for users 
+- Exercise 2: Run solution checker
+- Exercise 3: Use Test Studio to create test case for submitting problem (ok to not include image)
+- Exercise 4: Export and import solution
+- Exercise 5: Add existing flow to solution
 
 ## Prerequisites
 
