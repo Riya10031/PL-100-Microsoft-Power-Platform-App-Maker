@@ -489,7 +489,7 @@ In this task you will replace the approval sent by email with an adaptive card.
 
 21. Go to the **Dynamic content** pane and select **Primary Email** from the **Get user** step. 
 
-22. Select **Message** field. 
+22. Select **Adaptive Card** field. 
 
 23. Go to the **Dynamic content** pane and select **Teams Adaptive Card** from the **Create an approval** step.
 
