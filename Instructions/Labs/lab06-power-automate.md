@@ -414,23 +414,23 @@ In this task you will setup a Microsoft Teams team for the Lamna Healthcare Comp
 
 2.  Select **Use the web app instead** on the welcome screen.
 
-    ![A screenshot of the Microsoft Teams landing page with a border around the use the web app instead button](04/media/ex-3.png)
+    ![A screenshot of the Microsoft Teams landing page with a border around the use the web app instead button](04/media/image-5-teams.png)
 
 3.  When the Microsoft Teams window opens, dismiss the welcome messages.
 
-4.  On the top left corner, clcik on **"+"** and Select **Create a team** .
+4.  On the bottom left corner, choose **Join or create a team**.
 
-    ![A screenshot with a box around the join or create a team button at the bottom of the window and a border around the create a team button](04/media/ex-3t1(1).png)
+5.  Select **Create a team**.
+
+    ![A screenshot with a box around the join or create a team button at the bottom of the window and a border around the create a team button](04/media/image-5-createteam.png)
 
 6.  Press **From scratch**.
 
-       ![A Screenshot with an arrow pointing to the ok button in the expression tab under the pasted expression](04/media/ex-3t1(2).png)
-   
-8.  Select **Public**.
+7.  Select **Public**.
 
-9.  For the Team name choose **Company 311** and select **Create**.
+8.  For the Team name choose **Company 311** and select **Create**.
 
-10.  Select **Skip** adding members to Company 311.
+9.  Select **Skip** adding members to Company 311.
 
 
 #### Task 2: Modify flow to send adaptive card in Teams chat
@@ -447,14 +447,10 @@ In this task you will replace the approval sent by email with an adaptive card.
 
 5.  Select the **...** menu, and then select **Delete**. 
 
-     ![A Screenshot with an arrow pointing to the ok button in the expression tab under the pasted expression](04/media/ex-3t2(1).png)
-    
 6.  Hover your mouse between the steps, select the **+** to insert a new step then select **Add an action**. 
 
 7.  Search for **approval**, and select **Create an approval**. 
 
-    ![A Screenshot with an arrow pointing to the ok button in the expression tab under the pasted expression](04/media/ex-3t2(2).png)
-  
 8.  Select **Approve/Reject - Everyone must approve** for **Approval type**. 
 
 9.  Enter **Cost approval required** for **Title**. 
@@ -469,37 +465,39 @@ In this task you will replace the approval sent by email with an adaptive card.
     >
     > {details}
     >
-    > This is a \_very\_ expensive item with the estimated cost of
+    > This is a \_very\_ expensive item with the estimated cost of 
 
 13. Select **{title}** placeholder, go to the **Dynamic content** pane, locate and select **Title** field from **When a problem report is created or updated** step.
 
 14. Select **{details}** placeholder, go to the **Dynamic content** pane, locate and select **Details** field from **When a problem report is created or updated** step.
 
-15. Place your cursor after **cost of** , go to the **Dynamic content** pane, select the **Expression** tab, paste the expression below, and select **OK**.
+15. Place the cursor after **cost of**, go to the **Dynamic content** pane, select the **Expression** tab, paste the expression below, and select **OK**.
 
     `formatNumber(triggerOutputs()?['body/lh_estimatedcost'], 'C2')`
 
 16. Your step should look like the following: 
 
-    ![A screenshot of the create an approval window with the following. Approval type as approve/reject - everyone must approve, title as cost approval required, assigned to primary email, details as title, details, some text and format number, item link, and item link description](04/media/ex-3t2(3).png)
+    ![A screenshot of the create an approval window with the following. Approval type as approve/reject - everyone must approve, title as cost approval required, assigned to primary email, details as title, details, some text and format number, item link, and item link description](04/media/image-5-create-approval.png)
 
 17. Hover your mouse again below Create an approval step, select **+** and then select **Add an action**.
 
-18. Search for `teams` and select **Post adaptive card and wait for a response** action.
+18. Search for `teams` and select **Post card in a chat or channel** action. 
 
-19. Select **Flow bot** for Post as and select **Chat with Flow bot** for Post in.
+19. Select **Flow bot** for Post as and select **Chat with Flow bot** for Post in. 
 
-20. Select the **Recipient** field.
+20. Select the **Recipient** field. 
 
-21. Go to the **Dynamic content** pane and select **Primary Email** from the **Get user** step.
+21. Go to the **Dynamic content** pane and select **Primary Email** from the **Get user** step. 
 
-22. Select **Message** field.
+22. Select **Message** field. 
 
 23. Go to the **Dynamic content** pane and select **Teams Adaptive Card** from the **Create an approval** step.
 
-24. The **Post adaptive card and wait for a response** step should look like the image below
+24. The **Post card in a chat or channel** step should look like the image below:
 
-25. Hover your mouse again below Post card in a chat or channel step, select **+** and then select **Add an action**.
+    ![A screenshot of the post adaptive card in a chat or channel pane](04/media/image5-post-adaptive-card.png)
+
+25. Hover the cursor below the **Post card in a chat or channel** step, select **+** and then select **Add an action**.
 
 26. Search for `approval` and select **Wait for an approval** action.
 
@@ -507,13 +505,17 @@ In this task you will replace the approval sent by email with an adaptive card.
 
 28. Go to the **Dynamic content** pane and select **Approval ID** from the **Create an approval** step.
 
+    ![A screenshot of the wait for an approval panel with approval ID in the approval ID field](04/media/image-5-wait-for-approval.png)
+
 29. You now have replaced **Start and wait for an approval** step with the following:
 
-30. Expand the **Condition** step. The left side of the condition should be empty because it was referring the step which is now removed. 
+    ![A screenshot of the current flow with: create an approval, post adaptive card in a chat or channel, and wait for an approval](04/media/image-5-replaced-approval.png)
+
+30. Expand the **Condition** step. The left value of the **Condition** step should be empty because it was referring to the old step which is now removed. 
 
 31. Go to the **Dynamic content** pane, search for `outcome`, and select **Outcome** from **Wait for an approval** step. 
 
-32. Locate **Update problem report** step under **If yes** branch. 
+32. Locate the **Update problem report** step, under the **If yes** branch. 
 
 33. Select **Show advanced options**.
 
@@ -532,7 +534,7 @@ In this task, you will test the escalation flow with the Teams and adaptive card
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) and make sure you are in the correct environment.
 
-2.  Select **Apps** and open the **Company 311 Admin** application.
+2.  Select **Apps**, and then select the **Company 311 Admin** Model-driven application. Select **Play**.
 
 3.  Open one of the **Problem Report** Rows.
 
@@ -542,17 +544,23 @@ In this task, you will test the escalation flow with the Teams and adaptive card
 
 6.  Select **Chat**.
 
-7. You should see the **Cost approval required** adaptive card in a message from **Power Automate**.
+7. You should see the **Cost approval required** adaptive card in a message from **Workflows**.
+
+    ![A screen shot of the request for cost approval pane](04/media/image-5-sample-adaptive-card.png)  
 
 8. Select the **Reject** button and enter a comment of your choice in the **Comments** area, for example **The item is too expensive**.
 
 9. Select **Submit**. The card will become read-only.
+
+    ![A screenshot of the request once you have rejected it](04/media/image-5-readonly-card.png)
 
 10. Go back to the **Company 311 Admin** application.
 
 11. Change the view to **My Reports** and open the same Row you change the estimated cost.
 
 12. The **Status Reason** should be set to **Won’t fix** and the **Resolution** should contain the details of Approver, Response, Request Date and Response Date.
+
+    ![A screenshot of the status reason and resolution matching the details of your response to the request](04/media/problemreportadaptivecard.png)
 
 
 ## **Discussion**
