@@ -151,7 +151,7 @@ In this task, you will test the Notify Problem Creator flow.
 
 4.  Select **+ New**.
 
-5. Enter `Flow test` for **Title**, select **ODL_User <inject key="DeploymentID"></inject>**  for **Owner**, select **London Paddington** for **Building**,  and select **Save**.
+5. Enter `Flow test` (1) for **Title**, select **ODL_User <inject key="DeploymentID"></inject>** (2) for **Owner**, select **London Paddington** (3) for **Building**,  and select **Save**.
 
     ![A screenshot of the current flow](04/media/task2(2).png)
 
