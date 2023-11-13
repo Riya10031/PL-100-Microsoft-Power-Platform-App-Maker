@@ -149,7 +149,7 @@ In this task, you will create a table and columns.
 
     ![A screenshot of the new global choice with 3 choice values entered](03-1/media/2023-11-07_14-27-35.png)
 
-    ![A screenshot of the new global choice with 3 choice values entered](03-1/media/2023-11-07_14-28-43.png)
+    ![A screenshot of the new global choice with 3 choice values entered](04/media/lab033.png)
 
 15. Select **Availability** in **Sync this choice with**.
 
