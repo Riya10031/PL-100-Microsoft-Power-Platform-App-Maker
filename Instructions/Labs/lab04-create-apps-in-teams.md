@@ -1,3 +1,8 @@
+# Course Introduction
+ 
+> -  Common Data Service has been renamed to Microsoft Dataverse. [Learn more](https://aka.ms/PAuAppBlog)
+> - Some terminology in Microsoft Dataverse has been updated. For example, *entity* is now *table* and *field* is now *column*. [Learn more](https://go.microsoft.com/fwlink/?linkid=2147247)
+
 # Lab 04: Create apps in Teams
 
 ## Lab Scenario
@@ -5,9 +10,6 @@
 It is not uncommon for organizations to accumulate unused computer peripherals, power cords and other electronics. Your organization is taking steps to reuse existing devices and computer peripherals before ordering new equipment.
 
 You are asked to create an application where users can post devices they no longer need and browse through what their colleagues posted.
-
-> - Common Data Service has been renamed to Microsoft Dataverse. [Learn more](https://aka.ms/PAuAppBlog)
-> - Some terminology in Microsoft Dataverse has been updated. For example, *entity* is now *table* and *field* is now *column*. [Learn more](https://go.microsoft.com/fwlink/?linkid=2147247)
 
 ## Lab Objectives
 
@@ -22,10 +24,10 @@ Through this lab, you will be able to complete and gain insights into the follow
 1)	Application must use Dataverse for Teams.
 2)	Users should be able to create new items, edit items they created and see items created by other users.
 3)	Items should be removed from the list if they are no longer available.
-4)  Allow users to reserve an item.
-5)  Allow user to mark item for pick up.
-6)  If item is reserved, only reserved user should be able to mark item picked up.
-7)  Users should be able to search items.
+4) Allow users to reserve an item.
+5) Allow user to mark item for pick up.
+6) If item is reserved, only reserved user should be able to mark item picked up.
+7) Users should be able to search items.
 
 ## Exercise 1: Get started with Microsoft Dataverse for Teams
 

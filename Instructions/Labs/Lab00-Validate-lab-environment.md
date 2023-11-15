@@ -20,7 +20,7 @@ Though this lab, you will be able to complete and gain insights into the followi
  
 1.  Navigate to [Power Apps](https://powerapps.microsoft.com/) and select **Start free**.
 
-   ![signin](01/media/lab00.png)
+      ![signin](01/media/lab00.png)
  
 3.  Enter the email address from the provided Microsoft 365 credentials. Agree to the terms & conditions then select **Start your free trial**.
  
@@ -30,7 +30,7 @@ Though this lab, you will be able to complete and gain insights into the followi
  
 6.  Select **Yes** to stay signed in.
 
-   ![signin](01/media/lab011.png)
+      ![signin](01/media/lab011.png)
  
 8.  If applicable, read through the prompts by selecting **Next**, then select **Let's Go**.
  
@@ -53,7 +53,7 @@ In this exercise, you will create a **Practice** environment that you will use t
  
 3.  Skip the welcome tour by closing the prompt, or select **Get Started** to begin the tour and select **Next** through each prompt. At the end, select **Done** to finish the tour.
    
-   ![getting started](01/media/lab02.png)
+      ![getting started](01/media/lab02.png)
  
 5.  Select **Environments** from the site navigation and select **+ New** from the toolbar.
  
