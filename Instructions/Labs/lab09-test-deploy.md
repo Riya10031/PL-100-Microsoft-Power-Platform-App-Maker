@@ -19,6 +19,7 @@ In this lab, you will complete the following tasks:
 ## Prerequisites
 
 * Must have completed **Lab 02.1: Data model and model-driven app**
+* Must have completed **Lab 03.2: Canvas app**
 
 ## Detailed steps
 
