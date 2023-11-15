@@ -42,19 +42,19 @@ In this exercise, you will create security roles for users.
 
 7.  The read privileges for the **Building** and **Problem Report** Tables should now look like the image below. Select **Save Create New**.
 
-   ![A Screenshot with an arrow pointing to the save create new icon in the topmost part of the window and borders around the building and problem report on the list of custom entities](07/media/image2.png)
+   	![A Screenshot with an arrow pointing to the save create new icon in the topmost part of the window and borders around the building and problem report on the list of custom entities](07/media/lab-07(1).png)
 
 8.  Enter **Company 311 Admin** for **Role Name** and select the **Custom Entities** tab.
 
-9.  Set all privileges of the **Building**, **Department**, and **Problem Reports** tables to **Organization**.
+9. Set all privileges of the **Building**, **Department**, and **Problem Reports** tables to **Organization**.
 
-    ![A screenshot of building, department, and problem report having all privileges selected in the custom entities tab](07/media/image3.png)
+   ![A screenshot of building, department, and problem report having all privileges selected in the custom entities tab](07/media/lab-07(2).png)
 
 10. Select the **Customization** tab.
 
 11. Set all privileges for **Model-driven app**.
 
-    ![A screenshot of the security role edit dialog with all privileges selected for Model Driven app table](07/media/image25.png)
+    ![A screenshot of the security role edit dialog with all privileges selected for Model Driven app table](07/media/lab-07(7).png)
 
 12. Select **Save and Close**.
 
@@ -75,15 +75,17 @@ In this exercise, you will run the solution checker on the Company 311 solution.
 
 2.  Select **Solutions**, select the **Company 311** solution row, select **Solution checker** and select **Run**. 
 
-    ![A screenshot of the drop down from the solution checked button](07/media/image4.png)
+    ![A screenshot of the security role edit dialog with all privileges selected for Model Driven app table](07/media/lab-07(3).png)
 
 3.  The solution checker should start checking your solution, **wait** for it to complete. The **Solution check** column value will change to **Results** with a timestamp.
 
 4.  **Refresh** the page and select the solution again, select **Solution checker**, and select **View results**.
 
-    ![A Screenshot with an arrow pointing to the solution checked drop down icon and a border around the view results button](07/media/image5.png)
+    ![A screenshot of the security role edit dialog with all privileges selected for Model Driven app table](07/media/lab-07(4).png)
 
-5.  Review the issues listed on the **Solution checker results**.
+    ![A screenshot of the security role edit dialog with all privileges selected for Model Driven app table](07/media/lab-07(10).png)
+
+6.  Review the issues listed on the **Solution checker results**.
 
     > **NOTE**
     >
@@ -104,31 +106,32 @@ In this exercise, you use test studio to create test case for submitting a probl
 
 2.  Select **Apps**, select the **Company 311 Phone** application, and select **Edit**. Select **Skip** if prompted.
 
-    ![A Screenshot with an arrow pointing to the edit button](07/media/image6.png)
+    ![A screenshot of the security role edit dialog with all privileges selected for Model Driven app table](07/media/lab-07(5).png)
 
 3.  Select **Settings**.
 
 4.  Select **Upcoming features**.
 
-5.  Select the **Experimental** tab and enable **Formula level error management**.
+5.  Select the **Preview** tab and enable **Formula level error management** if not already enabled.
 
-6.  **Close** the settings pane.
+    ![A screenshot of the security role edit dialog with all privileges selected for Model Driven app table](07/media/lab-07(11).png)
+
+7.  **Close** the settings pane.
     
     > **NOTE**
     >
 	> Currently test studio cannot record steps inside components like the tab control we are using, you edit the App StartScreen formula, so the app navigates directly to the new report screen.
 
-7.  Select the **Tree view** menu.
+8.  Select the **Tree view** menu.
 
-8.  Select **App** and select **StartScreen**.
+9.  Select **App** and select **StartScreen**.
 
-9.  Add the formula below.
+10. Add the formula below.
 
     ```'New Reports Screen'```
-
-    ![A screenshot of a StartScreen formula set to new reports screen](07/media/image7.png)
+   
+    ![A screenshot of the security role edit dialog with all privileges selected for Model Driven app table](07/media/lab-07(6).png)
     
-
 9.  Select **Save**.
 
 10. Select **Publish**.
@@ -139,32 +142,37 @@ In this exercise, you use test studio to create test case for submitting a probl
 
 13. Select the **Advanced tools** tab and select **Open tests**.
 
-    ![A screenshot of the left navigation pane with an arrow pointing to the Advanced tools icon. Advanced tools pane is expanded with Open tests link highlighted with a rectangular border.](07/media/image26.png)
+    ![A screenshot of the security role edit dialog with all privileges selected for Model Driven app table](07/media/lab-07(8).png)
 
 14. Select the **ellipsis** of the **Case** and select **Rename**.
 
 15. Rename the **Case** to `Submit problem report`.
 
-16. Select **Record**.
+    ![A screenshot of the security role edit dialog with all privileges selected for Model Driven app table](07/media/lab-07(12).png)
 
-17. You should see the **New Report** tab.
+17. Select **Record**.
 
-18. Fill out the form and select **Submit**.
+18. You should see the **New Report** tab.
 
-19. Select **Done** button on the bottom-left side of the screen.
+19. Fill out the form and select **Submit**.
 
-21. You should see list of the recorded steps. Select **Play**.
+20. Select **Done** button on the bottom-left side of the screen.
 
-    ![A Screenshot with an arrow pointing to the play button](07/media/recordedSteps.png)
+    ![A screenshot of the security role edit dialog with all privileges selected for Model Driven app table](07/media/lab-07(13).png)
 
-22. Select **Publish** and wait for the publishing to complete.
+22. You should see list of the recorded steps. Select **Play**.
 
-23. The steps should replay correctly. Select **Done**.
+    ![A screenshot of the security role edit dialog with all privileges selected for Model Driven app table](07/media/lab-07(9).png)
 
-24. Close the test studio browser window or tab.
+23. Select **Publish** and wait for the publishing to complete.
 
-25. Close the app designer browser window or tab.
+24. The steps should replay correctly. Select **Done**.
 
+25. Close the test studio browser window or tab.
+
+26. Close the app designer browser window or tab.
+
+# READ-ONLY
 
 ### Exercise 4: Import export
 
