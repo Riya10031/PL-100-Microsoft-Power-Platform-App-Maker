@@ -1,43 +1,30 @@
----
-lab:
-    title: 'Lab 06: Create Power Virtual Agents in Teams'
-    module: 'Module 06: AI builder and Power Virtual Agents'
----
+# Course Introduction
 
-> **NOTE**
->
-> Effective November 2020:
 > - Common Data Service has been renamed to Microsoft Dataverse. [Learn more](https://aka.ms/PAuAppBlog)
 > - Some terminology in Microsoft Dataverse has been updated. For example, *entity* is now *table* and *field* is now *column*. [Learn more](https://go.microsoft.com/fwlink/?linkid=2147247)
->
 
 # Lab 06: Power Virtual Agents in Teams
 
-## Scenario
+## Lab Scenario
 
 Your organization is trying to recycle E-waste and decided to schedule a quarterly E-waste pickup service. Facilities department created an Excel file in OneDrive for business and want employees to be able to add their name and information about the item they want to get picked up to the list.
 
-In this exercise, you will create a Power Virtual Agents bot that will get the information from users and add them to the pickup list.
+In this exercise, you will create a Power Virtual Agents chatbot that will get the information from users and add them to the pickup list.
 
 ## Requirement
 
- 1. Bot should be able to get information about the item.
- 2. Bot should be able to get information about the user.
- 3. Bot should be able to add the new item to the list.
+- Chatbot should be able to get information about the item.
+- Chatbot should be able to get information about the user.
+- Chatbot should be able to add the new item to the list.
 
-## What you will learn
+## Lab Objectives
 
- 1. How to create a Power Virtual Agents in Teams.
- 2. How to publish Power Virtual Agents.
- 3. How to use Power Virtual Agents flow template.
+In this lab, you will complete the following tasks:
 
-## Prerequisites
+- Exercise 1: Create PVA Chatbot
+- Exercise 2: Test and publish the Chatbot
 
-* Must have completed **Lab 03.1: Create apps in Teams**
-
-## Detailed steps
-
-### Exercise 1 – Create PVA bot
+### Exercise 1 – Create PVA Chatbot
 
 #### Task 1 - Add Excel file to OneDrive
 
@@ -45,23 +32,21 @@ In this task, you will add an Excel file to your OneDrive for business and add n
 
 1.  Navigate to [Microsoft Teams](https://teams.microsoft.com).
 
-2.  Select the **App launcher** and select **OneDrive**.
+2.  Select the **App launcher (1)** and select **OneDrive (2)**.
 
-    ![A Screenshot with an arrow pointing to the app launcher icon and a box around the Onedrive option in the app launcher](06/media/ex1-t1-image1.png)
+    ![A Screenshot with an arrow pointing to the app launcher icon and a box around the Onedrive option in the app launcher](06/media/applauncher.png)
 
-3.  Select **Upload** and select **Files**.
+3.  Select **+ Add new (1)** and select **Files upload (2)**.
 
-    ![A screenshot with a box around the files option in the dropdown from the upload button](06/media/ex1-t1-image2.png)
+    ![A screenshot with a box around the files option in the dropdown from the upload button](06/media/filesupload.png)
 
 4.  Browse to the Lab Resources folder, select the **Recycle.xlsx** file, and select Open.
 
-    > **TIP**
-	>
-	> The lab resources folder can be found here: `F:\Instructions\Labs\06\Resources\`
+    > **TIP:** The lab resources folder can be found here: `F:\Instructions\Labs\06\Resources\`
 
-5.  Open the file you just added.
+5.  From the left menu, select **My files**, and select the file that you just added.
 
-    ![A Screenshot with an arrow pointing to the recycle.xlsx file](06/media/ex1-t1-image3.png)
+    ![A Screenshot with an arrow pointing to the recycle.xlsx file](06/media/recyclebin.png)
 
 6.  The file should just have headers. **Close** the file and OneDrive browser tabs.
 
@@ -74,44 +59,46 @@ In this task, you will install PVA.
 
 1.  Navigate to [Microsoft Teams](https://teams.microsoft.com).
 
-2.  Select **...More added apps**, enter **power virtual**, and select **Power Virtual Agents**.
+2.  Select **...More added apps (1)**, enter **power virtual (2)**, and select **Power Virtual Agents (3)**.
 
-    ![A Screenshot with an arrow pointing to the ellipsis icon on the left side of the window and a box around the power virtual agents option](06/media/ex1-t2-image1.png)
+    ![A Screenshot with an arrow pointing to the ellipsis icon on the left side of the window and a box around the power virtual agents option](06/media/powerapps.png)
 
 3.  Select **Add**. 
 
 4.  Right-click on the **Power Virtual Agents** and select **Pin**. (If the **Power Virtual Agents** menu is not coming on the left menu, then select **... More added apps** and pin it from the recents.)
 
-    ![A Screenshot with an arrow pointing to the power virtual agents icon and a box around the pin button](06/media/ex1-t2-image2.png)
+    ![A Screenshot with an arrow pointing to the power virtual agents icon and a box around the pin button](06/media/powervirtualagents.png)
 
 5.  Do not navigate away from this page.
 
 
-#### Task 3 - Create bot
+#### Task 3 - Create Chatbot
 
-In this task, you will create the bot.
+In this task, you will create the chatbot.
 
-1.  Select **Power Virtual Agents** and select **Start now**.
+1.  On the **Microsoft Copilot Studio** page, select **Start now**.
 
-    ![A Screenshot with an arrow pointing to the start now button](06/media/ex1-t3-image1.png)
+    ![A Screenshot with an arrow pointing to the start now button](06/media/startnow.png)
 
-2.  Select the **Green** team you created and select **Continue**.
+1.  On the **Create a chatbot**, select the **Green (1)** team you created and select **Continue (2)**.
 
-3.  Enter **Green Bot** for name, select **English (US)** for language, and then select **Create**.
+    ![A Screenshot with an arrow pointing to the start now button](06/media/createacopilot.png)
 
-4.  **Wait** for the bot to be created.
+1.  On the **Create a copilot**, enter **Green Bot (1)** for **Copilot name**, select **English (2)** for language, select any **Copilot theme (3)** of your choice and then select **Create (4)**.
 
-5.  Select **Test your bot** in the bottom left.
+    ![A Screenshot with an arrow pointing to the start now button](06/media/createbot.png)
 
-6.  Enter **Hello** in the text box and select **Send**. 
+1. **Wait** for the chatbot to be created.
 
-7.  The bot should respond with the default greeting. You will edit this greeting in the next task.
+1. Enter **Hello** in the **Test chatbot** and select **Send**. 
 
-    ![A screenshot with a box around the bot's default greeting reading: "Hi! I'm a virtual agent. I can help with account questions, orders, store information and more. If you'd like to speak to a human agent, let me know at any time. So what can I help you with today?"](06/media/ex1-t3-image2.png)
+1.  The chatbot should respond with the default greeting. You will edit this greeting in the next task.
 
-8.  You can show/hide the bot by clicking on the bot icon located in the bottom left. This will give more room for the authoring canvas.
+    ![A screenshot with a box around the bot's default greeting reading: "Hi! I'm a virtual agent. I can help with account questions, orders, store information and more. If you'd like to speak to a human agent, let me know at any time. So what can I help you with today?"](06/media/testchatbot.png)
 
-    ![A Screenshot with an arrow pointing to the hide bot button](06/media/ex1-t3-image3.png)
+8.  You can show/hide the chatbot by clicking on the chatbot icon located in the bottom left. This will give more room for the authoring canvas.
+
+    ![A Screenshot with an arrow pointing to the hide bot button](06/media/hidebot.png)
 
 9.  Do not navigate away from this page.
 
@@ -120,48 +107,50 @@ In this task, you will create the bot.
 
 In this task, you will edit the default greeting.
 
-1.  Select **Topics** and open the **Greeting** topic.
+1.  From the left-hand navigation menu, select **Topics (1)** and open the **Greeting (2)** topic.
 
-    ![A Screenshot with an arrow pointing to the greeting topic in the topics menu](06/media/ex1-t4-image1.png)
+    ![A Screenshot with an arrow pointing to the greeting topic in the topics menu](06/media/greetingschatbot.png)
 
 2.  Take a look and see the trigger phrases for this topic.
 
-3.  On the authoring canvas go to the first **Message** and replace the message with the text below.
+3.  On the authoring canvas go to the first **Message (2)** and replace the message with the text below.
 
     ```Hi! I'm a virtual agent. I can help you recycle e-waste by posting items to the Upcycle application or add them to the quarterly e-waste pickup list.```
 
-    ![A screenshot of the greeting message replaced with the aforementioned text](06/media/ex1-t4-image3.png)
+4.  Select **Save (2)**.
 
-4.  Select **Save**.
+    ![A screenshot of the greeting message replaced with the aforementioned text](06/media/message.png)
 
-5.  Select **Test your bot** to show the bot.
+5.  Select **Test bot** to show the **Test chatbot**.
 
 6.  Enter **Hey** and select **Send**.
 
-7.  The bot should now use your updated message. 
+7.  The chatbot should now use your updated message. 
 
     ![A screenshot of the updated bot greeting message](06/media/ex1-t4-image4.png)
 
-8.  Hide the bot.
+8.  Hide the chatbot.
 
 9.  Do not navigate away from this page.
 
 
 #### Task 5 - Create topic
 
-In this task, you will create a new topic for the bot so it can respond to inquiries.
+In this task, you will create a new topic for the chatbot so it can respond to inquiries.
 
-1.  Select **Topics** and select **+ New topic \> From blank**.
+1.  Select **Topics (1)** and select **+ New topic (2) \> From blank (3)**.
 
-    ![A Screenshot with an arrow pointing to the new topic button](06/media/ex1-t5-image1.png)
+    ![A Screenshot with an arrow pointing to the new topic button](06/media/newtopic.png)
 
-2.  Select **Details** to open the Details pane.
+1. Close **Trigger phrases (0)** page.
 
-3.  Enter **Recycle Reuse Reduce** for Name.
+1. Select **Details** to open the Details pane.
 
-4.  Select **Trigger phrases**.
+1. Enter **Recycle Reuse Reduce** for Name.
 
-5.  Copy the multi-line text below and paste it into **Add phrases** input box.
+1. Select **Trigger phrases**.
+
+1.  Copy the multi-line text below and paste it into **Add phrases** input box.
 
     ```
     Recycle
@@ -178,6 +167,8 @@ In this task, you will create a new topic for the bot so it can respond to inqui
 
 6.  Select the **+** to add entries for trigger phrases in bulk.
 
+    ![A screenshot of multiple trigger phrases entered in Add phrases textbox](06/media/+.png)
+
 7.  **Close** the Trigger phrases pane.
 
 8.  Select the first message, enter **I can help you with that.** And then select the **+ Add node** button.
@@ -190,9 +181,9 @@ In this task, you will create a new topic for the bot so it can respond to inqui
 
 10.  Enter the text below in the **Ask a question** textbox.
 
-    ```I can add your item to the Upcycle application or to the e-waste pick-up list. What would you like me to do?```
+        ```I can add your item to the Upcycle application or to the e-waste pick-up list. What would you like me to do?```
 
-11. Make sure you have **Multiple choice options** selected for Identity, enter **Add to the Upcycle app** for first option and select **+ New option**.
+11. Make sure you have **Multiple choice options** selected for Identify, enter **Add to the Upcycle app** for first option and select **+ New option**.
 
     ![A Screenshot with an arrow pointing to the new option button](06/media/ex1-t5-image6.png)
 
@@ -202,21 +193,21 @@ In this task, you will create a new topic for the bot so it can respond to inqui
 
     ![A Screenshot with an arrow pointing to the pencil icon in the box under the text save response as](06/media/ex1-t5-image8.png)
 
-14. Change the variable **Name** to `UserOption` and **close** the variable properties pane. 
+14. Change the variable **Name (1)** to `UserOption` and **close (2)** the variable properties pane. 
 
     ![A Screenshot with an arrow pointing to the cross icon in the top right corner of the pane](06/media/ex1-t5-image9.png)
 
-15. You should now have two conditions following the question. Select the **...** Options button on one of the conditions and select **Delete**. 
+15. You should now have two conditions following the question. Select the **⋮ (1)** Options button on one of the conditions and select **Delete (2)**. 
 
-    > We are deleting one condition because adding an item to the pick-up list and adding an item to the Upcycle application requires similar information. 
+    >**Note:** We are deleting one condition because adding an item to the pick-up list and adding an item to the Upcycle application requires similar information. 
 
-    ![A Screenshot with an arrow pointing to the three dots icon and a red box around the delete button](06/media/ex1-t5-image7.png)
+    ![A Screenshot with an arrow pointing to the three dots icon and a red box around the delete button](06/media/UserOption.png)
 
 16. Change the second input value in Condition menu to **has value**.
 
-    ![has value - screenshot](06/media/image1.png)
+    ![has value - screenshot](06/media/hasvalue.png)
 
-17. Select **+ Add node** and select **Ask a question**.
+17. Select **+ > Add node** and select **Ask a question**.
 
 18. Enter the text below in the Ask a question textbox.
 
@@ -232,7 +223,7 @@ In this task, you will create a new topic for the bot so it can respond to inqui
 
 21. Change the variable **Name** to `ItemName` and **close** the variable properties pane.
 
-22. Select **+ Add node** after the question.
+22. Select **+ > Add node** after the question.
 
 23. Select **Ask a question** again.
 
@@ -246,7 +237,7 @@ In this task, you will create a new topic for the bot so it can respond to inqui
 
 27. Change the variable **Name** to `Description` and **close** the variable properties pane.
 
-28. Select **+ Add node** after the question.
+28. Select **+ > Add node** after the question.
 
 29. Select **Ask a question** one more time.
 
@@ -271,7 +262,7 @@ In this task, you will create a new topic for the bot so it can respond to inqui
 
 In this task, you will create a flow that will add the item to the recycle list or to the Upcycle application depending on the user option.
 
-1.  Go to the last question, select **+ Add node** and select **Call an action**.
+1.  Go to the last question, select **+ > Add node** and select **Call an action**.
 
     ![A screenshot of a box around the call an action button](06/media/ex1-t6-image1.png)
 
@@ -279,29 +270,29 @@ In this task, you will create a flow that will add the item to the recycle list 
 
 3.  Select **Power Virtual Agents Flow Template**
 
-    ![A screenshot of a box around the power virtual agents flow template option](06/media/ex1-t6-image2.png)
+    ![A screenshot of a box around the power virtual agents flow template option](06/media/powervirtualagentsflowtemplate.png)
 
-4.  Rename the flow `Add item to app or list` and select **+ Add an input**.
+4.  Rename the flow `Add item to app or list` (1) and select **+ > Add an input (2)**.
 
     ![A screenshot of a box around the add item to app or list button and an arrow pointing to the add an input button under power virtual agents](06/media/ex1-t6-image3.png)
 
 5.  Select **Text**.
 
-6.  Enter `User ID` and select **+ Add an input** again.
+6.  Enter `User ID` and select **+ > Add an input** again.
 
     ![A Screenshot with an arrow pointing to the add an input button](06/media/ex1-t6-image4.png)
 
 7.  Select **Text**.
 
-8.  Enter `UserOption` and select **+ Add an input** one more time.
+8.  Enter `UserOption` and select **+ > Add an input** one more time.
 
 9.  Select **Text**.
 
-10. Enter `ItemName` and select **+ Add an input** one more time.
+10. Enter `ItemName` and select **+ > Add an input** one more time.
 
 11. Select **Text**.
 
-12. Enter `Description` and select **+ Add an input** one more time.
+12. Enter `Description` and select **+ > Add an input** one more time.
 
 13. Select **Text**.
 
@@ -319,7 +310,7 @@ In this task, you will create a flow that will add the item to the recycle list 
 
 18. Enter `Response to bot` for Name, select **String** for Type.
 
-19. Select **+ Insert a new step** and select **Add an action**.
+19. Select **+ > Add an action**.
 
     ![A Screenshot with an arrow pointing to the plus icon at the bottom of the initialize variable pane and a box around the add an action button](06/media/ex1-t6-image7.png)
 
@@ -327,11 +318,11 @@ In this task, you will create a flow that will add the item to the recycle list 
 
     ![A screenshot with a box around the get user profile V2 button](06/media/ex1-t6-image8.png)
 
-21. Select the **User (UPN)** field and select **User ID** from the Dynamic content pane.
+21. In **User (UPN)** field and select **User ID** from the Dynamic content pane.
 
     ![A screenshot with a box around the user ID box in the user UPN field. There is also an arrow pointing to the user ID option in the dynamic content pane](06/media/ex1-t6-image9.png)
 
-22. Select **+ Insert a new step** again and select **Add an action**.
+22. Select **+ > Add an action**.
 
 23. Search for `condition` and select the **Condition** action from the **Control** connector.
 
@@ -381,7 +372,7 @@ In this task, you will create a flow that will add the item to the recycle list 
 
     ![A Screenshot with an arrow pointing to the add an action button](06/media/ex1-t6-image17.png)
 
-38. Search for `add new row` and select the **Add a new row** action from the **Microsoft Dataverse** connector. 
+38. Search for `add a new row` and select the **Add a new row** action from the **Microsoft Dataverse** connector. 
 
     ![A screenshot with a box around the add a new row microsoft dataverse button](06/media/ex1-t6-image18.png)
 
@@ -423,7 +414,7 @@ In this task, you will create a flow that will add the item to the recycle list 
 
 53. Select **Save** to save the flow. 
 
-54. Select the **<-** back button next to the flow name.
+54. Select the back button next to the flow name.
 
     ![Back to PVA button - screenshot](06/media/ex1-t6-image22.png)
 
@@ -436,25 +427,23 @@ In this task, you will create a flow that will add the item to the recycle list 
 
 In this task, you will call the flow as an action from the Power Virtual Agents bot.
 
-1.  Go to the last question, select **+ Add node** and select **Call an action**.
+1.  Go to the last question, select **+ > Add node** and select **Call an action (1)**.
 
-2.  Select the **Add item to app or list** flow you created.
+2.  Select the **Add item to app or list (2)** flow you created.
 
     ![A Screenshot with an arrow pointing to the add item to app or list button](06/media/ex1-t7-image1.png)
 
-3.  Select the **User ID** field and select **bot.UserId**.
+3.  Select the **User ID** drop-down field and select **bot.UserId**.
 
-    ![A Screenshot with an arrow pointing to the drop down icon in the field asking the user to enter or select a value. There is also a box around the variable option bot.UserId](06/media/ex1-t7-image2.png)
+4.  Select the **UserOption** drop-down field and select **UserOption**.
 
-4.  Select the **UserOption** field and select **UserOption**.
+5.  Select the **ItemName** drop-down field and select **ItemName**.
 
-5.  Select the **ItemName** field and select **ItemName**.
+6.  Select the **Description** drop-down field and select **Description**.
 
-6.  Select the **Description** field and select **Description**.
+7.  Select the **Location** drop-down field and select **Location**.
 
-7.  Select the **Location** field and select **Location**.
-
-8.  Select **+ Add node** and select **Show a message**.
+8.  Select **+ > Add node** and select **Show a message**.
 
     ![A Screenshot with an arrow pointing to the show a message button](06/media/ex1-t7-image3.png)
 
@@ -479,7 +468,7 @@ In this task, you will call the flow as an action from the Power Virtual Agents 
 
 In this task, you will test the bot.
 
-1.  **Show** the bot if it is hidden by selecting Show Bot option on the bottom left side of the screen.
+1.  Select **Test your chatbot** option on the bottom left side of the screen.
 
 2.  Enter **Recycle** and select **Send**.
 
@@ -523,17 +512,17 @@ In this task, you will test the bot.
 
 19. Select **Teams**. 
 
-    ![A Screenshot with an arrow pointing to the teams icon](06/media/ex2-t1-image4.png)
+    ![A Screenshot with an arrow pointing to the teams icon](06/media/teams.png)
 
 20. Select **Green** team chat. Select the **Upcycle** tab. 
 
 21. Search for bot. You should see the **Bot charger** the bot added to the application. 
 
-    ![A screenshot with the word bot in the search bar in the upcycle tab](06/media/ex2-t1-image5.png)
+    ![A screenshot with the word bot in the search bar in the upcycle tab](06/media/botcharger.png)
 
-22. Select the App launcher and select **OneDrive**. 
+22. Select the **App launcher (1)** and select **OneDrive (2)**. 
 
-    ![A Screenshot with an arrow pointing to the app launcher icon and a box around the onedrive option](06/media/ex2-t1-image6.png)
+    ![A Screenshot with an arrow pointing to the app launcher icon and a box around the onedrive option](06/media/applauncher.png)
 
 23. Open the **Recycle.xlsx** file. 
 
@@ -554,17 +543,17 @@ In this task, you will test the bot.
 
 In this task, you will publish the bot you created.
 
-1.  Select **Power Virtual Agents**. 
+1. Select the **... (1)** from the left-hand navigation pane, and select **Power Virtual Agents (2)**. 
 
-    ![A Screenshot with an arrow pointing to the power virtual agents icon on the left hand side of the window](06/media/ex2-t2-image1.png)
+    ![A Screenshot with an arrow pointing to the power virtual agents icon on the left hand side of the window](06/media/moreapps.png)
 
-2.  Select the **Chatbots** tab and open the **Green Bot**. 
+2.  Select **Copilots (1)** tab and select the **Green Bot (2)**. 
 
-    ![A Screenshot with an arrow pointing to the green bot button](06/media/ex2-t2-image2.png)
+    ![A Screenshot with an arrow pointing to the green bot button](06/media/greenbot.png)
 
 3.  Select **Publish** from the left navigation. 
 
-    ![A Screenshot with an arrow pointing to the publish button](06/media/ex2-t2-image3.png)
+    ![A Screenshot with an arrow pointing to the publish button](06/media/publish.png)
 
 4.  Select the **Publish** button. 
 
@@ -574,13 +563,13 @@ In this task, you will publish the bot you created.
 
 7.  Select **Show to my teammates and shared users**. 
 
-    ![A screenshot of a publish pane with a cursor over shaow to my teammates and shared users.](06/media/ex2-t2-image5.png)
+    ![A screenshot of a publish pane with a cursor over shaow to my teammates and shared users.](06/media/downladzip.png)
 
 8. Select **Share**. 
 
 9. Select **Apps**. 
 
-    ![A Screenshot with an arrow pointing to the apps icon](06/media/ex2-t2-image6.png)
+    ![A Screenshot with an arrow pointing to the apps icon](06/media/apps.png)
 
 10. Select **Built with Power Platform** and select the **Green Bot** you created. 
 
@@ -589,3 +578,10 @@ In this task, you will publish the bot you created.
 11. Select **Add**. 
 
 12. The bot should greet you. You may test the bot again. 
+
+### Review
+In this lab, you have completed:
+- Created PVA Chatbot,
+- Tested and published the Chatbot.
+
+### You have successfully completed the lab

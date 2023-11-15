@@ -1,74 +1,55 @@
----
-lab:
-    title: 'Lab 03.1: Create apps in Teams'
-    module: 'Module 03: Create a canvas app'
----
-
-> **NOTE**
->
-> Effective November 2020:
->
-> - Common Data Service has been renamed to Microsoft Dataverse. [Learn more](https://aka.ms/PAuAppBlog)
+# Course Introduction
+ 
+> -  Common Data Service has been renamed to Microsoft Dataverse. [Learn more](https://aka.ms/PAuAppBlog)
 > - Some terminology in Microsoft Dataverse has been updated. For example, *entity* is now *table* and *field* is now *column*. [Learn more](https://go.microsoft.com/fwlink/?linkid=2147247)
->
 
-Lab 03.1: Create apps in Teams
-=================================
+# Lab 04: Create apps in Teams
 
-## Scenario
+## Lab Scenario
 
 It is not uncommon for organizations to accumulate unused computer peripherals, power cords and other electronics. Your organization is taking steps to reuse existing devices and computer peripherals before ordering new equipment.
 
 You are asked to create an application where users can post devices they no longer need and browse through what their colleagues posted.
 
+## Lab Objectives
+
+Through this lab, you will be able to complete and gain insights into the following exercises:
+ 
+-  Exercise 1: Get started with Microsoft Dataverse for Teams
+-  Exercise 2: Create application
+-  Exercise 3: Test and publish application
+
 ## Requirements
 
 1)	Application must use Dataverse for Teams.
-
 2)	Users should be able to create new items, edit items they created and see items created by other users.
-
 3)	Items should be removed from the list if they are no longer available.
+4) Allow users to reserve an item.
+5) Allow user to mark item for pick up.
+6) If item is reserved, only reserved user should be able to mark item picked up.
+7) Users should be able to search items.
 
-4)  Allow users to reserve an item.
-
-5)  Allow user to mark item for pick up.
-
-6)  If item is reserved, only reserved user should be able to mark item picked up.
-
-7)  Users should be able to search items.
-
-## What you will learn
-
-1)	How to create an application using Dataverse for Teams.
-
-2)	How to publish application.
-
-3)	How to give other users permission to your application.
-
-
-## Detailed steps
-
-### Exercise 1: Get started with Microsoft Dataverse for Teams
+## Exercise 1: Get started with Microsoft Dataverse for Teams
 
 In this exercise, you will create a new team and install Power Apps for Teams.
 
-#### Task 1: Create team
+### Task 1: Create team
 
 In this task you will create a new team.
 
-1.  Navigate to [Microsoft Teams](https://teams.microsoft.com).
+1.  Navigate to Desktop and search for Microsoft teams and select it. Select **Keep using the new teams**.
 
-2.  Select **Teams**, hover over **Create a team** and select the **Create team** button.
+2.  Select the **Create a new team** button.
 
-    ![A screenshot with a box around the teams button on the left side of the window and an arrow pointing to the create team button](03-1/media/ex1-t1-image1.png)
+    ![A screenshot with a box around the teams button on the left side of the window and an arrow pointing to the create team button](03-1/media/lab4-ex1-t1-6.png)
 
 3.  Select **From scratch**.
 
 4.  Select **Public**.
 
-5.  Enter `Green` for **Team name** and select **Create**.
+5.  Enter **Green** for **Team name** and select **Create**.
 
-    ![A screenshot with the word green in the team name field](03-1/media/ex1-t1-image2.png)
+    ![A screenshot with the word green in the team name field](03-1/media/lab4-ex1-t1-9.png)
 
 6.  Select **Skip** on the **Add members to Green** screen.
 
@@ -79,108 +60,133 @@ In this task you will create a new team.
 8.  Do not navigate away from this page.
 
 
-#### Task 2: Install Power Apps
+### Task 2: Install Power Apps
 
 In this task you will install Power Apps for Teams.
 
-1.  Select the **... More added apps**, search for power apps and select **Power Apps**. 
+1.  Select the **ellipsis More added apps**, search for power apps and select **Power Apps**. 
 
-    ![A Screenshot with an arrow pointing to the ellipsis icon for more added apps on the left side of the page and a box around power apps button](03-1/media/ex1-t2-image1.png)
+    ![A Screenshot with an arrow pointing to the ellipsis icon for more added apps on the left side of the page and a box around power apps button](03-1/media/lab4-ex1-t1-12.png)
 
 2.  Select **Add**. 
 
 3.  Right-click on the Power Apps tab and select **Pin**. 
 
-    ![A Screenshot with an arrow pointing to the power apps icon and a box around the pin button](03-1/media/ex1-t2-image2.png)
+    ![A Screenshot with an arrow pointing to the power apps icon and a box around the pin button](03-1/media/lab4-ex1-t1-14.png)
 
 
-### Exercise 2: Create application
+## Exercise 2: Create application
 In this exercise, you will provision Dataverse for Teams by creating an application and you will also create a Dataverse table with columns.
 
-#### Task 1: Create application
+### Task 1: Create application
 
 In this task, you will provision Dataverse for Teams by creating an application.
 
-1.  Navigate to [Microsoft Teams](https://teams.microsoft.com).
+1.  Navigate to Desktop and search for Microsoft teams and select it. Select **Keep using the new teams**.
 
 2.  Select **Power Apps** and select **Start now**.
 
-    ![A screenshot of the power apps for teams home page](03-1/media/ex2-t1-image1.png)
+    ![A screenshot of the power apps for teams home page](03-1/media/lab4-ex1-t1-15.png)
 
 3.  Select the **Green** team you created and select **Create**.
 
+    ![A screenshot of the power apps for teams home page](03-1/media/lab4-ex1-t1-17.png)
+
 4.  **Wait** until provisioning is complete.
 
-5.  Enter `Upcycle` for **App name** and select **Save**.
+5.  Enter **Upcycle** for App name and select **Save**.
+
+    ![A screenshot of the power apps for teams home page](03-1/media/lab4-ex1-t1-18.png)
 
 6.  Do not navigate away from this page.
 
 
-#### Task 2: Create table
+### Task 2: Create table
 In this task, you will create a table and columns.
 
-1.  Select **With data** and select **Create new table**.
+1.  Select **With data** and then select **Create new table**.
 
-    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/ex2-t2-image2.png)
+    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/lab4-ex1-t1-19.png)
 
-2.  Enter `Gadget` for **Table name** and select **Create**.
+2.  Select **Start with a blank table** in Create new table tab.
 
-3.  Select **+ New column**.
+    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/lab4-ex1-t1-20.png)
 
-4.  Enter `Description` for **Display name**, select **Text** for **Data type** (displayed as **Single line of text**), and expand the **Advanced options** section.
+3.  Click on edit and Enter **Gadget** for **Display name** and select **Save** then select  **Save and close**.
 
-    ![A screenshot with the cursor pointing to the advanced options link](03-1/media/ex2-t2-image3.png)
+    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/lab4-ex1-t1-21.png)
 
-5.  Change the **Maximum character count** to `500` and select **Save**.
+4. Select **Data** tab then select ellipse of Gadgets table and select Edit data.
 
-6.  Select **+ New column** again.
+    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/2023-11-07_14-23-55.png)
 
-7.  Enter `Availability` for Name, select **Choice** for Type, and select **+ New choice** under **Sync this choice with** drop-down box. That will open a window to create a global choice to sync with.
+5. Select **Create new column** tab.
 
-8.  Enter `Availability` for **Display name**.
+    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/2023-11-07_14-24-19.png)
 
-9.  Enter `Available` for the first choice and select **+ New choice**.
+6.  Select the dropdown of New column and select edit column. Enter **Name** for **Display name** and then select **Update**.
 
-10. Enter `Reserved` for the second choice and select **+ New choice**.
+    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/2023-11-07_14-24-57.png)
 
-11. Enter `Picked up` for the third choice and select **Save**.
+    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/2023-11-07_14-25-36.png)
 
-    ![A screenshot of the new global choice with 3 choice values entered](03-1/media/ex2-t2-image4.png)
+7.  Select **+ New column**.
 
-12. Select **Availability** in **Sync this choice with**.
+8.  Enter **Description** for **Display name**, select **Text** for **Data type** (displayed as **Single line of text**), and expand the **Advanced options** section.
+    Change the **Maximum character count** to `500` and select **Save**.
 
-13. Select **Available** for **Default choice** and select **Save**.
+    ![A screenshot with the cursor pointing to the advanced options link](03-1/media/2023-11-07_14-26-52.png)
+
+9.  Select **+ New column** again.
+
+10.  Enter **Availability** for Name, select **Choice** for Type, and select **+ New choice** under **Sync this choice with** drop-down box. That will open a window to create a global choice to sync with.
+
+11.  Enter **Availability** for **Display name**.
+
+12.  Enter **Available** for the first choice and select **+ New choice**.
+
+13. Enter **Reserved** for the second choice and select **+ New choice**.
+
+14. Enter **Picked up** for the third choice and select **Save**.
+
+    ![A screenshot of the new global choice with 3 choice values entered](03-1/media/2023-11-07_14-27-35.png)
+
+    ![A screenshot of the new global choice with 3 choice values entered](04/media/lab033.png)
+
+15. Select **Availability** in **Sync this choice with**.
+
+16. Select **Available** for **Default choice** and select **Save**.
 
     ![A screenshot of a new choice column with global choice to sync with selected](03-1/media/ex2-t2-image6.png)
 
-14. Select **+ New column** menu.
+17. Select **+ New column** menu.
 
-15. Enter `Location` for **Display name**, select **Text** for **Data type** (displayed as **Single line of text**), select **Business required** for **Required** and select **Save**.
+18. Enter **Location** for **Display name**, select **Text** for **Data type** (displayed as **Single line of text**), select **Business required** for **Required** and select **Save**.
 
-    ![A screenshot of the add column window with the relevant text in each field](03-1/media/ex2-t3-image.png)
+    ![A screenshot of the add column window with the relevant text in each field](03-1/media/lab4-ex1-t1-24.png)
 
-16. Select **+ New column**.
+19. Select **+ New column**.
 
-17. Enter `Photo` for **Display name**, select **File > Image** for **Data type**, check the **Primary image** checkbox and select **Save**.
+20. Enter **Photo** for **Display name**, select **File > Image** for **Data type**, check the **Primary image** checkbox and select **Save**.
 
-    ![A screenshot of the add column window with the relevant text in each field](03-1/media/ex2-t3-image3.png)
+    ![A screenshot of the add column window with the relevant text in each field](03-1/media/lab4-ex1-t1-25.png)
 
-18. Select **+ New column**.
+21. Select **+ New column**.
 
-19. Enter `Reserved by` for **Display name**, select **Lookup** for Data type, select **User** for **Related table** and select **Save**.
+22. Enter **Reserved by** for **Display name**, select **Lookup** for Data type, select **User** for **Related table** and select **Save**.
 
-    ![A screenshot of the add column window with the relevant text in each field](03-1/media/ex2-t3-image4.png)
+    ![A screenshot of the add column window with the relevant text in each field](03-1/media/lab4-ex1-t1-27.png)
 
-20. Your table screen should now look like the image below.
+23. Your table screen should now look like the image below.
 
-    ![A screenshot of the new Gadget table with all columns in a grid layout](03-1/media/ex2-t2-image5.png)
+    ![A screenshot of the new Gadget table with all columns in a grid layout](03-1/media/lab4-ex1-t1-28.png)
 
-21. Close the table editor by selecting the **Close** button.
+24. Close the table editor by selecting the **Save and Close** button.
 
-22. Do not navigate away from this page.
+25. Close the preview mode after adding all the records.
 
 
-#### Task 3: Edit the application
+### Task 3: Edit the application
 
 In this task, you will edit the application by filters for gadgets that are available and edit the form.
 
@@ -192,7 +198,7 @@ In this task, you will edit the application by filters for gadgets that are avai
 
 2.  Make sure **RightContainer1** is expanded and select the **EditForm1** control from tree view.
 
-    ![A screenshot with a border around the edit form button under screen 1](03-1/media/ex2-t4-image1.png)
+    ![A screenshot with a border around the edit form button under screen 1](03-1/media/lab4-ex1-t1-30.png)
 
 3.  Go to the **Properties** pane and select **Edit fields**.
 
@@ -228,9 +234,9 @@ In this task, you will edit the application by filters for gadgets that are avai
 
     ![A Screenshot with an arrow pointing to the lock icon under the advanced tab](03-1/media/ex2-t4-image5_2.png)
 
-11. Search for `display` and change the **DisplayMode** value to `DisplayMode.View`
+11. Search for **display** and change the **DisplayMode** value to **DisplayMode.View** 
 
-    ![A screenshot with a border around the display mode field](03-1/media/ex2-t4-image5_3.png)
+    ![A screenshot with a border around the display mode field](03-1/media/lab4-ex1-t1-34.png)
 
 12. Select the **Browse gallery** under **LeftContainer** in the treeview.
 
@@ -238,19 +244,19 @@ In this task, you will edit the application by filters for gadgets that are avai
 
     ```Filter(Gadgets, Availability <> [@Availability].'Picked up')```
 
-    ![Filter data - screenshot](03-1/media/ex2-t4-image6.png)
+    ![Filter data - screenshot](03-1/media/lab4-ex1-t1-35.png)
 
 14. Select the **Image1** inside the gallery.
 
     ![A Screenshot with an arrow pointing to image 1 inside the gallery](03-1/media/ex2-t4-image7.png)
 
-15. Go to the formula bar and verify that the value of the **Image** property is set to the formula below.
+15. Go to the formula bar and verify that the value of the **Image** property is set to the formula: **ThisItem.Photo**.
 
-    ```ThisItem.Photo```
+    ![A Screenshot with an arrow pointing to image 1 inside the gallery](03-1/media/lab4-ex1-t1-36.png)
 
 16. Select the **Data** tab (database icon) in the left navigation, select the **...More actions** button of the **Gadgets** table and select **Refresh**.
 
-    ![A Screenshot with an arrow pointing to the ellipsis icon for more actions and a border around the refresh button](03-1/media/ex2-t4-image9.png)
+    ![A Screenshot with an arrow pointing to the ellipsis icon for more actions and a border around the refresh button](03-1/media/lab4-ex1-t1-37.png)
 
 17. Select **Save** and wait for the app to be saved.
 
@@ -279,7 +285,7 @@ In this task, you will edit the application by filters for gadgets that are avai
 25. **Do not** navigate away from this screen.
 
 
-#### Task 4: Update Dataverse rows
+### Task 4: Update Dataverse rows
 
 In this task, you will add buttons that will let users reserve and/or pick up item, you will also update the rows in Dataverse as reserved or picked up.
 
@@ -287,7 +293,7 @@ In this task, you will add buttons that will let users reserve and/or pick up it
 
     ```Set(CurrentUser, First(Filter(Users, 'Primary Email' = User().Email)))```
 
-    ![A screenshot with a border around app selected in the screens tab on the left and another border around the formula bar with the relevant command entered in](03-1/media/ex2-t5-image1.png)
+    ![A screenshot with a border around app selected in the screens tab on the left and another border around the formula bar with the relevant command entered in](03-1/media/lab4-ex1-t1-41.png)
 
 2.  Select App, select **ellipsis** and select **Run OnStart**.
 
@@ -297,13 +303,15 @@ In this task, you will add buttons that will let users reserve and/or pick up it
 
 3.  Select the **+** Insert button and select **Button**.
 
-    ![A Screenshot with an arrow pointing to the plus icon to insert and a border around the button option](03-1/media/ex2-t5-image3.png)
+    ![A Screenshot with an arrow pointing to the plus icon to insert and a border around the button option](03-1/media/lab4-ex1-t1-42.png)
 
 4.  Select the **Tree view**, double-click on the button you just added and rename it `Reserve Button`.
 
     ![A screenshot with the text "Reserve Button" highlighted as the new name for the button you added](03-1/media/ex2-t5-image4.png)
 
-5.  Set the **Text** property of the Reserve Button to `Reserve`.
+5.  Set the **Text** property of the Reserve Button to **Reserve**.
+
+    ![A screenshot with the text "Reserve Button" highlighted as the new name for the button you added](03-1/media/lab4-ex1-t1-43.png)
 
 6.  **Move** the Reserve Button and place it next to the Gadget Image.
 
@@ -313,13 +321,19 @@ In this task, you will add buttons that will let users reserve and/or pick up it
 
     ```If(BrowseGallery1.Selected.Availability = [@Availability].Available, DisplayMode.Edit, DisplayMode.Disabled)```
 
+    ![A screenshot of the Reserve button selected and moved next to the image on the right hand side](03-1/media/lab4-ex1-t1-44.png)
+
 8.  Set the **OnSelect** property of the Reserve Button to the formula below. This formula will update the selected record by setting the reserved by value to the current user and the availability value to reserved.
 
     ```Patch(Gadgets, BrowseGallery1.Selected, {Availability: [@Availability].Reserved, 'Reserved by': CurrentUser})```
 
+    ![A screenshot of the Reserve button selected and moved next to the image on the right hand side](03-1/media/lab4-ex1-t1-45.png)
+
 9.  Set the **Visible** property of the Reserve Button to the formula below. This formula will hide the button if the user is creating a new record.
 
     ```If(EditForm1.Mode = FormMode.View, true, false)```
+
+    ![A screenshot of the Reserve button selected and moved next to the image on the right hand side](03-1/media/lab4-ex1-t1-46.png)
 
 10. Select the **RightContainer1** again.
 
@@ -352,7 +366,7 @@ In this task, you will add buttons that will let users reserve and/or pick up it
 18. Do not navigate away from this page.
 
 
-#### Task 5: Add search
+### Task 5: Add search
 
 In this task, you will add search capability to your application.
 
@@ -364,7 +378,7 @@ In this task, you will add search capability to your application.
 
     ![A screenshot of the plus icon selected](03-1/media/ex2-t6-image1.png)
 
-4.  Select the icon, go to the **Properties** and select **Search** for Icon.
+4.  Select the icon from the tree view, go to the **Properties** and select **Search** for Icon.
 
     ![A screenshot with a border around the Search option selected as the icon](03-1/media/ex2-t6-image2.png)
 
@@ -400,7 +414,7 @@ In this task, you will add search capability to your application.
 
     ![Suggested description column - screenshot](03-1/media/ex2-t6-image7.png)
 
-14. Select the **Search Box**.
+14. Select the **Search Box** from the RightContainer1.
 
 15. Go to the formula bar and clear the **Value** text.
 
@@ -409,11 +423,11 @@ In this task, you will add search capability to your application.
 16. Select **Save** to save your changes.
 
 
-### Exercise 3: Test and publish application
+## Exercise 3: Test and publish application
 
 In this exercise, you will test, publish and give colleagues permission to use the application.
 
-#### Task 1: Test application
+### Task 1: Test application
 
 In this task, you will test the application.
 
@@ -446,7 +460,7 @@ In this task, you will test the application.
 10.  Do not navigate away from this page.
 
 
-#### Task 2: Publish application
+### Task 2: Publish application
 
 In this task, you will publish the application to Teams.
 
@@ -473,7 +487,7 @@ In this task, you will publish the application to Teams.
 7. **Test** the application in Teams and make sure it behaves as you expect.
 
 
-#### Task 3: Give permissions
+### Task 3: Give permissions
 
 In this task, you will give your colleagues permission to create new items, edit items they created, delete items they created and read items created by other people.
 

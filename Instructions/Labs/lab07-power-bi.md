@@ -1,158 +1,144 @@
----
-lab:
-    title: 'Lab 05: Power BI'
-    module: 'Module 05: Power BI'
----
+# Course Introduction
 
-> **NOTE**
->
-> Effective November 2020:
 > - Common Data Service has been renamed to Microsoft Dataverse. [Learn more](https://aka.ms/PAuAppBlog)
 > - Some terminology in Microsoft Dataverse has been updated. For example, *entity* is now *table* and *field* is now *column*. [Learn more](https://go.microsoft.com/fwlink/?linkid=2147247)
->
 
+# Lab 07: Power BI
 
-# Lab 05: Power BI
-
+## Lab Scenario
 In this lab, you will build a Power BI dashboard that visualizes data about problems reported by company employees.
 
-## What you will learn
+## Lab Objectives
 
-  - How to connect to Dataverse 
-  - How to refine the data model and prepare it for reporting
-  - How to create a Power BI visualization 
-  - How to embed a Power BI report in Microsoft Teams
-
-## High-level lab steps
-
-We will follow the below steps to design and create the Power BI dashboard:
-
--   Connect to tables in Microsoft Dataverse 
--   Transform the data to include user-friendly descriptions for the related Rows (lookups)
--   Create and publish a report with various visualizations of the information about problem reports
--   User natural language query to build additional visualizations
--   Build mobile view
--   Embed the Company 311 Power BI report to Microsoft Teams
+-  Exercise 1: Prepare environment & data
+-  Exercise 2: Create Power BI Report
+-  Exercise 3: Create Power BI Dashboard
+-  Exercise 4: Embed Power BI report
+-  Exercise 5: Power BI embedded canvas
 
 ## Prerequisites
 
 * Must have completed **Lab 02.1: Data model and model-driven app**
 * Permissions to install programs on your computer (required for Power BI Desktop installation)
 
-## Things to consider before you begin
+## Exercise 1: Prepare environment & data  
 
--   Who is the target audience of the report?
--   How will the audience consume the report? Typical device? Location?
--   Do you have sufficient data to visualize?
--   What are the possible characteristics you can use to analyze data about the visits?
-
-## Detailed steps
-
-### Exercise 1: Prepare environment & data  
-
-**Objective:** In this exercise, you will install and configure Power BI Desktop and configure a connection to Microsoft Dataverse. 
-
-> **IMPORTANT**
->
-> If you do not have required permissions to install desktop applications or experience difficulties in configuring Power BI Desktop and connecting it to the data, follow **Addendum: Import sample data** and then continue on **Exercise 2** but using Power BI service instead of Power BI Desktop.
-
-#### Task 1: Configure Power BI Desktop
+### Task 1: Configure Power BI Desktop
 
 1.  If you do not have Power BI Desktop installed, navigate to [https://aka.ms/pbidesktopstore](https://aka.ms/pbidesktopstore) to download and install Power BI app.
-
-    > **IMPORTANT**
-    >
-    > If you experience issues installing Power BI Desktop using Microsoft Store, try the standalone installer that can be downloaded from [https://aka.ms/pbiSingleInstaller](https://aka.ms/pbiSingleInstaller).
+    >**Note**: If you experience issues installing Power BI Desktop using Microsoft Store, try the standalone installer that can be downloaded from [https://aka.ms/pbiSingleInstaller](https://aka.ms/pbiSingleInstaller).
 
 2.  Open Power BI Desktop and select **Get started**.
 
+    ![A screenshot of the dataverse selected in the power platform window](05/media/2023-11-07_17-44-34.png)
+
 3.  Subscribe to the email list or select **Maybe later** and select **Close**.
 
-    **Note:** If you were signed into Power BI Desktop previously, select **File** > **Sign out**. 
+    >**Note**: If you were signed into Power BI Desktop previously, select **File** > **Sign out**. 
 
-4.  Enter your email address and select **Continue**. Sign in if prompted or select **File** > **Sign in** to sign in.
+4.  Enter your email address: <inject key="Username" enableCopy="false" /> and select **Continue**. Sign in if prompted or select **File** > **Sign in** to sign in.
 
 5.  Select **Work or school account** and select **Continue**.
 
-6.  Sign in using your M365 credentials and select **No, sign into this app only**. 
+6.  Sign in using your M365 credentials and select **No, sign into this app only**.
+
+    ![A screenshot of the dataverse selected in the power platform window](05/media/2023-11-07_17-46-09.png)
 
 
-#### Task 2: Prepare Data
+
+### Task 2: Prepare Data
 
 1.  Open Power BI Desktop if it is not already open.
 
 2.  Select **Get data** > **Dataverse**.
 
-3.  Select **Sign in**.
+    ![A screenshot of the dataverse selected in the power platform window](05/media/2023-11-07_17-48-04.png)
 
-    ![A screenshot of the dataverse selected in the power platform window](05/media/image-6-4.png)
+3.  Select **Sign in** and provide the user name <inject key="Username" enableCopy="false" />
 
-4.  The connection details dialog will open up. If you are not signed in, select **Sign in** and follow the prompts to sign in. Select **Connect**. 
+    ![A screenshot of the dataverse selected in the power platform window](05/media/2023-11-07_17-48-24.png)
+
+4.  The connection details dialog will open up. If you are not signed in, select **Sign in** and provide the user name: <inject key="Username" enableCopy="false" /> and Password: <inject key="Password" enableCopy="false" />. Select **Connect**. 
 
 5.  Expand environment node. Using `lh_` to filter, select the **lh_building**, **lh_department**, **lh_problemreport** tables and select **Load**. Wait until the load is complete.
 
-    ![A Screenshot with an arrow pointing to the load button](05/media/image-6-7.png)
+    ![A Screenshot with an arrow pointing to the load button](05/media/2023-11-07_17-53-04.png)
 
 6.  On the **Connection settings** window, choose **DirectQuery** and select **OK**.
 
+    ![A Screenshot with an arrow pointing to the load button](05/media/2023-11-08_11-40-36.png)
+
 7.  Select the **Model** icon on the left vertical toolbar.
 
-    ![A Screenshot with an arrow pointing to the model icon on the left vertical toolbar](05/media/image-6-8.png)
+    ![A Screenshot with an arrow pointing to the model icon on the left vertical toolbar](05/media/image-6-8-1.png)
 
 8.  Power BI should detect the relationships between the tables. The relationship should look like the image below.
 
-    ![A screenshot of the relationship between the table. There should be three main panels, Ih_building, Ih_problemreport, and Ih_department](05/media/image-6-9.png)
+    ![A screenshot of the relationship between the table. There should be three main panels, Ih_building, Ih_problemreport, and Ih_department](05/media/2023-11-08_11-43-13.png)
 
 9. Select the **Report** icon on the left side of the canvas.
 
-    ![A Screenshot with an arrow pointing to the report icon on the left toolbar](05/media/image-6-10.png)
+    ![A Screenshot with an arrow pointing to the report icon on the left toolbar](05/media/2023-11-08_11-44-22.png)
 
 10. Expand the **lh_problemreport** node in the **Data** panel. 
 
-11. Select the **...** More options button of the **lh_ProblemReport** table. 
+11. Select the ellipsis More options button of the **lh_ProblemReport** table. 
 
-    ![A Screenshot with an arrow pointing to the ellipsis for more options](05/media/image-6-11.png)
+    ![A Screenshot with an arrow pointing to the ellipsis for more options](05/media/image-6-11-1.png)
 
 12. Select **New column**. 
 
-    ![A screenshot of a border around the new column button](05/media/image-6-12.png)
+    ![A screenshot of a border around the new column button](05/media/2023-11-08_11-44-51.png)
 
-13. Complete the formula as below and press ENTER or select the checkmark button. That will add a new column with the building name into the problem report data.
+13. Complete the formula as below and press Enter or select the checkmark button. That will add a new column with the building name into the problem report data.
 
-    ```Building = RELATED(lh_Building[lh_name])```
+    ```powershell
+       Building = RELATED(lh_building[Name])
+    ```
 
-    ![A Screenshot with an arrow pointing to the checkmark icon](05/media/image-6-13.png)
+    ![A Screenshot with an arrow pointing to the checkmark icon](05/media/2023-11-08_11-46-55.png)
+
+    >**Note**: If this step throws an error with Building name column is already present, you can skip this step and use the existing column.
 
 14. Repeat the three previous steps on **lh_problemreport** node to add a column **Department** with the below formula.
 
-    ```Department = RELATED(lh_Department[lh_name])```
+    ```powershell
+       Department = RELATED(lh_department[Name])
+    ```
+    >**Note**: If this step throws an error with Department name column is already present, you can skip this step and use the existing column.
 
-15. Select the **...** menu next to the **lh_problemreportid** column of the **lh_problemreport** table and select **Rename**. Enter **Problem Report** as the column name.
+15. Select the ellipsis menu next to the **lh_problemreportid** column of the **lh_problemreport** table and select **Rename**. Enter **Problem Report** as the column name.
 
-16. Select the **...** menu next to the **statuscodename** column and select **Rename**. Enter `Status` as the column name.
+    >**Note**: If Problem Report column is already present, you can skip this step and use the existing column.
 
-17. Save work in progress by selecting **File** > **Save** and enter `Problem management` as a filename.
+16. Select the ellipsis menu next to the **statuscodename** column and select **Rename**. Enter **Status** as the column name.
+
+    >**Note**: If this step throws an error with Status name column is already present, you can skip this step and use the existing column.
+
+17. Save work in progress by selecting **File** > **Save** and enter **Problem management** as a filename.
 
 
-### Exercise 2: Create Power BI Report 
+## Exercise 2: Create Power BI Report 
 
 **Objective:** In this exercise, you will create a Power BI report based on data from Microsoft Dataverse tables.
 
-#### Task 1: Create Chart and Time Visualizations
+### Task 1: Create Chart and Time Visualizations
 
 1.  Click on **Report view**
 
-    ![A Screenshot with an arrow pointing to the Report view](05/media/image-6-31.png)
+    ![A Screenshot with an arrow pointing to the Report view](05/media/2023-11-08_11-44-22.png)
 
 2.  Select the **Pie chart** icon in the **Visualizations** panel to insert the chart.
 
-    ![A Screenshot with an arrow pointing to the pie chart icon](05/media/image-6-14.png)
+    ![A Screenshot with an arrow pointing to the pie chart icon](05/media/2023-11-08_11-45-18.png)
 
 3.  Expand **lh_ProblemReport** table in the **Data** panel, drag **Building** Column and drop it into **Legend** target box.
 
+    ![A Screenshot with Building needs to be dragged from the fields column into the Legend field](05/media/2023-11-08_12-34-23.png)
+
 4.  Drag **Problem Report** Column and drop it into **Values** target box.
 
-    ![A Screenshot with an arrow pointing to the direction the problem report needs to be dragged from the fields column into the values field](05/media/image-6-15.png)
+    ![A Screenshot with Problem Report needs to be dragged from the Values column into the Legend field](05/media/2023-11-08_12-35-37.png)
 
 5.  Resize the pie chart using corner handles so that all chart components are visible. Your report should now look like this:
 
@@ -160,84 +146,99 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 6.  Select the report's design surface outside of the chart area. Select **New visual** on the Power BI ribbon then select **stacked column** chart in **Visualizations** pane. 
 
-    ![A Screenshot with an arrow pointing to the stacked column chart icon](05/media/image-6-17.png)
+    ![A Screenshot with an arrow pointing to the stacked column chart icon](05/media/2023-11-08_12-39-24.png)
 
-7.  Drag **Problem Report** Column and drop it into **Y-axis** target box.
+7.  Drag **Problem Report(1)** Column and drop it into **Y-axis(2)** target box and Drag **statuscodename(3)** Column and drop it into **X-axis(4)** target box.
 
-8.  Drag **Status** Column and drop it into **X-axis** target box.
+    ![A Screenshot with an arrow pointing to the stacked column chart icon](05/media/2023-11-08_13-27-57.png) 
 
 9.  **Resize** the chart as required using the corner handles.
 
 10.  **Test** the report interactivity:
 
-    * Select various building slices on the pie chart and observe changes on the stacked column chart.
-    * Select various bars on the stacked column chart and observe changes on the pie report.
+>**Note**: Select various building slices on the pie chart and observe changes on the stacked column chart. 
+>**Note**:Select various bars on the stacked column chart and observe changes on the pie report.
 
-    ![A Screenshot with an arrow pointing to the pie chart to observe changed to the data after changing data on the stacked column chart](05/media/image-6-18.png)
+![A Screenshot with an arrow pointing to the pie chart to observe changed to the data after changing data on the stacked column chart](05/media/image-6-18.png)
 
 11. Select the **Insert**, and select **Q&A**.
 
-    ![A Screenshot with an arrow pointing to the Q&A button](05/media/image-6-addbutton.png)
+    ![A Screenshot with an arrow pointing to the Q&A button](05/media/2023-11-08_13-34-01.png)
 
 12. Select **Turn on Q&A** and wait for the Q&A to get ready.
 
-13. Enter **bar count of problem reports by building**. You should see a bar chart.
+    ![A Screenshot with an arrow pointing to the Q&A button](05/media/2023-11-08_13-35-31.png)
+
+13. Enter **bar count of problem reports by building**. You should see a bar chart. bar count of problem reports by building
 
     ![A screenshot of the relevant text typed into the Q&A field](05/media/image-6-QAchart.png)
 
 14. The dashboard now has Q&A enabled. Select the **...** More options button of the Q&A visual and select **Remove**.
 
-    ![A Screenshot with an arrow pointing to the ellipsis icon for more options and a border around the remove button](05/media/image-6-removevisual.png)
+    ![A screenshot of the relevant text typed into the Q&A field](05/media/2023-11-08_13-38-51.png)
 
 15. Save work in progress by selecting **File | Save**.
 
 
-### Exercise 3: Create Power BI Dashboard
+## Exercise 3: Create Power BI Dashboard
 
-#### Task 1: Publish Power BI Report
+### Task 1: Publish Power BI Report
 
 1.  Navigate to [Power BI Service](https://app.powerbi.com)
 
 2.  Select **Workspaces** and select **Create a workspace**.
 
-    ![A Screenshot with a box around the workspaces button and an arrow pointing to the create a workspace button](05/media/image-6-createworkspace.png)
+    ![A Screenshot with a box around the workspaces button and an arrow pointing to the create a workspace button](05/media/2023-11-08_13-41-36.png)
 
-3.  Enter **311 Workspace** for Workspace name and select **Save**.
+3.  Enter **311 Workspace** for Workspace name and select **Apply**.
+
+    ![A Screenshot with 311 Workspace](05/media/2023-11-08_13-42-14.png)
 
 4.  Go back to the Power BI desktop application, select the **Home** tab, and select **Publish**.
 
-    ![A Screenshot with an arrow pointing to the publish button](05/media/image-6-19.png)
+    ![A Screenshot with an arrow pointing to the publish button](05/media/2023-11-08_13-42-46.png)
 
-5.  Select **311 Workspace** as the destination.
+5.  Select **311 Workspace** as the destination and Click on **Select**.
 
-6.  **Wait** until publishing is complete and open the **<name of your report\>.pbix** file in Power BI.
+    ![A Screenshot with an arrow pointing to the publish button](05/media/2023-11-08_13-43-22.png)
 
-    ![A Screenshot with an arrow pointing to the button to open your report](05/media/image-6-20.png)
+6.  **Wait** until publishing is complete and open the **Problem management.pbix** file in Power BI.This will open the published report in the browser.
 
-    This will open the published report in the browser.
+    ![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-43-46.png)
 
-> **NOTE**
->
-> If you are getting an error on PowerBI Service with message "the data source is missing credentials and cannot be accessed", follow the below steps:
->
-> 1. Select **311 Workspace** and select the **Problem Management** dataset.
-> 2. Expand Refresh dropdown and select **Schedule refresh**.
-> 3. Expand **Data Source credentials** section and select **Edit Credentials**.
-> 4. Select **OAuth2** for **Authentication** Method and **Organizational** for **Privacy level setting**.
-> 5. Select **Sign in**. This will resolve the issue for report and it should display properly on Power BI.
+ >**Note**:If you are getting an error on PowerBI Service with message "the data source is missing credentials and cannot be accessed", follow the below steps:
+1. Select **311 Workspace** and select the **Problem Management** dataset.
+
+   ![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-45-18.png)
+
+2. Expand Refresh dropdown and select **Schedule refresh**.
+
+   ![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-58-19.png)
+
+3. Expand **Data Source credentials** section and select **Edit Credentials**.
+
+   ![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-58-55.png)
 
 
-#### Task 2: Create Power BI Dashboard
+4. Select **OAuth2** for **Authentication** Method and **Organizational** for **Privacy level setting for this data source**.
+
+   ![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-59-19.png)
+
+
+5. Select **Sign in**. Provide the sign in details with the Username: <inject key="Username" enableCopy="false" />.This will resolve the issue for report and it should display properly on Power BI.
+
+
+### Task 2: Create Power BI Dashboard
 
 1.  Click on **311 Workspace**. If you don't see it in your menu, select **Workspaces** and then **311 Workspace**
 
 2.  Select the **Problem management** with a type **Report**. 
 
-    ![A screenshot with a border around the problem management option under reports](05/media/image-6-21.png)
+    ![A screenshot with a border around the problem management option under reports](05/media/2023-11-08_13-45-18.png)
 
-3.  Select **Pin to a dashboard** on the menu. Depending on the layout you may need to press **...** to show additional menu items.
+3.  Select **Pin to a dashboard** on the menu. Depending on the layout you may need to press ellipsis to show additional menu items.
 
-    ![A Screenshot with an arrow pointing to the ellipsis icon for more options and a border around the pin to dashboard option](05/media/image-6-22.png)
+    ![A Screenshot with an arrow pointing to the ellipsis icon for more options and a border around the pin to dashboard option](05/media/2023-11-08_14-02-45.png)
 
 4.  Select **New dashboard** on **Pin to dashboard** prompt.
 
@@ -250,26 +251,26 @@ We will follow the below steps to design and create the Power BI dashboard:
 7.  Test interactivity of the pie and bar charts that are displayed.
 
 
-#### Task 3: Add Visualizations Using Natural Language
+### Task 3: Add Visualizations Using Natural Language
 
 1.  Select **Ask a question about your data** on top of the dashboard.
 
-    ![A Screenshot with an arrow pointing to the ask a question about your data button at the top of your dashboard](05/media/image-6-24.png)
+    ![A Screenshot with an arrow pointing to the ask a question about your data button at the top of your dashboard](05/media/2023-11-08_14-05-14.png)
 
 2.  Enter **funnel count of problem reports by status** in Q&A area. The funnel chart will be displayed.
 
-3.  Select **Pin visual**.
+3.  Select **Pin visual(1)** and Select **Existing dashboard(2)**, select **Problem Management dashboard(3)**, select **Pin(4)**.
 
-    ![A Screenshot with an arrow pointing to the pin visual button](05/media/image-6-25.png)
-
-4.  Select **Existing dashboard**, select **Problem Management dashboard**, select **Pin**.
+    ![A Screenshot with an arrow pointing to the pin visual button](05/media/2023-11-08_14-13-35.png)
 
 
-#### Task 4: Build Mobile Phone View
+### Task 4: Build Mobile Phone View
 
 1.  Select the **Problem Management dashboard** from **Dashboards** area.
 
 2.  Select **Edit** and then select **Mobile Layout** from the drop-down box.
+
+    ![A photo of the mobile phone layout with tiles rearrange to display data](05/media/2023-11-08_14-14-23.png)
 
 3.  **Rearrange** the tiles as desired.
 
@@ -283,18 +284,16 @@ We will follow the below steps to design and create the Power BI dashboard:
 
 6.  If you have a mobile device, scan the code using a QR scanner app available on both iOS and Android platforms.
 
-    > **NOTE**
-    >
-    > To access the dashboard and report you will have to sign in on the phone as the same user.
+>**Note**: To access the dashboard and report you will have to sign in on the phone as the same user.
 
 7.  Navigate and explore reports and dashboards on a mobile device. 
 
 
-### Exercise 4: Embed Power BI report
+## Exercise 4: Embed Power BI report
 
 In this exercise, you will add the Company 311 Power BI report to Microsoft Teams and to the Company 311 Admin Model-driven application as a way for management and staff to be able to view the reports from directly within Teams and the Model-driven application. 
 
-#### Task 1: Setup Company 311 Team
+### Task 1: Setup Company 311 Team
 
 In this task you will setup a Microsoft Teams team for the Lamna Healthcare Company, if you have not done so previously.
 
@@ -321,7 +320,7 @@ In this task you will setup a Microsoft Teams team for the Lamna Healthcare Comp
 9.  Select **Skip** adding members to Company 311.
 
 
-#### Task 2: Embed Power BI report to Teams
+### Task 2: Embed Power BI report to Teams
 
 1.  Navigate to [Microsoft Teams](https://teams.microsoft.com).
 
@@ -342,7 +341,7 @@ In this task you will setup a Microsoft Teams team for the Lamna Healthcare Comp
     ![A screenshot of your Power BI report in a tab in Microsoft Teams](05/media/image-6-powerbi.png)
 
 
-#### Task 3: Embed Power BI report to Model-driven app
+### Task 3: Embed Power BI report to Model-driven app
 
 1.  Navigate to [Power BI](https://app.powerbi.com/home).
 
@@ -378,7 +377,7 @@ In this task you will setup a Microsoft Teams team for the Lamna Healthcare Comp
 
 12.  While still in the Company 311 solution, open the **Company 311 Admin** Model-driven application.
 
-    ![A Screenshot with an arrow pointing to the company 311 admin option with another border around model-driven application in the type column in line with the correct company 311 admin option](05/media/image-6-editmodeldrivenapp.png)
+     ![A Screenshot with an arrow pointing to the company 311 admin option with another border around model-driven application in the type column in line with the correct company 311 admin option](05/media/image-6-editmodeldrivenapp.png)
 
 13. In app designer make sure you have **Manage Problems** area selected. If not, click on the arrows and select **Manage Problems**.
 
@@ -388,7 +387,7 @@ In this task you will setup a Microsoft Teams team for the Lamna Healthcare Comp
 
     ![A screenshot with a arrow pointing to the Group option under Add button](05/media/image-6-eddgroup.png)
 
-15. Go to the **Properties** pane and enter **Reports** for **Title**.
+15. Go to the **Display options** pane and enter **Reports** for **Title**.
 
 16. Select the **Reports** group you just created, select **+ New**.
 
@@ -413,11 +412,11 @@ In this task you will setup a Microsoft Teams team for the Lamna Healthcare Comp
 22. Interact with report and make sure it behaves as expected.
 
 
-### Exercise 5: Power BI embedded canvas
+## Exercise 5: Power BI embedded canvas
 
 In this exercise, you will add embedded canvas application to Power BI as a visual.
 
-#### Task 1: Add canvas
+### Task 1: Add canvas
 
 1.  Navigate to [Power BI](https://app.powerbi.com).
 
@@ -448,7 +447,7 @@ In this exercise, you will add embedded canvas application to Power BI as a visu
 10. Do not navigate away from this page.
 
 
-#### Task 2: Customize the app
+### Task 2: Customize the app
 
 1.  Right-click on the **Gallery** and select **Delete**.
 
@@ -466,7 +465,7 @@ In this exercise, you will add embedded canvas application to Power BI as a visu
 
     ![Add data - screenshot](05/media/ex_5_adddata.png)
 
-7.  Select the **Problem reports** table.
+7.  Search and Select the **Problem reports** table.
 
     ![Select data table - screenshot](05/media/ex_5_datatable.png)
 
@@ -511,7 +510,7 @@ In this exercise, you will add embedded canvas application to Power BI as a visu
 19. Do not navigate away from this page.
 
 
-#### Task 3: Add controls
+### Task 3: Add controls
 
 1.  Select the **Insert** tab and select **Text label**.
 
@@ -561,23 +560,28 @@ In this exercise, you will add embedded canvas application to Power BI as a visu
 
 18.  Select the **Next icon** and set the **OnSelect** value to the formula below.
 
-    ```UpdateContext({CurrentItem: LookUp('Problem Reports', 'Problem Report' = GUID(Last(FirstN([@PowerBIIntegration].Data,currentIndex+1)).'Problem Report'))});UpdateContext({currentIndex: currentIndex+1})```
+ 
+         ```UpdateContext({CurrentItem: LookUp('Problem Reports', 'Problem Report' = GUID(Last(FirstN([@PowerBIIntegration].Data,currentIndex+1)).'Problem Report'))});UpdateContext({currentIndex: currentIndex+1})```
 
 19.  Set the **DisplayMode** value of the **Next icon** to the formula below.
 
-    ```If(currentIndex = CountRows([@PowerBIIntegration].Data), DisplayMode.Disabled, DisplayMode.Edit)```
+          ```If(currentIndex = CountRows([@PowerBIIntegration].Data), DisplayMode.Disabled, DisplayMode.Edit)```
 
 20. Select the **Back icon** and set the **OnSelect** value to the formula below.
 
-    ```UpdateContext({CurrentItem: LookUp('Problem Reports', 'Problem Report' = GUID(Last(FirstN([@PowerBIIntegration].Data,currentIndex-1)).'Problem Report'))});UpdateContext({currentIndex: currentIndex-1})```
+    ```powershell
+       UpdateContext({CurrentItem: LookUp('Problem Reports', 'Problem Report' = GUID(Last(FirstN([@PowerBIIntegration].Data,currentIndex-1)).'Problem Report'))});UpdateContext({currentIndex: currentIndex-1})
+    ```
 
 21. Set the **DisplayMode** value of the **Back icon** to the formula below.
 
-    ```If(currentIndex > 1, DisplayMode.Edit, DisplayMode.Disabled)```
+    ```powershell
+       If(currentIndex > 1, DisplayMode.Edit, DisplayMode.Disabled)
+    ```
 
 22. Select **+ Insert**, enter **check** in the search box, then select **Check** under **Icons**.
 
-23. In the tree view, double-click **Icon1** and rename the Check icon to **Complete icon**. 
+23. In the tree view, double-click **Icon3** and rename the Check icon to **Complete icon**. 
 
 24. Move the **Complete icon** to the top right of the screen.
 
@@ -659,6 +663,4 @@ In this exercise you will import sample data into Power BI service. That allows 
 
 9. You can now start **Exercise 2: Create Power BI Report** of this lab.
 
-    > **NOTE**
-    >
-    > The sample data contained in **pbix** file may differ from the data present in the Dataverse instance. If reports are built using imported file, some of the visual elements and functionality may vary as a result.
+    >**Note**: The sample data contained in **pbix** file may differ from the data present in the Dataverse instance. If reports are built using imported file, some of the visual elements and functionality may vary as a result.
