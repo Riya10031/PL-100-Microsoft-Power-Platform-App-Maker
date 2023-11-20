@@ -27,21 +27,32 @@ In this exercise, you will create a custom solution publisher and a solution. Th
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) and make sure you are in the practice environment you created. 
 
-2.  From the left navigation pane, select **s** and then select **+ New solution**. 
+1.  From the left navigation pane, select **Solution**.
 
-3.  For **Display name**, enter `Company 311` 
+1. Select **Create a database** and on the **New database** page, select **Create my database**.
 
-4.  Select **+ New publisher**, under the **Publisher** field. 
+1. Select **+ New solution**. 
+
+1. For **Display name**, enter `Company 311` 
+
+1.  Select **+ New publisher**, under the **Publisher** field. 
 
     ![A Screenshot with an arrow pointing to the new publisher button](02-1/media/image1(1).png)
 
-5.  Enter `Lamna Healthcare` for **Display name**, `lamnahealthcare` for **Name**, `lh` for **Prefix**, `88186` for **Choice value prefix**, and select **Save**.
+1.  Enter the following credentials, and select **Save**.
+
+    |**Settings**|**Value**|
+    |------------|---------|
+    |Display name|**Lamna Healthcare**|
+    |Name|**lamnahealthcare**|
+    |Prefix|**lh**|
+    |Choice value prefix|**88186**|
 
     ![A screenshot of the new publisher properties pane](02-1/media/image105(1).png)
 
-6.  Select **Lamna Healthcare (lamnahealthcare)** from the **Publisher** dropdown menu. 
+1.  Select **Lamna Healthcare (lamnahealthcare)** from the **Publisher** dropdown menu. 
 
-7.  Select **Create**. 
+1.  Select **Create**. 
 
     ![A screenshot of the new solution pane](02-1/media/image3(1).png)
 
@@ -86,9 +97,7 @@ In this exercise, you will create Tables, Columns, and the Relationships you ide
 
     ![A screenshot of the Rows in this table section with Can be added to a queue checkbox selected](02-1/media/image10(1).png)
 
-    > **NOTE**
-    >
-    > Enabling queues for Problem Report table allows rows to be associated with one or more queues to help facilitate routing problem reports to the different departments. Once this option is enabled, it can't be turned off. 
+    >**Note:** Enabling queues for Problem Report table allows rows to be associated with one or more queues to help facilitate routing problem reports to the different departments. Once this option is enabled, it can't be turned off. 
 
 12. Select **All** from the tree view in the **Objects** pane. The tables you created should now be visible in the list view and in the tree navigation. 
 
@@ -119,7 +128,13 @@ In this task, you will add Columns to the Problem Report Table.
 
 7.  Select **+ New \> Column** from the top menu. 
 
-8.  Enter **Details** for **Display name**, select **Text \> Multiple lines of text \> Plain Text** for **Data type**, make the Column **Business required**, and select **Save**. 
+8.  Enter the following credentials, and select **Save**.
+
+    |**Settings**|**Value**|
+    |------------|---------|
+    |Display name|**Details**|
+    |Data type|**Text \> Multiple lines of text \> Plain Text**|
+    |Required|**Business required**|
 
     ![A screenshot of the details window with the relevant values in each field](02-1/media/image16(1).png)
 
