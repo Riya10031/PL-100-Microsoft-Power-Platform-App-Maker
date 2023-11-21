@@ -48,7 +48,7 @@ In this task, you will create a flow that send notification when the status of p
 
     ![A screenshot showing dropdown menu to create new automated cloud flow](04/media/pl-100(6.1).png)
 
-4.  Select **+ New** > **Automation** > **Cloud Flow** > **Automated**.
+4.  Select **+ New (1)** > **Automation (2)** > **Cloud Flow (3)** > **Automated (4)**.
 
     ![A screenshot showing dropdown menu to create new automated cloud flow](04/media/pl-100(6.2).png)
 
@@ -128,7 +128,7 @@ In this task, you will create a flow that send notification when the status of p
     
 34. Select the **… Menu** button of the new step and select **Rename**.
 
-35. Rename the step to `Notify problem creator`(1)
+35. Rename the step to `Notify problem creator`
     
 37. At the top of the page, change the flow name from **Untitled** to `Notify Problem Creator`
 
@@ -143,7 +143,7 @@ In this task, you will create a flow that send notification when the status of p
 
 In this task, you will test the Notify Problem Creator flow.
 
-1.  On the Power Apps maker portal, `https://make.powerapps.com` ensure you are in the correct environment.
+1.  On the [Power Apps maker portal](https://make.powerapps.com/) and make sure you are in the correct environment.
 
 2.  Select **Apps**, and then select the **Company 311 Admin** Model-driven application. Select **Play**.
 

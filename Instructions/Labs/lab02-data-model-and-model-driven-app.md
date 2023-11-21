@@ -50,9 +50,9 @@ In this exercise, you will create a custom solution publisher and a solution. Th
 
     ![A screenshot of the new publisher properties pane](02-1/media/image105(1).png)
 
-1.  Select **Lamna Healthcare (lamnahealthcare)** from the **Publisher** dropdown menu. 
+1.  Select **Lamna Healthcare (lamnahealthcare) (1)** from the **Publisher** dropdown menu. 
 
-1.  Select **Create**. 
+1.  Select **Create (2)**. 
 
     ![A screenshot of the new solution pane](02-1/media/image3(1).png)
 
@@ -114,11 +114,11 @@ In this task, you will add Columns to the Problem Report Table.
 
 3.  Select the **Problem Report** Table.
 
-4.  There are many ways to add a new column to the table. For this lab, select **+ New**, then select **Column** from the Schema group. 
+4.  There are many ways to add a new column to the table. For this lab, select **+ New (1)**, then select **Column (2)** from the Schema group. 
 
     ![A screenshot of the solution page with +New menu expanded and cursor pointing to the Column item](02-1/media/image13(1).png)
 
-5.  Enter `Location` for **Display name**. Select **Text > Single line of text > Plain text** for **Data type**. 
+5.  Enter `Location` for **Display name (1)**. Select **Text > Single line of text > Plain text** for **Data type (2)**. 
 
     ![A screenshot of a New column form with Data type dropdown expanded with Text > Plain text option selected](02-1/media/image14-1(1).png)
 
@@ -176,7 +176,7 @@ In this task, you will edit the Status Reason column of the Problem Report table
 
 7.  Select **+ New choice** and enter `Won’t Fix` for **Label**.
 
-8.  You should now have 5 options. Verify the **Default choice** is set as **New** and select **Save**.
+8.  You should now have 5 options. Verify the **Default choice** is set as **New (1)** and select **Save (2)**.
 
     ![A screenshot of the Status Reason column properties with 5 options and New as Default choice](02-1/media/image25(1).png)
 
@@ -193,7 +193,7 @@ In this task, you will create many-to-one relationships between the Problem Repo
 
 2.  Select **+ New \> Relationship \> Many-to-one**.
 
-3.  Select **Building** for the **Related (One)** table and select **Done**.
+3.  Select **Building** for the **Related (One) (1)** table and select **Done (2)**.
 
     ![A screenshot of the many-to-one relationship settings](02-1/media/image29(1).png)
 
@@ -224,47 +224,49 @@ In this exercise, you will configure form and views for the Problem Report table
 
     ![A screenshot of the form designer with General form section selected.](02-1/media/image31(1).png)
 
-6.  Go to the **Properties** pane, change the **Label** to `Problem details` and enter `section\_problem\_report` for **Name**.
+6.  Go to the **Properties (1)** pane, change the **Label (2)** to `Problem details` and enter `section\_problem\_report` for **Name (3)**.
 
     ![A screenshot of the properties pane with the relevant text in each field](02-1/media/image32(1).png)
 
-7.  While you still have the section selected, go to the **Table columns** pane, and select the **Building** Column. The Building Column will be added to the form.
+7.  While you still have the section selected, go to the **Table columns (1)** pane, and select the **Building (2)** Column. The Building Column will be added to the form.
 
     ![A screenshot of the form designer with Building column selected in the Table columns section.](02-1/media/image33(1).png)
 
-8.  Add the **Details**, and **Photo** Columns to the form.
+8.  Add the **Details**, and **Photo** Columns to the form. Select the **Details** Column.
 
-9.  Your form should now look like the image below. Select the **Details** Column.
+9. Go to the **Properties** pane and expand the **Formatting** section.
 
-10. Go to the **Properties** pane and expand the **Formatting** section.
-
-11. Change the **Form field height** to **4 rows**.
+10. Change the **Form field height** to **4 rows**.
 
     ![A screenshot of the form field height set to 4 rows](02-1/media/image36(1).png)
 
-12. Select the **+ Component** from the menu then select **1-column section**.
+11. Select the **Component (1)** from the top menu then select **1-column section (2)**.
 
-13. A new section should be added to the form. Select the **New Section**.
+    ![A screenshot of the form field height set to 4 rows](03-2/media/1-column.png)
 
-14. Go to the **Properties** pane, change the **Section label** to `Resolution details` and enter `section\_resolution\_details` for **Name**.
+12. A new section should be added to the form. Select the **New Section**.
+
+13. Go to the **Properties (1)** pane, change the **Label (2)** to `Resolution details` and enter `section\_resolution\_details` for **Name (3)**.
 
     ![A screenshot of the section properties pane with the relevant text in each field](02-1/media/image40(1).png)
 
-15. Select **Table columns** from the toolbar.
+14. Select **Table columns** from the toolbar.
 
-16. Add **Department**, **Status Reason**, **Resolved On**, and **Resolution** columns to the **Resolution details** section.
+15. Add **Department**, **Status Reason**, **Resolved On**, and **Resolution** columns to the **Resolution details** section.
 
-17. Select the **Resolution** Column.
+16. Select the **Resolution** Column.
 
-18. Go to the **Properties** pane and, if necessary expand the **Formatting** section.
+17. Go to the **Properties** pane and, if necessary expand the **Formatting** section.
 
-19. Change the **Form field height** to **4 rows**.
+18. Change the **Form field height** to **4 rows**.
 
-20. Your form should now look like the image below. Select **Save and publish**.
+19. Your form should now look like the image below. Select **Save and publish**.
 
-21. Wait for the publishing to complete.
+    ![A screenshot of the form field height set to 4 rows](03-2/media/newproblem.png)
 
-22. Select the **🡠 Back** button to return to the **Solution Explorer**.
+20. Wait for the publishing to complete.
+
+21. Select the **🡠 Back** button to return to the **Solution Explorer**.
 
     ![A screenshot of the form designer with the cursor over Back button inm the menu.](02-1/media/image43(1).png)
 
@@ -273,7 +275,7 @@ In this exercise, you will configure form and views for the Problem Report table
 
 1.  In the **Problem Report** table, under **Data experiences**, select **Views**.
 
-    ![A screenshot of the table designer screen with Views selected under the table entry.](02-1/media/image44-1(1).png)
+    ![A screenshot of the form field height set to 4 rows](03-2/media/problemreport.png)
 
 2.  Open the **Active Problem Reports** view.
 
@@ -289,7 +291,7 @@ In this exercise, you will configure form and views for the Problem Report table
 
 6.  Change the existing filter and set it to **Status Reason Equals New**.
 
-    ![A screenshot of the view filter with one condition of Status Reason Equals to New](02-1/media/image48(1).png) 
+    ![A Screenshot with an arrow pointing to the edit filters button](03-2/media/editfilter.png)
 
 7.  Expand the values drop-down with Status Reason values where **New** is selected.
 
@@ -328,9 +330,9 @@ In this task, you will create a new view from the Active Problem Reports view.
 
     ![A screenshot of the edit filters window with the following Status Reason values: Completed, Won't Fix, Inactive](02-1/media/image54(1).png)
 
-7.  Select the chevron next to the Save and publish button and select **Save As**.
+7.  Select **Save As** button.
 
-8.  Enter `Resolved Problems` for **Name** and select **Save**.
+8.  Enter `Resolved Problems` for **Name (1)** and select **Save (2)**.
 
     ![A screenshot of the Save As window](02-1/media/image56(1).png)
 
@@ -353,25 +355,23 @@ In this exercise, you will create a model-driven application.
 
 2.  Select **Solutions** and open the **Company 311** solution.
 
-3.  Select **+ New > App > Model-driven app** from the command bar.
+3.  Select **+ New (1)> App (2)> Model-driven app (3)** from the command bar.
 
     ![A screenshot of the menu to create a new model-driven app](02-1/media/image60(1).png)
 
-4.  Enter `Company 311 Admin` for name and select **Create**. 
+4.  Enter `Company 311 Admin` (1) for name and select **Create (2)**. 
 
     ![A screenshot of the New model-driven app window](02-1/media/image61(1).png)
 
 5.  Select **Navigation** from the left menu. 
 
-    ![A screenshot of the navigation pane with navigation bar selected](02-1/media/lab02-ex4-t1-s5-a.png)
+6.  In the properties pane, check **Enable Areas**.
 
     ![A screenshot of the navigation pane with navigation bar selected](02-1/media/lab02-ex4-t1-s5-b.png)
 
-6.  In the properties pane, check **Enable Areas**. 
-
 7.  Select **Area1**.
 
-8.  Go to the **Properties** pane, enter `Manage Problems` for **Title**, and enter `area_manage_problems` for **ID**.
+8.  Go to the **Properties** pane, enter `Manage Problems` for **Title (1)**, and enter `area_manage_problems` for **ID (2)**.
 
      ![A screenshot of the properties pane with the title and ID changed](02-1/media/lab02-ex4-t1-s8.png)
 
@@ -389,7 +389,7 @@ In this exercise, you will create a model-driven application.
     
 13. Select **New Group** in the navigation pane.
 
-14. Go to the **Properties**, enter `Problems` for **Title**, and enter `group_problems` for **ID**.
+14. Go to the **Properties**, enter `Problems` for **Title (1)**, and enter `group_problems` for **ID (2)**.
 
     ![A screenshot of the adding new area](02-1/media/lab02-ex4-t1-s14.png)
 
@@ -397,7 +397,7 @@ In this exercise, you will create a model-driven application.
     
     ![A screenshot of the adding new area](02-1/media/image107(1).png)
 
-17. Go to the **Properties** pane, enter `Settings` for **Title**, and enter `area_settings` for **ID**.
+17. Go to the **Properties** pane, enter `Settings` for **Title (1)**, and enter `area_settings` for **ID (2)**.
 
     ![A screenshot of the properties pane with the title and ID changed](02-1/media/lab02-ex4-t1-s16.png)
     
@@ -438,7 +438,7 @@ In this exercise, you will input data to the Dataverse tables.
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) and make sure you are in the correct environment.
 
-2.  Select **Apps** and open the **Company 311 Admin** application created in the previous exercise.
+2.  Select **Apps (1)** and open the **Company 311 Admin (2)** application created in the previous exercise.
 
     ![A Screenshot with an arrow pointing to the Company 311 Admin app](02-1/media/lab02-ex5-t1-s2.png)
 
@@ -466,7 +466,7 @@ In this exercise, you will input data to the Dataverse tables.
 
 11. Enter `London Paddington` for **Name** and select **Save & Close**.
 
-    You should now have two Building rows.
+    >**Note:** You should now have two Building rows.
 
 12. Select **Change area**.
 
@@ -480,13 +480,11 @@ In this exercise, you will input data to the Dataverse tables.
 
 15. Enter **Broken door** for **Title**, select **San Francisco Main Campus** for **Building**, enter **The main entrance door will not open all the way** for **Details**, and select **Save**.
 
-    > **NOTE**
-    >
-    > You cannot save images before creating the row in the database. Select **Save** and then you may upload a picture.
+    >**Note:** You cannot save images before creating the row in the database. Select **Save** and then you may upload a picture.
 
     ![A screenshot of the new problem report window with all relevant text in each field](02-1/media/lab02-ex5-t1-s15.png)
 
-16. Select **Open file** on the **Photo** field.
+16. Select **Choose file** on the **Photo** field.
 
 17. Select an image from your device. The sample image displayed below can be found [here](02-1/media/image89(1).png).
 
@@ -509,11 +507,7 @@ In this exercise, you will import sample data into the environment. Rows are imp
 
 3.  Select **Browse**.
 
-4.  Select the **DataImport.zip** solution file located in the Lab Resources folder and select **Open**.
-
-    > **TIP** 
-    > 
-    > The solution file can be found here: ```F:\Instructions\Labs\02-1\Resources\DataImport.zip```
+4.  Select the **DataImport.zip** solution file located in the **C:\PL100\PL-100-Microsoft-Power-Platform-App-Maker-prod\Instructions\Labs\02-1\Resources** and select **Open**.
 
 5.  Select **Next**.
 
@@ -537,32 +531,30 @@ In this exercise, you will import sample data into the environment. Rows are imp
 1.  Open the **Data Import** solution you imported.
 
 2.  Select the **Import Data** flow. 
-
-3.  Select **Edit** from the Command Bar.
  
-5.  If necessary, dismiss the welcome prompt by selecting **Get started**.
+3.  If necessary, dismiss the welcome prompt by selecting **Get started**.
 
-6.  Expand the **InputData** step.
+4.  Select **Edit** from the Command Bar.
 
-7.  Review the JSON text in the **Value** field. This is the data that will be imported into your environment. Note: The image data is encoded as Base-64 text.
+5.  Expand the **InputData** step.
 
-8.  Expand the **EachDepartment** for each control.
+6.  Review the JSON text in the **Value** field. This is the data that will be imported into your environment. Note: The image data is encoded as Base-64 text.
 
-9.  Expand and review the **Upsert Department** step.
+7.  Expand the **EachDepartment** for each control.
 
-10. Expand and review the rest of the steps.
+8.  Expand and review the **Upsert Department** step.
 
-11. Select **Save** to save the flow.
+9. Expand and review the rest of the steps.
 
-12. Select the **🡠** back button to go back to the previous page.
+10. Select **Save** to save the flow.
+
+11. Select the **🡠** back button to go back to the previous page.
 
     ![A Screenshot with an arrow pointing to the arrow icon to go back](02-1/media/image92(1).png)
 
-13. Open the **Import Data** flow **Details** and select **Run**.
+12. Open the **Import Data** flow **Details** and select **Run**.
 
-    > **TIP**
-    >
-    > If the **Run** option is disabled then make sure the flow has been enabled by selecting **Turn on**.
+    >**Note:** If the **Run** option is disabled then make sure the flow has been enabled by selecting **Turn on**.
 
 14. Select **Run flow**.
 
@@ -587,9 +579,7 @@ In this exercise, you will import sample data into the environment. Rows are imp
 
     ![A screenshot with a border around problem new reports rows.](02-1/media/image104(1).png)
 
-    > **NOTE**
-    >
-    > Because the input status reason is picked randomly, some of the imported problem report rows may have the status reason of Completed, Won't Fix, or Inactive. Select the **Resolved Problems** view to find these rows.
+    >**Note:** Because the input status reason is picked randomly, some of the imported problem report rows may have the status reason of Completed, Won't Fix, or Inactive. Select the **Resolved Problems** view to find these rows.
 
 4.  Open one of the **Problem Report** Rows.
 
