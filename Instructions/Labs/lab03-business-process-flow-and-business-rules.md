@@ -139,6 +139,11 @@ In this task, you will create a business process flow for the Problem Report tab
 
 35. Select **Done**.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Exercise 2: Create business rule
 
@@ -214,6 +219,11 @@ In this exercise, you will create a business rule that will block completion of 
 
 23.  Select **Publish all customizations** and wait for the publishing to complete.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Exercise 3: Test processes
 
@@ -258,3 +268,10 @@ In this exercise, you will test the business process flow and the business rule 
     ![A screenshot of the form without the error message after resolution](02-2/media/image26(1).png)
 
 11. Select **Save** to save the Problem Report.
+
+### Review
+In this lab, you have completed:
+- Created BPF lifecycle of problem report.
+- Explored on business rule to not allow close without resolution.
+
+### You have successfully completed the lab

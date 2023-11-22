@@ -187,6 +187,11 @@ In this task, you will test the Notify Problem Creator flow.
 
     ![A screenshot of the email you should receive with the status of the problem, problem title, and its current status](04/media/task2(7).png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Exercise 2: Build escalation flow
 
@@ -394,6 +399,12 @@ In this task, you will test the escalation flow.
 
 14. Select **Save**, if you have not done so previously.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 ### Exercise 3: Send approval requests as adaptive card in Microsoft Teams
 
 In this exercise, you will setup a team in Microsoft Teams dedicated to the Company 311 applications. You will modify the flow to send the approval request as an adaptive card in Teams chat instead of an approval message.
@@ -564,3 +575,11 @@ In this task, you will test the escalation flow with the Teams and adaptive card
   - Auto-subscribe creator of the problem report.
   - How to find out previous value of status reason?
   - Create your own adaptive card using [Adaptive Cards Designer](https://adaptivecards.io/designer/).
+
+### Review
+In this lab, you have completed:
+- Builded notify flow.
+- Builded escalation flow.
+- Sended approval requests as adaptive card in Microsoft Teams(READ-ONLY). 
+
+### You have successfully completed the lab

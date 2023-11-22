@@ -56,6 +56,12 @@ In this exercise, you will create a custom solution publisher and a solution. Th
 
     ![A screenshot of the new solution pane](02-1/media/image3(1).png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 
 ### Exercise 2: Implement data model
 
@@ -205,6 +211,11 @@ In this task, you will create many-to-one relationships between the Problem Repo
 
 7.  Select **Publish all customizations** and wait for the publishing to complete. 
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Exercise 3: Configure form and views
 
@@ -429,6 +440,11 @@ In this exercise, you will create a model-driven application.
 
     ![A screenshot with an arrow pointing to the publish all customizations button](02-1/media/lab02-ex4-t1-s28.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Exercise 5: Input data
 
@@ -494,6 +510,11 @@ In this exercise, you will input data to the Dataverse tables.
 
 19. Select **Save & Close**.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Exercise 6: Import data
 
@@ -591,8 +612,13 @@ In this exercise, you will import sample data into the environment. Rows are imp
 
 7.  Make sure the department Rows got imported.
 
+### Review
+In this lab, you have completed:
+- Created publisher and solution. 
+- Implemented the data model.
+- Configured forms and views. 
+- Composed a basic model-driven app. 
+- Input data and refine some views, import some problem reports. 
 
-### **Bonus exercise**
-
-  - Deal with problem report assignment within a department.
+### You have successfully completed the lab
 

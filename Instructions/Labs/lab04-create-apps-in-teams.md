@@ -80,6 +80,11 @@ In this task you will install Power Apps for Teams.
 
     ![A Screenshot with an arrow pointing to the power apps icon and a box around the pin button](03-1/media/lab4-ex1-t1-14.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Exercise 2: Create application
 In this exercise, you will provision Dataverse for Teams by creating an application and you will also create a Dataverse table with columns.
@@ -486,3 +491,10 @@ In this task, you will give your colleagues permission to create new items, edit
 
 5.  You may wish to test the application with another user in your tenant and see how it behaves.
 
+### Review
+In this lab, you have completed:
+- Get started with Microsoft Dataverse for Teams.
+- Created application.
+- Tested and published application. 
+
+### You have successfully completed the lab
