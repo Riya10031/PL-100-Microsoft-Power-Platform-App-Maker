@@ -185,8 +185,6 @@ In this exercise, you will create a business rule that will block completion of 
 
 11. Scroll down to **Rule 2**, select **Resolution** for **Field**, select **Does not contain data** for **Operator**, make sure **AND** is selected for **Rule Logic**, and select **Apply**.
 
-    ![A screenshot of the rules panel if you scroll further down with the relevant text in each field](02-2/media/image16(1).png)
-
 12. Select **+ Add**.
 
     ![A Screenshot with an arrow pointing to the add button](02-2/media/image17(1).png)
