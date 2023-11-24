@@ -359,7 +359,7 @@ In this task you will setup a Microsoft Teams team for the Lamna Healthcare Comp
 
 2.  Select **Data hub**.
 
-    ![A screenshot of a border around the datasets button](05/media/image-6-datasets.png)
+    ![A screenshot of a border around the datasets button](05/media/Power-bi.png)
 
 3.  Hover over the dataset you created, select the **...** More options button, and select **Settings**.
 
