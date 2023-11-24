@@ -3,7 +3,7 @@
 > - Common Data Service has been renamed to Microsoft Dataverse. [Learn more](https://aka.ms/PAuAppBlog)
 > - Some terminology in Microsoft Dataverse has been updated. For example, *entity* is now *table* and *field* is now *column*. [Learn more](https://go.microsoft.com/fwlink/?linkid=2147247)
 
-# Lab 07: Power BI
+# Lab 05: Power BI
 
 ## Lab Scenario
 In this lab, you will build a Power BI dashboard that visualizes data about problems reported by company employees.
@@ -179,6 +179,12 @@ In this lab, you will build a Power BI dashboard that visualizes data about prob
 
 15. Save work in progress by selecting **File | Save**.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 
 ## Exercise 3: Create Power BI Dashboard
 
@@ -286,7 +292,13 @@ In this lab, you will build a Power BI dashboard that visualizes data about prob
 
 >**Note**: To access the dashboard and report you will have to sign in on the phone as the same user.
 
-7.  Navigate and explore reports and dashboards on a mobile device. 
+7.  Navigate and explore reports and dashboards on a mobile device.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 
 ## Exercise 4: Embed Power BI report
@@ -347,7 +359,7 @@ In this task you will setup a Microsoft Teams team for the Lamna Healthcare Comp
 
 2.  Select **Data hub**.
 
-    ![A screenshot of a border around the datasets button](05/media/image-6-datasets.png)
+    ![A screenshot of a border around the datasets button](05/media/Power-bi.png)
 
 3.  Hover over the dataset you created, select the **...** More options button, and select **Settings**.
 

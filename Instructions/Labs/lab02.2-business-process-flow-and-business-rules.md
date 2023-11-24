@@ -51,7 +51,7 @@ In this task, you will create a business process flow for the Problem Report tab
 
 2.  Select **Solutions** and open the **Company 311** solution.
 
-3.  Select **+ New > Automation > Process > Business process flow**.
+3.  Select **+ New (1)> Automation (2)> Process (3)> Business process flow (4)**.
 
     ![image-20221004145025636](02-2/media/image2(1).png)
 
@@ -59,7 +59,7 @@ In this task, you will create a business process flow for the Problem Report tab
 
     ![A screenshot of New business process flow panel with relevant field values.](02-2/media/image3(1).png)
 
-5.  Open the **Problem resolution process** Business Process flow created in the previous step. Select the **New stage**, go to the **Properties** pane, change the **Display Name** to `Route` and select **Apply**. 
+5.  On the **Problem resolution process** Business Process flow created in the previous step. Select the **New stage**, go to the **Properties** pane, change the **Display Name** to `Route` and select **Apply**. 
 
     ![A screenshot of the new stage and properties pane](02-2/media/image4(1).png)
 
@@ -139,6 +139,11 @@ In this task, you will create a business process flow for the Problem Report tab
 
 35. Select **Done**.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Exercise 2: Create business rule
 
@@ -180,8 +185,6 @@ In this exercise, you will create a business rule that will block completion of 
 
 11. Scroll down to **Rule 2**, select **Resolution** for **Field**, select **Does not contain data** for **Operator**, make sure **AND** is selected for **Rule Logic**, and select **Apply**.
 
-    ![A screenshot of the rules panel if you scroll further down with the relevant text in each field](02-2/media/image16(1).png)
-
 12. Select **+ Add**.
 
     ![A Screenshot with an arrow pointing to the add button](02-2/media/image17(1).png)
@@ -214,6 +217,11 @@ In this exercise, you will create a business rule that will block completion of 
 
 23.  Select **Publish all customizations** and wait for the publishing to complete.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ### Exercise 3: Test processes
 
@@ -258,3 +266,10 @@ In this exercise, you will test the business process flow and the business rule 
     ![A screenshot of the form without the error message after resolution](02-2/media/image26(1).png)
 
 11. Select **Save** to save the Problem Report.
+
+### Review
+In this lab, you have completed:
+- Created BPF lifecycle of problem report.
+- Explored on business rule to not allow close without resolution.
+
+### You have successfully completed the lab

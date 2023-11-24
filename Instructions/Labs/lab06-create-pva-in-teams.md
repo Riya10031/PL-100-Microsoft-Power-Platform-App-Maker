@@ -42,7 +42,7 @@ In this task, you will add an Excel file to your OneDrive for business and add n
 
 4.  Browse to the Lab Resources folder, select the **Recycle.xlsx** file, and select Open.
 
-    > **TIP:** The lab resources folder can be found here: `F:\Instructions\Labs\06\Resources\`
+    > **TIP:** The lab resources folder can be found here:`C:\PL100\PL-100-Microsoft-Power-Platform-App-Maker-prod\Instructions\Labs\06\Resources\`
 
 5.  From the left menu, select **My files**, and select the file that you just added.
 
@@ -460,6 +460,12 @@ In this task, you will call the flow as an action from the Power Virtual Agents 
 12. Select **Save** to save your changes and wait for the bot to be saved.
 
 13. Do not navigate away from this page.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 
 ### Exercise 2 – Test and publish the bot

@@ -3,7 +3,7 @@
 > -  Common Data Service has been renamed to Microsoft Dataverse. [Learn more](https://aka.ms/PAuAppBlog)
 > - Some terminology in Microsoft Dataverse has been updated. For example, *entity* is now *table* and *field* is now *column*. [Learn more](https://go.microsoft.com/fwlink/?linkid=2147247)
 
-# Lab 04: Create apps in Teams
+# Lab 03.1: Create apps in Teams
 
 ## Lab Scenario
 
@@ -37,19 +37,31 @@ In this exercise, you will create a new team and install Power Apps for Teams.
 
 In this task you will create a new team.
 
-1.  Navigate to Desktop and search for Microsoft teams and select it. Select **Keep using the new teams**.
+1.  Navigate to Desktop and search for **Microsoft Edge**, and in the browser search for **[Microsoft teams](https://www.microsoft.com/en-in/microsoft-teams/log-in)**.
 
-2.  Select the **Create a new team** button.
+1. On the Microsoft teams page, select **Get Started**. 
 
-    ![A screenshot with a box around the teams button on the left side of the window and an arrow pointing to the create team button](03-1/media/lab4-ex1-t1-6.png)
+    ![A screenshot with a box around the teams button on the left side of the window and an arrow pointing to the create team button](06/media/getstarted.png)
+
+    >**Note:** If it asks for the sign in credentials, then enter the username:- <inject key="AzureAdUserEmail"></inject>, and password:- <inject key="AzureAdUserPassword"></inject>
+
+    >**Note:** If it shows **Welcome to Microsoft Teams!** page, select **Get Started**.
+
+1. On **Stay signed in to all your apps** page, select **No, sign in to this app only**.
+
+    >**Note:** If prompted **One more step to set up Teams with Office** select **Let's do it**, and close the slides.
+
+1. Select **Teams** from the lef-hand navigation menu.
+
+1.  Select the **Create a new team** button.
 
 3.  Select **From scratch**.
 
 4.  Select **Public**.
 
-5.  Enter **Green** for **Team name** and select **Create**.
+5.  Enter **Green (1)** for **Team name** and select **Create (2)**.
 
-    ![A screenshot with the word green in the team name field](03-1/media/lab4-ex1-t1-9.png)
+    ![A screenshot with the word green in the team name field](06/media/teamsgreen.png)
 
 6.  Select **Skip** on the **Add members to Green** screen.
 
@@ -64,16 +76,19 @@ In this task you will create a new team.
 
 In this task you will install Power Apps for Teams.
 
-1.  Select the **ellipsis More added apps**, search for power apps and select **Power Apps**. 
+1.  Select the **ellipsis More added apps (1)**, search for power apps and select **Power Apps (2)**. 
 
-    ![A Screenshot with an arrow pointing to the ellipsis icon for more added apps on the left side of the page and a box around power apps button](03-1/media/lab4-ex1-t1-12.png)
-
-2.  Select **Add**. 
+    ![A Screenshot with an arrow pointing to the ellipsis icon for more added apps on the left side of the page and a box around power apps button](06/media/ellipses.png)
 
 3.  Right-click on the Power Apps tab and select **Pin**. 
 
-    ![A Screenshot with an arrow pointing to the power apps icon and a box around the pin button](03-1/media/lab4-ex1-t1-14.png)
+    ![A Screenshot with an arrow pointing to the power apps icon and a box around the pin button](06/media/powerapps-1.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 ## Exercise 2: Create application
 In this exercise, you will provision Dataverse for Teams by creating an application and you will also create a Dataverse table with columns.
@@ -84,19 +99,19 @@ In this task, you will provision Dataverse for Teams by creating an application.
 
 1.  Navigate to Desktop and search for Microsoft teams and select it. Select **Keep using the new teams**.
 
-2.  Select **Power Apps** and select **Start now**.
+2.  Select **Power Apps (1)** and select **Start now (2)**.
 
-    ![A screenshot of the power apps for teams home page](03-1/media/lab4-ex1-t1-15.png)
+    ![A screenshot of the power apps for teams home page](06/media/powerapps-2.png)
 
-3.  Select the **Green** team you created and select **Create**.
+3.  Select the **Green (1)** team you created and select **Create (2)**.
 
-    ![A screenshot of the power apps for teams home page](03-1/media/lab4-ex1-t1-17.png)
+    ![A screenshot of the power apps for teams home page](06/media/greencreate.png)
 
-4.  **Wait** until provisioning is complete.
+    >**Note:** You have to **wait** until provisioning is complete.
 
-5.  Enter **Upcycle** for App name and select **Save**.
+5.  Enter **Upcycle (1)** for App name and select **Save (2)**.
 
-    ![A screenshot of the power apps for teams home page](03-1/media/lab4-ex1-t1-18.png)
+    ![A screenshot of the power apps for teams home page](06/media/upcycle.png)
 
 6.  Do not navigate away from this page.
 
@@ -104,7 +119,7 @@ In this task, you will provision Dataverse for Teams by creating an application.
 ### Task 2: Create table
 In this task, you will create a table and columns.
 
-1.  Select **With data** and then select **Create new table**.
+1.  Select **With data (1)** and then select **Create new table (2)**.
 
     ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/lab4-ex1-t1-19.png)
 
@@ -112,23 +127,21 @@ In this task, you will create a table and columns.
 
     ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/lab4-ex1-t1-20.png)
 
-3.  Click on edit and Enter **Gadget** for **Display name** and select **Save** then select  **Save and close**.
+3.  Click on **Edit (1)** and Enter **Gadget (2)** for **Display name** and select **Save (3)** then select  **Save and close**.
 
-    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/lab4-ex1-t1-21.png)
+    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](06/media/newtable.png)
 
-4. Select **Data** tab then select ellipse of Gadgets table and select Edit data.
+4. Select **Data (1)** tab then select **ellipse (2)** of Gadgets table and select **Edit data (3)**.
 
-    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/2023-11-07_14-23-55.png)
+    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](06/media/editdata.png)
 
-5. Select **Create new column** tab.
-
-    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/2023-11-07_14-24-19.png)
-
-6.  Select the dropdown of New column and select edit column. Enter **Name** for **Display name** and then select **Update**.
+6.  Select the **dropdown of New column (1)** and select **edit column (2)**.
 
     ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/2023-11-07_14-24-57.png)
 
-    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/2023-11-07_14-25-36.png)
+7. Enter **Name (1)** for **Display name** and then select **Save (2)**.
+
+    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](06/media/displayname.png)
 
 7.  Select **+ New column**.
 
@@ -139,7 +152,7 @@ In this task, you will create a table and columns.
 
 9.  Select **+ New column** again.
 
-10.  Enter **Availability** for Name, select **Choice** for Type, and select **+ New choice** under **Sync this choice with** drop-down box. That will open a window to create a global choice to sync with.
+10.  Enter **Availability** for **Display name**, select **Choice > Choice** for Data Type, and select **+ New choice** under **Sync this choice with** drop-down box. That will open a window to create a global choice to sync with.
 
 11.  Enter **Availability** for **Display name**.
 
@@ -156,8 +169,6 @@ In this task, you will create a table and columns.
 15. Select **Availability** in **Sync this choice with**.
 
 16. Select **Available** for **Default choice** and select **Save**.
-
-    ![A screenshot of a new choice column with global choice to sync with selected](03-1/media/ex2-t2-image6.png)
 
 17. Select **+ New column** menu.
 
@@ -181,22 +192,17 @@ In this task, you will create a table and columns.
 
     ![A screenshot of the new Gadget table with all columns in a grid layout](03-1/media/lab4-ex1-t1-28.png)
 
-24. Close the table editor by selecting the **Save and Close** button.
-
-25. Close the preview mode after adding all the records.
-
+24. Close the table editor by selecting **Close**.
 
 ### Task 3: Edit the application
 
 In this task, you will edit the application by filters for gadgets that are available and edit the form.
 
-> **NOTE**
->
-> If you don't have Power Apps Studio open from last step, navigate to **Power Apps app**, select the **Home** tab and open the **Upcycle** application you created. 
+> **Note:** If you don't have Power Apps Studio open from last step, navigate to **Power Apps app**, select the **Home** tab and open the **Upcycle** application you created. 
 
 1.  Select **Screen1**. If the screen already contains the form, move to the next step, otherwise select **With data** and select **Gadgets** table under **Current environment**. That will create the screen elements including the form.
 
-2.  Make sure **RightContainer1** is expanded and select the **EditForm1** control from tree view.
+2.  Make sure **RightContainer1 (1)** is expanded and select the **EditForm1 (2)** control from tree view.
 
     ![A screenshot with a border around the edit form button under screen 1](03-1/media/lab4-ex1-t1-30.png)
 
@@ -214,7 +220,7 @@ In this task, you will edit the application by filters for gadgets that are avai
     - **Reserved by**
     - **Photo**
 
-    ![A screenshot of the add field window](03-1/media/ex2-t4-image3.png)
+        ![A screenshot of the add field window](03-1/media/ex2-t4-image3.png)
 
 6.  Remove any extra fields and close the **Fields** pane. Your form should only have **Name, Description, Availability, Location, Reserved By and Photo** columns.
 
@@ -236,8 +242,6 @@ In this task, you will edit the application by filters for gadgets that are avai
 
 11. Search for **display** and change the **DisplayMode** value to **DisplayMode.View** 
 
-    ![A screenshot with a border around the display mode field](03-1/media/lab4-ex1-t1-34.png)
-
 12. Select the **Browse gallery** under **LeftContainer** in the treeview.
 
 13. Select **Items** on the formula bar and replace the value with formula below. This formula will filter the gadgets to show only the available gadgets.
@@ -254,9 +258,9 @@ In this task, you will edit the application by filters for gadgets that are avai
 
     ![A Screenshot with an arrow pointing to image 1 inside the gallery](03-1/media/lab4-ex1-t1-36.png)
 
-16. Select the **Data** tab (database icon) in the left navigation, select the **...More actions** button of the **Gadgets** table and select **Refresh**.
+16. Select the **Data** tab (database icon) in the left navigation, select the **...More actions (1)** button of the **Gadgets** table and select **Refresh (2)**.
 
-    ![A Screenshot with an arrow pointing to the ellipsis icon for more actions and a border around the refresh button](03-1/media/lab4-ex1-t1-37.png)
+    ![A Screenshot with an arrow pointing to the ellipsis icon for more actions and a border around the refresh button](06/media/gadgets.png)
 
 17. Select **Save** and wait for the app to be saved.
 
@@ -307,8 +311,6 @@ In this task, you will add buttons that will let users reserve and/or pick up it
 
 4.  Select the **Tree view**, double-click on the button you just added and rename it `Reserve Button`.
 
-    ![A screenshot with the text "Reserve Button" highlighted as the new name for the button you added](03-1/media/ex2-t5-image4.png)
-
 5.  Set the **Text** property of the Reserve Button to **Reserve**.
 
     ![A screenshot with the text "Reserve Button" highlighted as the new name for the button you added](03-1/media/lab4-ex1-t1-43.png)
@@ -320,8 +322,6 @@ In this task, you will add buttons that will let users reserve and/or pick up it
 7.  Set the **DisplayMode** property of the Reserve Button to the formula below. This formula will disable the button if the selected item is not available.
 
     ```If(BrowseGallery1.Selected.Availability = [@Availability].Available, DisplayMode.Edit, DisplayMode.Disabled)```
-
-    ![A screenshot of the Reserve button selected and moved next to the image on the right hand side](03-1/media/lab4-ex1-t1-44.png)
 
 8.  Set the **OnSelect** property of the Reserve Button to the formula below. This formula will update the selected record by setting the reserved by value to the current user and the availability value to reserved.
 
@@ -340,8 +340,6 @@ In this task, you will add buttons that will let users reserve and/or pick up it
 11. Select the **+** Insert button and select **Button** again.
 
 12. Select the **Tree view**, double-click on the button you just added and rename it to `Picked Up Button`.
-
-    ![A screenshot with the text "Picked Up Button" highlighted as the name new for button you added](03-1/media/ex2-t5-image6.png)
 
 12. Set the **Text** property of the Reserve Button to `Picked Up`.
 
@@ -388,8 +386,6 @@ In this task, you will add search capability to your application.
 
 7.  Select the text box you just added and rename it `Search Box`
 
-    ![A screenshot of the words "Search Box" highlighted as the new name for the text box you added](03-1/media/ex2-t6-image3.png)
-
 8.  **Move** the Search Box to the right of the icon.
 
     ![A screenshot of the Search Box placed to the right of the icon](03-1/media/ex2-t6-image4.png)
@@ -404,11 +400,7 @@ In this task, you will add search capability to your application.
 
 11. Place your cursor after **'Search Box'.Value** and enter `name`. You should see a suggestion with crxxx_name, select the suggested column.
 
-    ![A screenshot with a border around the words "crefe4_name"](03-1/media/ex2-t6-image5.png)
-
 12. Add a comma after the name column you just selected and enter `description` and select the suggested column again.
-
-    ![A screenshot with a border around the worlds "crfe4_description"](03-1/media/ex2-t6-image6.png)
 
 13. Your formula should now look like the image below. This formula will search the name and description columns of the gadgets table for whatever the user enters in the text box and filter out the picked up items.
 
@@ -437,11 +429,7 @@ In this task, you will test the application.
 
 2.  The **Reserve** and **Picked Up** button should be visible and enabled.
 
-3.  Search for `cable`
-
-    The gallery should show items that have the text **cable** in the name or description column.
-
-    ![A screenshot with the word cable in the search bar and a gallery showing items that have the text cable in their name or description column on the left side of the window](03-1/media/ex3-t1-image2.png)
+3.  Search for `cable`. The gallery should show items that have the text **cable** in the name or description column.
 
 5.  Select one of the items, the **Reserved by** column value should be empty.
 
@@ -507,3 +495,10 @@ In this task, you will give your colleagues permission to create new items, edit
 
 5.  You may wish to test the application with another user in your tenant and see how it behaves.
 
+### Review
+In this lab, you have completed:
+- Get started with Microsoft Dataverse for Teams.
+- Created application.
+- Tested and published application. 
+
+### You have successfully completed the lab
