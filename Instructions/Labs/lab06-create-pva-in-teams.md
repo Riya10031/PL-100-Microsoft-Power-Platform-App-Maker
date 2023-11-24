@@ -42,7 +42,7 @@ In this task, you will add an Excel file to your OneDrive for business and add n
 
 4.  Browse to the Lab Resources folder, select the **Recycle.xlsx** file, and select Open.
 
-    > **TIP:** The lab resources folder can be found here: `F:\Instructions\Labs\06\Resources\`
+    > **TIP:** The lab resources folder can be found here:`C:\PL100\PL-100-Microsoft-Power-Platform-App-Maker-prod\Instructions\Labs\06\Resources\`
 
 5.  From the left menu, select **My files**, and select the file that you just added.
 
