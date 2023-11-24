@@ -452,63 +452,67 @@ In this exercise, you will input data to the Dataverse tables.
 
 #### Task 1: Input data
 
+1. Download this image and save it in the desktop. 
+
+    ![A screenshot of a vector image of a door which should appear](02-1/media/image89(1).png)
+
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) and make sure you are in the correct environment.
 
-2.  Select **Apps (1)** and open the **Company 311 Admin (2)** application created in the previous exercise.
+1.  Select **Apps (1)** and open the **Company 311 Admin (2)** application created in the previous exercise.
 
     ![A Screenshot with an arrow pointing to the Company 311 Admin app](02-1/media/lab02-ex5-t1-s2.png)
 
-3.  Select **Change area**.
+1.  Select **Change area**.
 
     ![A screenshot with an arrow pointing to chevron icon next to Manage Problems](02-1/media/lab02-ex5-t1-s3.png)
 
-4.  Select the **Settings** area.
+1.  Select the **Settings** area.
 
-5.  Select **Departments** and select **+ New**.
+1.  Select **Departments** and select **+ New**.
 
-6.  Enter `Information Technology` for **Name** and select **Save**.
+1.  Enter `Information Technology` for **Name** and select **Save**.
 
     ![A screenshot showing the change in name to information technology](02-1/media/lab02-ex5-t1-s6.png)
 
-7.  Select **Buildings**.
+1.  Select **Buildings**.
 
     ![A Screenshot with an arrow pointing to the buildings button under taxonomy](02-1/media/lab02-ex5-t1-s7.png)
 
-8.  Select **+ New**.
+1.  Select **+ New**.
 
-9.  Enter `San Francisco Main Campus` for **Name** and select **Save & Close**.
+1.  Enter `San Francisco Main Campus` for **Name** and select **Save & Close**.
 
-10. Select **+ New** again.
+1. Select **+ New** again.
 
-11. Enter `London Paddington` for **Name** and select **Save & Close**.
+1. Enter `London Paddington` for **Name** and select **Save & Close**.
 
     >**Note:** You should now have two Building rows.
 
-12. Select **Change area**.
+1. Select **Change area**.
 
     ![A Screenshot with an arrow pointing to the chevron icon next to settings in the bottom left corner of the window](02-1/media/lab02-ex5-t1-s12.png)
 
-13. Select **Manage Problems**.
+1. Select **Manage Problems**.
 
-14. Select **+ New**.
+1. Select **+ New**.
 
     ![A screenshot of the active problem reports page](02-1/media/image86(1).png)
 
-15. Enter **Broken door** for **Title**, select **San Francisco Main Campus** for **Building**, enter **The main entrance door will not open all the way** for **Details**, and select **Save**.
+1. Enter **Broken door** for **Title**, select **San Francisco Main Campus** for **Building**, enter **The main entrance door will not open all the way** for **Details**, and select **Save**.
 
     >**Note:** You cannot save images before creating the row in the database. Select **Save** and then you may upload a picture.
 
     ![A screenshot of the new problem report window with all relevant text in each field](02-1/media/lab02-ex5-t1-s15.png)
 
-16. Select **Choose file** on the **Photo** field.
+1. Select **Choose file** on the **Photo** field.
 
-17. Select an image from your device. The sample image displayed below can be found [here](02-1/media/image89(1).png).
+1. Select the image which you have downloaded in the starting of this task.
 
-18. The image should now show on the form.
+1. The image should now show on the form.
 
     ![A screenshot of a vector image of a door which should appear](02-1/media/image89(1).png)
 
-19. Select **Save & Close**.
+1. Select **Save & Close**.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
