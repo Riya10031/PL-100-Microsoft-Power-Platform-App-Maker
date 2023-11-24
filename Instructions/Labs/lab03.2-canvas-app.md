@@ -48,7 +48,7 @@ In this task, you will import the shared components solution into your environme
 
     > **TIP**
     > 
-    > The lab resources can be found here: `D:\Instructions\Labs\03-2\Resources\SharedComponents_1_0_0_4.zip`
+    > The lab resources can be found here: `C:\PL100\PL-100-Microsoft-Power-Platform-App-Maker-prod\Instructions\Labs\03-2\Resources\SharedComponents_1_0_0_4.zip`
 
 5.  Select **Next**.
 
