@@ -37,19 +37,23 @@ In this exercise, you will create a new team and install Power Apps for Teams.
 
 In this task you will create a new team.
 
-1.  Navigate to Desktop and search for Microsoft teams and select it. 
+1.  Navigate to Desktop and search for **Microsoft Edge**, and in the browser search for **[Microsoft teams](https://www.microsoft.com/en-in/microsoft-teams/log-in)**.
 
-1. On **Welcome to Microsoft Teams!** page, select **Get Started**.
+1. On the Microsoft teams page, select **Get Started**. 
 
-1. Enter the log-in credentials, Username:- <inject key="AzureAdUserEmail"></inject>, and password:- <inject key="AzureAdUserPassword"></inject>
+    ![A screenshot with a box around the teams button on the left side of the window and an arrow pointing to the create team button](06/media/getstarted.png)
+
+    >**Note:** If it asks for the sign in credentials, then enter the username:- <inject key="AzureAdUserEmail"></inject>, and password:- <inject key="AzureAdUserPassword"></inject>
+
+    >**Note:** If it shows **Welcome to Microsoft Teams!** page, select **Get Started**.
 
 1. On **Stay signed in to all your apps** page, select **No, sign in to this app only**.
 
     >**Note:** If prompted **One more step to set up Teams with Office** select **Let's do it**, and close the slides.
 
-1.  Select the **Create a new team** button.
+1. Select **Teams** from the lef-hand navigation menu.
 
-    ![A screenshot with a box around the teams button on the left side of the window and an arrow pointing to the create team button](03-1/media/lab4-ex1-t1-6.png)
+1.  Select the **Create a new team** button.
 
 3.  Select **From scratch**.
 
@@ -72,13 +76,13 @@ In this task you will create a new team.
 
 In this task you will install Power Apps for Teams.
 
-1.  Select the **ellipsis More added apps**, search for power apps and select **Power Apps**. 
+1.  Select the **ellipsis More added apps (1)**, search for power apps and select **Power Apps (2)**. 
 
-    ![A Screenshot with an arrow pointing to the ellipsis icon for more added apps on the left side of the page and a box around power apps button](03-1/media/lab4-ex1-t1-12.png)
+    ![A Screenshot with an arrow pointing to the ellipsis icon for more added apps on the left side of the page and a box around power apps button](06/media/ellipses.png)
 
 3.  Right-click on the Power Apps tab and select **Pin**. 
 
-    ![A Screenshot with an arrow pointing to the power apps icon and a box around the pin button](03-1/media/lab4-ex1-t1-14.png)
+    ![A Screenshot with an arrow pointing to the power apps icon and a box around the pin button](06/media/powerapps-1.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
@@ -95,9 +99,9 @@ In this task, you will provision Dataverse for Teams by creating an application.
 
 1.  Navigate to Desktop and search for Microsoft teams and select it. Select **Keep using the new teams**.
 
-2.  Select **Power Apps** and select **Start now**.
+2.  Select **Power Apps (1)** and select **Start now (2)**.
 
-    ![A screenshot of the power apps for teams home page](03-1/media/lab4-ex1-t1-15.png)
+    ![A screenshot of the power apps for teams home page](06/media/powerapps-2.png)
 
 3.  Select the **Green (1)** team you created and select **Create (2)**.
 
@@ -115,7 +119,7 @@ In this task, you will provision Dataverse for Teams by creating an application.
 ### Task 2: Create table
 In this task, you will create a table and columns.
 
-1.  Select **With data** and then select **Create new table**.
+1.  Select **With data (1)** and then select **Create new table (2)**.
 
     ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/lab4-ex1-t1-19.png)
 
