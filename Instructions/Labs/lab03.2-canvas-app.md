@@ -88,6 +88,12 @@ In this task, you will import the shared components solution into your environme
 
 17. Close the **Lamna Healthcare Shared Components** tab in your browser.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+
 
 #### Task 2: Create view
 
@@ -217,6 +223,12 @@ In this task, create a canvas app using the phone form factor.
     ![A screenshot of the two tabs you added](03-2/media/save.png)
 
     >**Note:** Do not navigate away from this page.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+   > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+   > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+   > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+   > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
 
 ### Exercise 2: My reports
