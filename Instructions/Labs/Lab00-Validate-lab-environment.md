@@ -3,7 +3,7 @@
 > - Common Data Service has been renamed to Microsoft Dataverse. You can refer to the following link for more details: `https://aka.ms/PAuAppBlog`
 > - Some terminology in Microsoft Dataverse has been updated. For example, *entity* is now *table* and *field* is now *column*. For more details, navigate to: `https://go.microsoft.com/fwlink/?linkid=2147247`
  
-## Exercise 1: Acquire a Power Platform trial tenant
+## Lab 00: Validate-lab-environment
  
 ## Lab Scenario
  
