@@ -43,8 +43,6 @@ In this exercise, you will create security roles for users.
 
 7.  The read privileges for the **Building** and **Problem Report** Tables should now look like the image below. Select **Save Create New**.
 
-   	![A Screenshot with an arrow pointing to the save create new icon in the topmost part of the window and borders around the building and problem report on the list of custom entities](07/media/lab-07(1).png)
-
 8.  Enter **Company 311 Admin** for **Role Name** and select the **Custom Entities** tab.
 
 9. Set all privileges of the **Building**, **Department**, and **Problem Reports** tables to **Organization**.
