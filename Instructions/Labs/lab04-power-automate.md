@@ -561,7 +561,7 @@ In this task, you will test the escalation flow with the Teams and adaptive card
 
 11. Change the view to **My Reports** and open the same Row you change the estimated cost.
 
-12. The **Status Reason** should be set to **Won’t fix** and the **Resolution** should contain the details of Approver, Response, Request Date and Response Date.
+12. The **Status Reason** should be changed to **Won’t fix** and the **Resolution** should contain the details of Approver, Response, Request Date and Response Date.
 
 
 ## **Discussion**
