@@ -24,7 +24,9 @@ Though this lab, you will be able to complete and gain insights into the followi
 
     ![A data model showing problem report, department and building](03-2/media/tryfree.png)
 
-1. Enter the email address from the provided Microsoft 365 credentials. Agree to the terms & conditions then select **Start your free trial**.
+1. Scroll down and select **Start using apps>** and enter the email address from the provided Microsoft 365 credentials. Agree to the terms & conditions then select **Start your free trial**.
+
+    ![A data model showing problem report, department and building](01/media/pa1.png)
 
     ![A data model showing problem report, department and building](03-2/media/lab011.png)
 
