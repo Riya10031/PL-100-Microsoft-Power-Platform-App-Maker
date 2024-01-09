@@ -46,9 +46,7 @@ In this task, you will import the shared components solution into your environme
 
 4.  Go to the Lab Resources folder, select the **Shared Components** solution file, and select **Open**.
 
-    > **TIP**
-    > 
-    > The lab resources can be found here:`C:\PL100\PL-100-Microsoft-Power-Platform-App-Maker-prod\Instructions\Labs\03-2\Resources\SharedComponents_1_0_0_4.zip`
+    > **TIP:** The lab resources can be found here:`C:\PL100\PL-100-Microsoft-Power-Platform-App-Maker-prod\Instructions\Labs\03-2\Resources\SharedComponents_1_0_0_4.zip`
 
 5.  Select **Next**.
 
@@ -62,9 +60,7 @@ In this task, you will import the shared components solution into your environme
 
     ![A screenshot of the shared components window with the Lamna Healthcare shared components item](03-2/media/image2.png)
 
-    > **IMPORTANT**
-    >
-    > There is an issue where importing the app as part of a solution may not add it to your components library. The following steps are designed to resolve the issue.
+    >**Important:** There is an issue where importing the app as part of a solution may not add it to your components library. The following steps are designed to resolve the issue.
 
 10. Navigate to the [Power Apps maker portal](https://make.powerapps.com/) page and make sure you are in the correct environment.    
 
@@ -76,9 +72,9 @@ In this task, you will import the shared components solution into your environme
 
 13. If prompted, select your **Region/Country** and select **Get started** or select **Skip**.
     
-    > **NOTE:** When the app is open in Edit mode, move on to next step, as the Preloader component shows a Loading icon but it is not actually waiting for something to load.
+    > **Note:** When the app is open in Edit mode, move on to next step, as the Preloader component shows a Loading icon but it is not actually waiting for something to load.
 
-14. After the app opens, select the drop-down &#709; next to the **Save** button and select **Save as**.
+14. After the app opens, select the drop-down &**#709**; next to the **Save** button and select **Save as**.
 
 15. Change app name to `Lamna Healthcare Shared Components A` and select **Save**.
 
@@ -253,9 +249,7 @@ In this exercise, add a gallery that will show reports created by the current lo
 
 5.  Under **View**, select the **My Reports** that you created.
 
-6.  Under **Fields**, select **Edit**.
-
-    ![A Screenshot with an arrow pointing to the edit button](03-2/media/image22.png)
+6.  Under **Fields**, select **7 selected**.
 
 7.  Change Subtitle1 to **statuscode**. This is the **Status Reason** column.
 
@@ -317,9 +311,7 @@ In this exercise, add a form to the canvas app to submit new problem reports.
 
 3.  Select **New Report Form**, go to the **Properties** pane, and select **Problem Report** under **Data source**.
 
-4.  Select **Edit fields**.
-
-    ![A Screenshot with an arrow pointing to the edit fields button](03-2/media/image28.png)
+4.  Select **4 selected**, in the **Fields** section.
 
 5.  If **Status Reason** Column is there you can remove it.
 
