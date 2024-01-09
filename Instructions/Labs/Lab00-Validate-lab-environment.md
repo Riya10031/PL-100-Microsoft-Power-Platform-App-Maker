@@ -30,7 +30,8 @@ Though this lab, you will be able to complete and gain insights into the followi
 
     ![A data model showing problem report, department and building](03-2/media/lab011.png)
 
-1.  Enter the ODL credentials. On the **Welcome to Power Apps**, select the country **United States**, and select **Get started**.
+
+    >**Note:** On the **Welcome to Power Apps**, select the country **United States**, and select **Get started**.
 
     >**Note:** If you encounter an error: "Sorry, there's been a disconnect", you can follow the steps below. If not, you can continue to Exercise 2.
 
@@ -46,6 +47,8 @@ In this exercise, you will create a **Practice** environment that you will use t
 #### Task 1 – Create environment
  
 1.  Open a new browser tab and navigate to the Power Platform admin center `https://aka.ms/ppac` 
+
+1. On the **Welcome to the Power Platform admin center!**, select **Get Started**.
 
 2.  Log in with your Microsoft 365 credentials, if prompted again.
  
