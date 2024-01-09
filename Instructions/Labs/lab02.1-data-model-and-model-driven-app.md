@@ -27,6 +27,8 @@ In this exercise, you will create a custom solution publisher and a solution. Th
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) and make sure you are in the practice environment you created. 
 
+    > **Note**: Please ensure you have performed to activate the PowerApps trial license in the **Lab00: Validate-lab-environment.**
+
 1.  From the left navigation pane, select **Solution**.
 
 1. Select **Create a database** and on the **New database** page, select **Create my database**.
