@@ -34,7 +34,7 @@ In this task, you will add a lookup Column to the problem report table.
 
 4.  Select **+ New**, then select **Column**. 
 
-5.  Enter `Assign to` for **Display name**, select **Lookup** for **Data type**, select **User** for **Related table**, and select **Save**.
+5.  Enter `Assign to` for **Display name**, select **Lookup > Lookup** for **Data type**, select **User** for **Related table**, and select **Save**.
 
     ![A screenshot of the column properties panel for Assign To column with all relevant values in each field](02-2/media/image1(1).png)
 
@@ -81,7 +81,7 @@ In this task, you will create a business process flow for the Problem Report tab
 
 10. Select the new data step, go to the **Properties** pane, select **Location** for **Data Field**, and select **Apply**.
 
-11. Select **+ Add** again and select **Add Data Step**.
+11. Select the **+** option to add the data step below the **Location** data step.
 
 12. Select the new data step, go to the **Properties** pane, select **Department** for **Data Field**, and select **Apply**.
 
@@ -195,9 +195,9 @@ In this exercise, you will create a business rule that will block completion of 
 
     ![A Screenshot with an arrow pointing to the add button on the true path of the condition](02-2/media/image18(1).png)
 
-15. Select the new action, go to the **Properties** pane, enter **Show message** for **Display Name**, select **Status Reason** for **Field**, enter `The Problem must have a resolution before it can be closed.` for **Message**, and select **Apply**.
+15. Select the new action, go to the **Properties** pane, enter **Show message** for **Display Name**, select **Status Reason (1)** for **Field**, enter `The Problem must have a resolution before it can be closed. (2)` for **Message**, and select **Apply (3)**.
 
-    ![A screenshot of the properties panel with the relevant text in the fields](02-2/media/image19(1).png)
+    ![A screenshot of the properties panel with the relevant text in the fields](03-2/media/statusreason.png)
 
 16. The business rule should now look like the image below. Select **Save**.
 
@@ -231,9 +231,9 @@ In this exercise, you will test the business process flow and the business rule 
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) page and make sure you are in the correct environment.
 
-2.  Select **Apps** and open the **Company 311 Admin** application.
+2.  Select **Apps (1)** and open the **Company 311 Admin (2)** application.
 
-    ![A Screenshot with an arrow pointing to the company 311 admin option in apps](02-2/media/image21(1).png)
+    ![A Screenshot with an arrow pointing to the company 311 admin option in apps](03-2/media/appsmodel.png)
 
 3.  Select **Problem Reports** and select **+ New**.
 
@@ -245,19 +245,17 @@ In this exercise, you will test the business process flow and the business rule 
 
     ![A Screenshot with an arrow pointing to the route stage at the top of the page](02-2/media/image23(1).png)
 
-6.  Enter `North-end` for **Location**, select **Maintenance** for **Department** and select the **Next stage** button.
+6.  Enter `North-end` for **Location**, select **Maintenance** for **Department** and select the **Next stage>** button.
 
-    > **NOTE**
-    >
-    > If the **Next Stage** button is not visible, then refresh the page.
+    >**Note:** If the **Next Stage >** button is not visible, then refresh the page.
 
     ![A screenshot of the drop down from the route stage with the relevant options selected and entered](02-2/media/image24(1).png)
 
-7.  Select a user for **Assign to** and select **Next Stage**.
+7.  Select **<inject key="AzureAdUserEmail"></inject>** user for **Assign to** and select **Next Stage >**.
 
 8.  Select an appropriate date and time for the **Resolved on** and leave the **Resolution** value empty.
 
-9.  Scroll down to the **Resolution details** section and select **Completed** for **Status Reason**. You should see the business rule error message defined earlier.
+9.  Select **New Tab**. Under **Resolution details** section, select **Completed** for **Status Reason**. You should see the business rule error message defined earlier.
 
     ![A screenshot of the error message under status reason](02-2/media/image25(1).png)
 

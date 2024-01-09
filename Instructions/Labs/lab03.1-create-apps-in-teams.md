@@ -37,9 +37,9 @@ In this exercise, you will create a new team and install Power Apps for Teams.
 
 In this task you will create a new team.
 
-1.  Navigate to Desktop and search for **Microsoft Edge**, and in the browser search for **[Microsoft teams](https://www.microsoft.com/en-in/microsoft-teams/log-in)**.
+1.  In the browser, open an another tab, and in the browser search for **[Microsoft Teams](https://teams.microsoft.com).
 
-1. On the Microsoft teams page, select **Get Started**. 
+    >**Note:** If it opens the Microsoft teams page, select **Get Started**. 
 
     ![A screenshot with a box around the teams button on the left side of the window and an arrow pointing to the create team button](06/media/getstarted.png)
 
@@ -50,6 +50,8 @@ In this task you will create a new team.
 1. On **Stay signed in to all your apps** page, select **No, sign in to this app only**.
 
     >**Note:** If prompted **One more step to set up Teams with Office** select **Let's do it**, and close the slides.
+
+    >**Note:** If it asks to **Get the Windows app** or **Use the web app instead**, select **Use the web app instead**.
 
 1. Select **Teams** from the lef-hand navigation menu.
 

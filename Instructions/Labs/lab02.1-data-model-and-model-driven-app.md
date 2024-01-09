@@ -257,7 +257,7 @@ In this exercise, you will configure form and views for the Problem Report table
 
     ![A screenshot of the form field height set to 4 rows](03-2/media/1-column.png)
 
-12. A new section should be added to the form. Select the **New Section**.
+12. Under **New Tab**, a new section should be added to the form. Select the **New Section**.
 
 13. Go to the **Properties (1)** pane, change the **Label (2)** to `Resolution details` and enter `section\_resolution\_details` for **Name (3)**.
 
@@ -289,6 +289,8 @@ In this exercise, you will configure form and views for the Problem Report table
 1.  In the **Problem Report** table, under **Data experiences**, select **Views**.
 
     ![A screenshot of the form field height set to 4 rows](03-2/media/problemreport.png)
+
+    >**Note:** If needed on the left-navigation pane, expand **Problem Report**
 
 2.  Open the **Active Problem Reports** view.
 
@@ -546,6 +548,8 @@ In this exercise, you will import sample data into the environment. Rows are imp
 
 9.  Select **Create**, authenticate if required, wait until new connection is created. **Close** the browser tab.
 
+    >**Note:** If it asks you to pick an account, select **<inject key="AzureAdUserEmail"></inject>** and enter **<inject key="AzureAdUserPassword"></inject>**, select **Sign in**, and on the **Stay signed in?**, pop-up select **No**.
+
 10. Select **Refresh**. Verify the new connection is selected in the drop-down. 
 
 11. Select **Import** and wait for the message **Solution "Data Import" imported successfully** to appear.
@@ -610,11 +614,11 @@ In this exercise, you will import sample data into the environment. Rows are imp
 
 4.  Open one of the **Problem Report** Rows.
 
-5.  Select the **Search** icon of the **Building** lookup and make sure building Rows were imported.
+5.  Select the **Search** icon of the **Building** lookup and make sure building Rows were imported, close the **Building** lookup.
 
-    ![A screenshot of a border around the building lookup with the building rows imported](02-1/media/image95(1).png)
+    ![A screenshot of a border around the building lookup with the building rows imported](03-2/media/buildingloop.png)
 
-6.  Scroll down and select the **Department** lookup.
+6. Select **New Tab**, and select the **Department** lookup.
 
 7.  Make sure the department Rows got imported.
 
