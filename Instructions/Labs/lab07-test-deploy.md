@@ -41,7 +41,9 @@ In this exercise, you will create security roles for users.
 
 6.  Set the read privilege of the **Problem Report** table to **User**.
 
-7.  The read privileges for the **Building** and **Problem Report** Tables should now look like the image below. Select **Save Create New**.
+7.  Select **Save Create New**.
+
+    ![A screenshot of building, department, and problem report having all privileges selected in the custom entities tab](03-2/media/savecreatenew.png)
 
 8.  Enter **Company 311 Admin** for **Role Name** and select the **Custom Entities** tab.
 
@@ -72,7 +74,7 @@ In this exercise, you will run the solution checker on the Company 311 solution.
 
 1.  Make sure you are still on the [Power Apps maker portal](https://make.powerapps.com/) site and you are in the correct environment.
 
-2.  Select **Solutions**, select the **Company 311** solution row, select **Solution checker** and select **Run**. 
+2.  Select **Solutions**, select the **Company 311** solution checkbox, select **Solution checker** and select **Run**. 
 
     ![A screenshot of the security role edit dialog with all privileges selected for Model Driven app table](07/media/lab-07(3).png)
 
@@ -86,9 +88,7 @@ In this exercise, you will run the solution checker on the Company 311 solution.
 
 6.  Review the issues listed on the **Solution checker results**.
 
-    > **NOTE**
-    >
-    > If you are seeing errors in the Solution Check Result, open the component showing errors one by one and resolve the issues.
+    > **Note:** If you are seeing errors in the Solution Check Result, open the component showing errors one by one and resolve the issues.
     >
     > At this point you will see errors for the Canvas App. Open the app and fix the Accessible Label and Tab Index errors. For assistance, you can refer to [Microsoft Documentation](https://docs.microsoft.com/powerapps/maker/canvas-apps/accessibility-checker). After resolving the issues, save and publish your app. Go back to the **Company 311** Solution and re-run the solution checker.
     >
@@ -103,7 +103,7 @@ In this exercise, you use test studio to create test case for submitting a probl
 
 1.  Navigate to the [Power Apps maker portal](https://make.powerapps.com/) and make sure you are in the correct environment.
 
-2.  Select **Apps**, select the **Company 311 Phone** application, and select **Edit**. Select **Skip** if prompted.
+2.  Select **Apps**, select the **Company 311 Phone** application checkbox, and select **Edit**. Select **Skip** if prompted.
 
     ![A screenshot of the security role edit dialog with all privileges selected for Model Driven app table](07/media/lab-07(5).png)
 
@@ -117,9 +117,7 @@ In this exercise, you use test studio to create test case for submitting a probl
 
 7.  **Close** the settings pane.
     
-    > **NOTE**
-    >
-	> Currently test studio cannot record steps inside components like the tab control we are using, you edit the App StartScreen formula, so the app navigates directly to the new report screen.
+    > **Note:** Currently test studio cannot record steps inside components like the tab control we are using, you edit the App StartScreen formula, so the app navigates directly to the new report screen.
 
 8.  Select the **Tree view** menu.
 
@@ -274,7 +272,7 @@ In this exercise, you will export the company 311 solution and import it into a 
 28. Close the **Company 311 Phone App** browser window or tab.
 
 
-### Exercise 5: Add existing flow to solution
+### Exercise 5: Add existing flow to solution (Read-Only)
 
 An employee has created a simple personal productivity flow. The flow looks like a very useful addition to everyone at the company so the decision was made to make this flow available to everyone by including it into the existing solution.
 In this exercise, you will create the flow outside of the solution and then add it to the Company 311 solution.
@@ -287,7 +285,7 @@ In this task, you will create the Lunchtime Sports team.
 
 2.  Select **Teams** and select **Join or create a team**.
 
-    ![A Screenshot with an arrow pointing to the join or create a team button](07/media/join_create_team.png)
+    ![A Screenshot with an arrow pointing to the join or create a team button](03-2/media/joinateam.png)
 
 3.  Select **Create team**.
 
@@ -363,7 +361,7 @@ In this task, you will test the flow.
 
     ![A Screenshot with an arrow pointing to the ellipsis icon for more options and a border around the manage team button](07/media/image17.png)
 
-3.  Select **Add member**.
+3.  Select **+ Add member**.
 
 4.  Search and select a user you want to use for testing.
 
@@ -388,7 +386,7 @@ In this task, you will add the flow to the Company 311 solution.
 
 2.  Select **Solutions** and open the **Company 311** solutions. 
 
-3.  Select **+ Add existing >> Automation >> Cloud flow**.
+3.  Select **Add existing >> Automation >> Cloud flow**.
 
 4.  Select the **Outside Dataverse** tab, select the flow you created, and select **Add**.
 
@@ -396,21 +394,19 @@ In this task, you will add the flow to the Company 311 solution.
 
 5.  Select **Publish all customizations** and wait for the publishing to complete.
 
-6.  Select **Export**.
+1. Navigate back to the **Solutions** list. 
 
-7.  Select **Next**.
+1.  Select the **Company 311** solution and select **Export Solution** from the toolbar.
 
-8.  Select **Managed** and select **Export**.
+1.  When it has exported successfully, select **Download** to save the solution to your computer. 
 
-9.  Wait for the export to complete and save the exported solution on your machine.
+1. Select **Export solution** again. 
 
-10. Select **Export** again.
+1. Select **Next**. 
 
-11. Select **Next**.
+1. Select **Unmanaged**, change the **version** to match the managed solution version and select **Export**. 
 
-12. Select **Unmanaged**, change the **version** to match the managed solution you just exported and select **Export**.
-
-13. Wait for the export to complete and save the exported solution on your machine.
+1. You should have the **Managed** and **Unmanaged** versions of the solution exported and downloaded.
 
 
 #### Task 5: Import solution
