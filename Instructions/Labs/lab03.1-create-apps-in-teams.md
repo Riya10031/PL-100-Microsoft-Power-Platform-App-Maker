@@ -37,7 +37,7 @@ In this exercise, you will create a new team and install Power Apps for Teams.
 
 In this task you will create a new team.
 
-1.  In the browser, open an another tab, and in the browser search for **[Microsoft Teams](https://teams.microsoft.com).
+1.  In the browser, open an another tab, and in the browser search for **[Microsoft Teams](https://teams.microsoft.com).**
 
     >**Note:** If it opens the Microsoft teams page, select **Get Started**. 
 
@@ -504,3 +504,5 @@ In this lab, you have completed:
 - Tested and published application. 
 
 ### You have successfully completed the lab
+
+#### Click on next to continue with the next lab

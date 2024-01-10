@@ -32,14 +32,14 @@ Though this lab, you will be able to complete and gain insights into the followi
 
     >**Note:** If prompted for the email and password, enter your ODL credentials.
 
-    >**Note:** If it shows the **Welcome to Power Apps**, select the country **United States**, and select **Get started**.
+    >**Note:** On the **Welcome to Power Apps**, select the country **United States**, and select **Get started**.
 
     >**Note:** If you encounter an error: "Sorry, there's been a disconnect", you can follow the steps below. If not, you can continue to Exercise 2.
 
-    1. Navigate to Power Apps Maker Portal.
-    1. Select the Gear Icon (Settings) from top-right corner on the header of the page.
-    1. Select Plan(s) and verify if you have Power Apps Per User Plan Trial.
-    1. If you do not have the above license, repeat Exercise 1. Otherwise, proceed to Exercise 2.
+1. Navigate to Power Apps Maker Portal.
+1. Select the Gear Icon (Settings) from top-right corner on the header of the page.
+1. Select Plan(s) and verify if you have Power Apps Per User Plan Trial.
+1. If you do not have the above license, repeat Exercise 1. Otherwise, proceed to Exercise 2.
   
 ### Exercise 2: Create your environment
  

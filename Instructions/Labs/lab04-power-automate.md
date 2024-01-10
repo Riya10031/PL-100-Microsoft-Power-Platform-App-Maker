@@ -583,3 +583,5 @@ In this lab, you have completed:
 - Sended approval requests as adaptive card in Microsoft Teams(Read Only). 
 
 ### You have successfully completed the lab
+
+#### Click on next to continue with the next lab

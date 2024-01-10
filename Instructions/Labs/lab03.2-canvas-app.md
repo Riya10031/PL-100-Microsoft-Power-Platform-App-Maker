@@ -478,3 +478,5 @@ In this lab, you have completed:
 - Embedded canvas app in Microsoft Teams.
 
 ### You have successfully completed the lab
+
+#### Click on next to continue with the next lab

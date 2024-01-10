@@ -152,39 +152,38 @@ In this lab, you will build a Power BI dashboard that visualizes data about prob
 
     ![A Screenshot with an arrow pointing to the stacked column chart icon](05/media/2023-11-08_13-27-57.png) 
 
-9.  **Resize** the chart as required using the corner handles.
+8.  **Resize** the chart as required using the corner handles.
 
-10.  **Test** the report interactivity:
+9.  **Test** the report interactivity:
 
->**Note**: Select various building slices on the pie chart and observe changes on the stacked column chart. 
->**Note**:Select various bars on the stacked column chart and observe changes on the pie report.
+     >**Note**: Select various building slices on the pie chart and observe changes on the stacked column chart. 
+     >**Note**:Select various bars on the stacked column chart and observe changes on the pie report.
 
-![A Screenshot with an arrow pointing to the pie chart to observe changed to the data after changing data on the stacked column chart](05/media/image-6-18.png)
+     ![A Screenshot with an arrow pointing to the pie chart to observe changed to the data after changing data on the stacked column chart](05/media/image-6-18.png)
 
-11. Select the **Insert**, and select **Q&A**.
+10. Select the **Insert**, and select **Q&A**.
 
     ![A Screenshot with an arrow pointing to the Q&A button](05/media/2023-11-08_13-34-01.png)
 
-12. Select **Turn on Q&A** and wait for the Q&A to get ready.
+11. Select **Turn on Q&A** and wait for the Q&A to get ready.
 
     ![A Screenshot with an arrow pointing to the Q&A button](05/media/2023-11-08_13-35-31.png)
 
-13. Enter **bar count of problem reports by building**. You should see a bar chart. bar count of problem reports by building
+12. Enter **bar count of problem reports by building**. You should see a bar chart. bar count of problem reports by building
 
     ![A screenshot of the relevant text typed into the Q&A field](05/media/image-6-QAchart.png)
 
-14. The dashboard now has Q&A enabled. Select the **...** More options button of the Q&A visual and select **Remove**.
+13. The dashboard now has Q&A enabled. Select the **...** More options button of the Q&A visual and select **Remove**.
 
     ![A screenshot of the relevant text typed into the Q&A field](05/media/2023-11-08_13-38-51.png)
 
-15. Save work in progress by selecting **File | Save**.
+14. Save work in progress by selecting **File | Save**.
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    > - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
 
 ## Exercise 3: Create Power BI Dashboard
 
@@ -212,29 +211,27 @@ In this lab, you will build a Power BI dashboard that visualizes data about prob
 
     ![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-43-46.png)
 
- >**Note**:If you are getting an error on PowerBI Service with message "the data source is missing credentials and cannot be accessed", follow the below steps:
-1. Select **311 Workspace** and select the **Problem Management** dataset.
+    >**Note**:If you are getting an error on PowerBI Service with message "the data source is missing credentials and cannot be accessed", follow the below steps:
+
+7. Select **311 Workspace** and select the **Problem Management** dataset.
 
    ![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-45-18.png)
 
-2. Expand Refresh dropdown and select **Schedule refresh**.
+8. Expand Refresh dropdown and select **Schedule refresh**.
 
    ![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-58-19.png)
 
-3. Click on **File** and open **Settings**. Then expand **Data Source credentials** section and select **Edit Credentials**.
+9. Click on **File** and open **Settings**. Then expand **Data Source credentials** section and select **Edit Credentials**.
 
-    ![](05/media/L5E3T1S3.png)
+   ![](05/media/L5E3T1S3.png)
 
    ![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-58-55.png)
 
-
-5. Select **OAuth2** for **Authentication** Method and **Organizational** for **Privacy level setting for this data source**.
+10. Select **OAuth2** for **Authentication** Method and **Organizational** for **Privacy level setting for this data source**.
 
    ![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-59-19.png)
 
-
-6. Select **Sign in**. Provide the sign in details with the Username: <inject key="Username" enableCopy="false" />.This will resolve the issue for report and it should display properly on Power BI.
-
+11. Select **Sign in**. Provide the sign in details with the Username: <inject key="Username" enableCopy="false" />.This will resolve the issue for report and it should display properly on Power BI.
 
 ### Task 2: Create Power BI Dashboard
 
@@ -271,7 +268,6 @@ In this lab, you will build a Power BI dashboard that visualizes data about prob
 
     ![A Screenshot with an arrow pointing to the pin visual button](05/media/2023-11-08_14-13-35.png)
 
-
 ### Task 4: Build Mobile Phone View
 
 1.  Select the **Problem Management dashboard** from **Dashboards** area.
@@ -301,7 +297,6 @@ In this lab, you will build a Power BI dashboard that visualizes data about prob
    > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-
 
 ## Exercise 4: Embed Power BI report
 
@@ -655,7 +650,7 @@ In this exercise, you will add embedded canvas application to Power BI as a visu
 
 In this exercise you will import sample data into Power BI service. That allows you to complete the lab exercises even if do not have required permissions to install desktop applications, or experience difficulties in configuring Power BI Desktop and connecting it to the data. After completion of this exercise you can skip **Exercise1** and start the lab on **Exercise 2** using Power BI service ([https://app.powerbi.com](https://app.powerbi.com)) instead of Power BI Desktop. 
 
-1.  Download [problem-reports-data.pbix](05\Resources\problem-reports-data.pbix) and save on your computer.
+1.  Download [problem-reports-data.pbix](https://github.com/MicrosoftLearning/PL-100-Microsoft-Power-Platform-App-Maker/raw/master/Instructions/Labs/05/Resources/problem-reports-data.pbix) and save on your computer.
 
 2.  Navigate to [Power BI](https://app.powerbi.com/).
 
@@ -678,3 +673,5 @@ In this exercise you will import sample data into Power BI service. That allows 
 9. You can now start **Exercise 2: Create Power BI Report** of this lab.
 
     >**Note**: The sample data contained in **pbix** file may differ from the data present in the Dataverse instance. If reports are built using imported file, some of the visual elements and functionality may vary as a result.
+
+#### Click on next to continue with the next lab

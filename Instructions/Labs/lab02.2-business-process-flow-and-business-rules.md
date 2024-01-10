@@ -271,3 +271,4 @@ In this lab, you have completed:
 - Explored on business rule to not allow close without resolution.
 
 ### You have successfully completed the lab
+#### Click on next to continue with the next lab
