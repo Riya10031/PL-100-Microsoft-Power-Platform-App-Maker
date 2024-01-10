@@ -90,15 +90,15 @@ In this task, you will create the chatbot.
 
 1. **Wait** for the chatbot to be created.
 
-1. Enter **Hello** in the **Test chatbot** and select **Send**. 
+1. Enter **Hello** in the **Test your Copilot** and select **Send**. 
 
 1.  The chatbot should respond with the default greeting. You will edit this greeting in the next task.
 
-    ![A screenshot with a box around the bot's default greeting reading: "Hi! I'm a virtual agent. I can help with account questions, orders, store information and more. If you'd like to speak to a human agent, let me know at any time. So what can I help you with today?"](06/media/testchatbot.png)
+    ![A screenshot with a box around the bot's default greeting reading: "Hi! I'm a virtual agent. I can help with account questions, orders, store information and more. If you'd like to speak to a human agent, let me know at any time. So what can I help you with today?"](06/media/L6E1T3S6.png)
 
 8.  You can show/hide the chatbot by clicking on the chatbot icon located in the bottom left. This will give more room for the authoring canvas.
 
-    ![A Screenshot with an arrow pointing to the hide bot button](06/media/hidebot.png)
+    ![A Screenshot with an arrow pointing to the hide bot button](06/media/L6E1T3S7.png)
 
 9.  Do not navigate away from this page.
 
@@ -121,7 +121,7 @@ In this task, you will edit the default greeting.
 
     ![A screenshot of the greeting message replaced with the aforementioned text](06/media/message.png)
 
-5.  Select **Test bot** to show the **Test chatbot**.
+5.  Select **Test bot** to show the **Test your copilot**.
 
 6.  Enter **Hey** and select **Send**.
 
@@ -416,7 +416,7 @@ In this task, you will create a flow that will add the item to the recycle list 
 
 54. Select the back button next to the flow name.
 
-    ![Back to PVA button - screenshot](06/media/ex1-t6-image22.png)
+    ![Back to PVA button - screenshot](06/media/L6E1T6S54.png)
 
 55. You should now be back to the bot authoring canvas.
 
@@ -431,7 +431,7 @@ In this task, you will call the flow as an action from the Power Virtual Agents 
 
 2.  Select the **Add item to app or list (2)** flow you created.
 
-    ![A Screenshot with an arrow pointing to the add item to app or list button](06/media/ex1-t7-image1.png)
+    ![A Screenshot with an arrow pointing to the add item to app or list button](06/media/L6E1T7S2.png)
 
 3.  Select the **User ID** drop-down field and select **bot.UserId**.
 
@@ -474,7 +474,7 @@ In this task, you will call the flow as an action from the Power Virtual Agents 
 
 In this task, you will test the bot.
 
-1.  Select **Test your chatbot** option on the bottom left side of the screen.
+1.  Select **Test your copilot** option on the bottom left side of the screen.
 
 2.  Enter **Recycle** and select **Send**.
 
