@@ -520,12 +520,6 @@ In this task, you will test the bot.
 
     ![A Screenshot with an arrow pointing to the teams icon](06/media/teams.png)
 
-20. Select **Green** team chat. Select the **Upcycle** tab. 
-
-21. Search for bot. You should see the **Bot charger** the bot added to the application. 
-
-    ![A screenshot with the word bot in the search bar in the upcycle tab](06/media/botcharger.png)
-
 22. Select the **App launcher (1)** and select **OneDrive (2)**. 
 
     ![A Screenshot with an arrow pointing to the app launcher icon and a box around the onedrive option](06/media/applauncher.png)
