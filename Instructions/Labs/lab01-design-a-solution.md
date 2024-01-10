@@ -234,3 +234,5 @@ Review the following user story:
 The following is an example UI mockup showing both the **Add new item** and **My reports** lists. There is no single answer to what this has to look like and there are possibly many examples you could come up with. The goal for the UI mockup stage is to be able to quickly demonstrate what you want to build and show it to somebody without having to actually build it. Depending on the tool you used you can often make changes quickly as you evolve the mockup. The mockup is used to help you build the actual application screens quicker with less rework. 
 
 ![A UI mockup of the add and my reports list screens](01/media/image3.png)
+
+### Click on next to continue with the next lab
