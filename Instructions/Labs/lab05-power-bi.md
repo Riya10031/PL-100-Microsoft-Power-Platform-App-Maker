@@ -655,7 +655,7 @@ In this exercise, you will add embedded canvas application to Power BI as a visu
 
 In this exercise you will import sample data into Power BI service. That allows you to complete the lab exercises even if do not have required permissions to install desktop applications, or experience difficulties in configuring Power BI Desktop and connecting it to the data. After completion of this exercise you can skip **Exercise1** and start the lab on **Exercise 2** using Power BI service ([https://app.powerbi.com](https://app.powerbi.com)) instead of Power BI Desktop. 
 
-1.  Download [problem-reports-data.pbix](05\Resources\problem-reports-data.pbix) and save on your computer.
+1.  Download [problem-reports-data.pbix](https://github.com/MicrosoftLearning/PL-100-Microsoft-Power-Platform-App-Maker/raw/master/Instructions/Labs/05/Resources/problem-reports-data.pbix) and save on your computer.
 
 2.  Navigate to [Power BI](https://app.powerbi.com/).
 
