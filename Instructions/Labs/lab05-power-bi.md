@@ -673,3 +673,5 @@ In this exercise you will import sample data into Power BI service. That allows 
 9. You can now start **Exercise 2: Create Power BI Report** of this lab.
 
     >**Note**: The sample data contained in **pbix** file may differ from the data present in the Dataverse instance. If reports are built using imported file, some of the visual elements and functionality may vary as a result.
+
+#### Click on next to continue with the next lab
