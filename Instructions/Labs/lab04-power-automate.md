@@ -405,7 +405,7 @@ In this task, you will test the escalation flow.
    > - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    > - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### Exercise 3: Send approval requests as adaptive card in Microsoft Teams
+### Exercise 3: Send approval requests as adaptive card in Microsoft Teams (Read Only)
 
 In this exercise, you will setup a team in Microsoft Teams dedicated to the Company 311 applications. You will modify the flow to send the approval request as an adaptive card in Teams chat instead of an approval message.
 
@@ -580,7 +580,7 @@ In this task, you will test the escalation flow with the Teams and adaptive card
 In this lab, you have completed:
 - Builded notify flow.
 - Builded escalation flow.
-- Sended approval requests as adaptive card in Microsoft Teams(READ-ONLY). 
+- Sended approval requests as adaptive card in Microsoft Teams(Read Only). 
 
 ### You have successfully completed the lab
 

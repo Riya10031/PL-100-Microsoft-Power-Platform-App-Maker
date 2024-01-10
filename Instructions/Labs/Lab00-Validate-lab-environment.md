@@ -20,15 +20,17 @@ Though this lab, you will be able to complete and gain insights into the followi
 
 1. Inside the Lab VM search for **Microsoft Edge**.
 
-1.  Navigate to [Power Apps](https://powerapps.microsoft.com/), select **Try free** and select **Try free** again.
+1.  Navigate to [Power Apps](https://powerapps.microsoft.com/), select **Try for free**.
 
-    ![A data model showing problem report, department and building](03-2/media/tryfree.png)
+    ![A data model showing problem report, department and building](03-2/media/1-tryforfree.png)
 
 1. Scroll down and select **Start using apps>** and enter the email address from the provided Microsoft 365 credentials. Agree to the terms & conditions then select **Start your free trial**.
 
-    ![A data model showing problem report, department and building](01/media/pa1.png)
+    ![A data model showing problem report, department and building](03-2/media/2-startusingapps.png)
 
     ![A data model showing problem report, department and building](03-2/media/lab011.png)
+
+    >**Note:** If prompted for the email and password, enter your ODL credentials.
 
     >**Note:** On the **Welcome to Power Apps**, select the country **United States**, and select **Get started**.
 
@@ -46,8 +48,6 @@ In this exercise, you will create a **Practice** environment that you will use t
 #### Task 1 – Create environment
  
 1.  Open a new browser tab and navigate to the Power Platform admin center `https://aka.ms/ppac` 
-
-1. On the **Welcome to the Power Platform admin center!**, select **Get Started**.
 
 2.  Log in with your Microsoft 365 credentials, if prompted again.
  
