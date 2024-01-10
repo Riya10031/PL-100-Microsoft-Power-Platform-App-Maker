@@ -176,13 +176,13 @@ In this task, you will create a table and columns.
 
 18. Enter **Location** for **Display name**, select **Text** for **Data type** (displayed as **Single line of text**), select **Business required** for **Required** and select **Save**.
 
-    ![A screenshot of the add column window with the relevant text in each field](03-1/media/lab4-ex1-t1-24.png)
+    ![A screenshot of the add column window with the relevant text in each field](03-1/media/L3E2T2S18.png)
 
 19. Select **+ New column**.
 
 20. Enter **Photo** for **Display name**, select **File > Image** for **Data type**, check the **Primary image** checkbox and select **Save**.
 
-    ![A screenshot of the add column window with the relevant text in each field](03-1/media/lab4-ex1-t1-25.png)
+    ![A screenshot of the add column window with the relevant text in each field](03-1/media/L3E2T2S20.png)
 
 21. Select **+ New column**.
 
