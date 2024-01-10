@@ -462,3 +462,5 @@ In this task, you will import the solution into another environment.
 20. Select **Turn on**.
 
 21. The flow should show the status as **On**. You can verify the Status value in the Details sections.
+
+### You have successfully completed the lab
