@@ -504,3 +504,5 @@ In this lab, you have completed:
 - Tested and published application. 
 
 ### You have successfully completed the lab
+
+#### Click on next to continue with the next lab
