@@ -221,17 +221,19 @@ In this lab, you will build a Power BI dashboard that visualizes data about prob
 
    ![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-58-19.png)
 
-3. Expand **Data Source credentials** section and select **Edit Credentials**.
+3. Click on **File** and open **Settings**. Then expand **Data Source credentials** section and select **Edit Credentials**.
+
+    ![](05/media/L5E3T1S3.png)
 
    ![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-58-55.png)
 
 
-4. Select **OAuth2** for **Authentication** Method and **Organizational** for **Privacy level setting for this data source**.
+5. Select **OAuth2** for **Authentication** Method and **Organizational** for **Privacy level setting for this data source**.
 
    ![A Screenshot with an arrow pointing to the button to open your report](05/media/2023-11-08_13-59-19.png)
 
 
-5. Select **Sign in**. Provide the sign in details with the Username: <inject key="Username" enableCopy="false" />.This will resolve the issue for report and it should display properly on Power BI.
+6. Select **Sign in**. Provide the sign in details with the Username: <inject key="Username" enableCopy="false" />.This will resolve the issue for report and it should display properly on Power BI.
 
 
 ### Task 2: Create Power BI Dashboard
@@ -317,11 +319,11 @@ In this task you will setup a Microsoft Teams team for the Lamna Healthcare Comp
 
 3.  When the Microsoft Teams window opens, dismiss the welcome messages.
 
-4.  On the bottom left corner, choose **Join or create a team**.
+4.  Select **Teams** from the left pane, and click on the **'+'** sign to **Join or create a team**.
 
 5.  Select **Create a team**.
 
-    ![A screenshot with a border around the join or create team button at the bottom of the window and another border around the create a team button](05/media/image-6-createteam.png)
+    ![A screenshot with a border around the join or create team button at the bottom of the window and another border around the create a team button](05/media/L5E4T1S5.png)
 
 6.  Press **From scratch**.
 
