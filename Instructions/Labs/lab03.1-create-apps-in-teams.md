@@ -141,16 +141,15 @@ In this task, you will create a table and columns.
 
     ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](03-1/media/2023-11-07_14-24-57.png)
 
-7. Enter **Name (1)** for **Display name** and then select **Save (2)**.
+7. Enter **Name** for **Display name**, select **Business required** for **Required**. Select **Advanced options**, enter **name** for **Schema name** and then select **Save**.
 
-    ![A screenshot with data option selected and cursor pointing to the create new table link from the select a data source prompt](06/media/displayname.png)
+    ![A screenshot with the cursor pointing to the advanced options link](03-1/media/Name.png)
 
 7.  Select **+ New column**.
 
-8.  Enter **Description** for **Display name**, select **Text** for **Data type** (displayed as **Single line of text**), and expand the **Advanced options** section.
-    Change the **Maximum character count** to `500` and select **Save**.
+8.  Enter **Description (1)** for **Display name**, select **Text** for **Data type** (displayed as **Single line of text (2)**), select **Text (3)**, select **Optional (4)** for **Required**, and expand the **Advanced options** section. Enter **Description (5)**, change the **Maximum character count (6)** to `500`, select **Auto (7)** for **IME mode** and select **Save (8)**.
 
-    ![A screenshot with the cursor pointing to the advanced options link](03-1/media/2023-11-07_14-26-52.png)
+    ![A screenshot with the cursor pointing to the advanced options link](03-1/media/description.png)
 
 9.  Select **+ New column** again.
 
